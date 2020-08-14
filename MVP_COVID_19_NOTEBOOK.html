@@ -13104,6 +13104,9 @@ div#notebook {
 
 <span class="c1">## First get all the functions set up</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">difflib</span>
+
 <span class="c1"># import itables.interactive</span>
 <span class="c1"># from itables import show</span>
 <span class="c1"># import itables.options as opt</span>
@@ -13210,7 +13213,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">covid19</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;Gene&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">fc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">fc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">covid19_to_genes</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">display_table_view</span><span class="p">()</span>
 <span class="n">covid19_to_genes</span>
 </pre></div>
@@ -13222,6 +13225,75 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>==========
+========== QUERY PARAMETER SUMMARY ==========
+==========
+
+BTE will find paths that join &#39;COVID-19&#39; and &#39;Gene&#39;.                   Paths will have 0 intermediate node.
+
+
+
+========== QUERY #1 -- fetch all Gene entities linked to COVID-19 ==========
+==========
+
+==== Step #1: Query path planning ====
+
+Because COVID-19 is of type &#39;Disease&#39;, BTE will query our meta-KG for APIs that can take &#39;Disease&#39; as input and &#39;Gene&#39; as output
+
+BTE found 8 apis:
+
+API 1. hetio(1 API call)
+API 2. cord_disease(1 API call)
+API 3. scibite(1 API call)
+API 4. pharos(1 API call)
+API 5. biolink(1 API call)
+API 6. mgi_gene2phenotype(1 API call)
+API 7. DISEASES(1 API call)
+API 8. scigraph(1 API call)
+
+
+==== Step #2: Query path execution ====
+NOTE: API requests are dispatched in parallel, so the list of APIs below is ordered by query time.
+
+API 6.1: https://pending.biothings.io/mgigene2phenotype/query?fields=_id&amp;size=300 (POST -d q=DOID:0080600&amp;scopes=mgi.associated_with_disease.doid)
+API 7.1: https://pending.biothings.io/DISEASES/query?fields=DISEASES.associatedWith (POST -d q=DOID:0080600&amp;scopes=DISEASES.doid)
+API 2.1: https://biothings.ncats.io/cord_disease/query?fields=associated_with (POST -d q=DOID:0080600&amp;scopes=doid)
+API 5.1: https://api.monarchinitiative.org/api/bioentity/disease/MONDO:0100096/genes?rows=200
+API 1.1: https://automat.renci.org/hetio/disease/gene/MONDO:0100096
+API 4.1: https://automat.renci.org/pharos/disease/gene/MONDO:0100096
+API 8.1: https://automat.renci.org/cord19-scigraph/disease/gene/MONDO:0100096
+API 3.1: https://automat.renci.org/cord19-scibite/disease/gene/MONDO:0100096
+
+
+==== Step #3: Output normalization ====
+
+API 6.1 mgi_gene2phenotype: No hits
+API 7.1 DISEASES: 2 hits
+API 8.1 scigraph: 7 hits
+API 4.1 pharos: No hits
+API 2.1 cord_disease: No hits
+API 3.1 scibite: No hits
+API 1.1 hetio: No hits
+API 5.1 biolink: No hits
+
+After id-to-object translation, BTE retrieved 8 unique objects.
+
+==========
+========== Final assembly of results ==========
+==========
+
+
+In the #1 query, BTE found 8 unique Gene nodes
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -13305,47 +13377,11 @@ div#notebook {
       <td>Automat CORD19 Scigraph API</td>
       <td>None</td>
       <td>Gene</td>
-      <td>POR</td>
-      <td>NCBIGene:5447</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>COVID-19</td>
-      <td>Disease</td>
-      <td>related_to</td>
-      <td>scigraph</td>
-      <td>Automat CORD19 Scigraph API</td>
-      <td>None</td>
-      <td>Gene</td>
       <td>CRP</td>
       <td>NCBIGene:1401</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>COVID-19</td>
-      <td>Disease</td>
-      <td>related_to</td>
-      <td>scigraph</td>
-      <td>Automat CORD19 Scigraph API</td>
-      <td>None</td>
-      <td>Gene</td>
-      <td>TH</td>
-      <td>NCBIGene:7054</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>COVID-19</td>
-      <td>Disease</td>
-      <td>related_to</td>
-      <td>scigraph</td>
-      <td>Automat CORD19 Scigraph API</td>
-      <td>None</td>
-      <td>Gene</td>
-      <td>SON</td>
-      <td>NCBIGene:6651</td>
-    </tr>
-    <tr>
-      <th>7</th>
+      <th>4</th>
       <td>COVID-19</td>
       <td>Disease</td>
       <td>related_to</td>
@@ -13357,7 +13393,19 @@ div#notebook {
       <td>NCBIGene:4141</td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>5</th>
+      <td>COVID-19</td>
+      <td>Disease</td>
+      <td>related_to</td>
+      <td>scigraph</td>
+      <td>Automat CORD19 Scigraph API</td>
+      <td>None</td>
+      <td>Gene</td>
+      <td>POR</td>
+      <td>NCBIGene:5447</td>
+    </tr>
+    <tr>
+      <th>6</th>
       <td>COVID-19</td>
       <td>Disease</td>
       <td>related_to</td>
@@ -13367,6 +13415,30 @@ div#notebook {
       <td>Gene</td>
       <td>TMPRSS2</td>
       <td>NCBIGene:7113</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>COVID-19</td>
+      <td>Disease</td>
+      <td>related_to</td>
+      <td>scigraph</td>
+      <td>Automat CORD19 Scigraph API</td>
+      <td>None</td>
+      <td>Gene</td>
+      <td>SON</td>
+      <td>NCBIGene:6651</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>COVID-19</td>
+      <td>Disease</td>
+      <td>related_to</td>
+      <td>scigraph</td>
+      <td>Automat CORD19 Scigraph API</td>
+      <td>None</td>
+      <td>Gene</td>
+      <td>TH</td>
+      <td>NCBIGene:7054</td>
     </tr>
   </tbody>
 </table>
@@ -13414,7 +13486,7 @@ Intermediate Node type running:
 SequenceVariant
 Intermediate Node type running:
 ChemicalSubstance
-API 4.1 pharos failed
+API 3.1 pharos failed
 Intermediate Node type running:
 Disease
 Intermediate Node type running:
@@ -13473,7 +13545,7 @@ PhenotypicFeature
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">covid_allNodes_Genes</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">])</span>
@@ -13511,42 +13583,42 @@ ANG: 20
 TP53: 18
 HIF1A: 17
 SQSTM1: 17
-FOS: 17
 CYP1A2: 17
 C0010762: 17
+FOS: 17
 TLR9: 16
 C0164786: 16
 AR: 16
 ACE2: 16
 ACE: 16
 SOD1: 15
+CYP2C9: 15
+PPIG: 15
 CD4: 15
 C1705556: 15
 VEGFA: 15
 EGFR: 15
 ALB: 15
 IL1B: 15
-CYP2C9: 15
-PPIG: 15
 RELA: 15
 APP: 15
 C0010531: 15
 C0030956: 15
 SOD2: 14
 BAX: 14
-CASP3: 14
 CDKN1A: 14
 MTOR: 14
+CASP3: 14
 C1705526: 14
+TH: 14
 EPO: 14
 MPO: 14
 IFNA1: 14
-TH: 14
 C0033634: 14
 TLR7: 13
-MAPK1: 13
-LEP: 13
-CCL2: 13
+CYP2B6: 13
+C0020364: 13
+C1142644: 13
 </pre>
 </div>
 </div>
@@ -13557,7 +13629,7 @@ CCL2: 13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## store top 50 genes</span>
@@ -13585,7 +13657,7 @@ CCL2: 13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">covid19</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;PhenotypicFeature&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -13606,7 +13678,7 @@ CCL2: 13
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13645,7 +13717,7 @@ CCL2: 13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## try more broad &quot;corona&quot; look at coronaviruses in general </span>
@@ -13663,7 +13735,7 @@ CCL2: 13
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13687,7 +13759,7 @@ CCL2: 13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">corona</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;PhenotypicFeature&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
@@ -13696,6 +13768,71 @@ CCL2: 13
 <span class="n">covid19_2_phentoypic_feature</span>
 
 <span class="c1">## no results </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="COVID-19--&gt;-BiologicalProcess">COVID-19 -&gt; BiologicalProcess<a class="anchor-link" href="#COVID-19--&gt;-BiologicalProcess">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">covid19</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;BiologicalProcess&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">fc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">covid19_2_biologicalProcess</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">display_table_view</span><span class="p">()</span>
+<span class="n">covid19_2_biologicalProcess</span>
 </pre></div>
 
     </div>
@@ -13745,74 +13882,9 @@ CCL2: 13
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="COVID-19--&gt;-BiologicalProcess">COVID-19 -&gt; BiologicalProcess<a class="anchor-link" href="#COVID-19--&gt;-BiologicalProcess">&#182;</a></h3>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">covid19</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;BiologicalProcess&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="n">fc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">covid19_2_biologicalProcess</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">display_table_view</span><span class="p">()</span>
-<span class="n">covid19_2_biologicalProcess</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># try broader corona family again </span>
@@ -13832,7 +13904,7 @@ CCL2: 13
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13872,13 +13944,137 @@ CCL2: 13
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.3-Which-of-the-genes-related-to-COVID-19-are-related-to-symptoms-of-COVID-19?">1.3 Which of the genes related to COVID-19 are related to symptoms of COVID-19?<a class="anchor-link" href="#1.3-Which-of-the-genes-related-to-COVID-19-are-related-to-symptoms-of-COVID-19?">&#182;</a></h3>
+<h2 id="Determine-symptoms-from:-http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=60833&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={A27BEC6F-30C5-4893-BB0F-9FEB5589DEB3}">Determine symptoms from: <a href="http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=60833&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={A27BEC6F-30C5-4893-BB0F-9FEB5589DEB3}">http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=60833&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={A27BEC6F-30C5-4893-BB0F-9FEB5589DEB3}</a><a class="anchor-link" href="#Determine-symptoms-from:-http://www.diseasesdatabase.com/relationships.asp?glngUserChoice=60833&amp;bytRel=2&amp;blnBW=0&amp;strBB=LR&amp;blnClassSort=255&amp;Key={A27BEC6F-30C5-4893-BB0F-9FEB5589DEB3}">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Symptoms and signs:</span>
+    
+<span class="c1"># Cough</span>
+<span class="c1">#    Coughing</span>
+<span class="c1"># Diarrhoea</span>
+<span class="c1">#     Loose stools</span>
+<span class="c1">#     Diarrhea</span>
+<span class="c1"># Myalgia</span>
+<span class="c1">#     Myodynia</span>
+<span class="c1">#     Muscle pain</span>
+<span class="c1"># Pyrexia</span>
+<span class="c1">#     Body temperature increased</span>
+<span class="c1">#     Febrile</span>
+<span class="c1">#     Fever</span>
+<span class="c1">#     Hyperthermia</span>
+<span class="c1"># Taste disturbance</span>
+<span class="c1">#     Ageusia</span>
+<span class="c1">#     Dysgeusia</span>
+<span class="c1">#     Hypogeusia</span>
+<span class="c1">#     Parageusia</span>
+
+
+<span class="c1"># Haematological abnormalities:</span>
+<span class="c1"># Lymphocytopenia</span>
+<span class="c1">#     Lymphopenia</span>
+<span class="c1">#     Lymphocyte count low (peripheral blood)</span>
+
+<span class="c1"># Biochemical abnormalities:</span>
+<span class="c1"># Lactate dehydrogenase levels raised (plasma or serum)</span>
+<span class="c1">#     LDH raised</span>
+
+<span class="c1"># Cardiac and vascular conditions:</span>
+<span class="c1"># Myocarditis</span>
+
+<span class="c1"># Inflammatory conditions:</span>
+<span class="c1"># Pneumonia</span>
+<span class="c1">#     Pneumonitis</span>
+<span class="c1">#     Pulmonary inflammation</span>
+
+
+<span class="n">symptom_and_phenotype_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Cough&#39;</span><span class="p">,</span><span class="s1">&#39;Coughing&#39;</span><span class="p">,</span><span class="s1">&#39;Diarrhoea&#39;</span><span class="p">,</span><span class="s1">&#39;Loose stools&#39;</span><span class="p">,</span><span class="s1">&#39;Diarrhea&#39;</span><span class="p">,</span><span class="s1">&#39;Myalgia&#39;</span><span class="p">,</span><span class="s1">&#39;Myodynia&#39;</span><span class="p">,</span>
+                              <span class="s1">&#39;Muscle pain&#39;</span><span class="p">,</span><span class="s1">&#39;Pyrexia&#39;</span><span class="p">,</span><span class="s1">&#39;Body temperature increased&#39;</span><span class="p">,</span><span class="s1">&#39;Febrile&#39;</span><span class="p">,</span><span class="s1">&#39;Fever&#39;</span><span class="p">,</span><span class="s1">&#39;Hyperthermia&#39;</span><span class="p">,</span>
+                              <span class="s1">&#39;Taste disturbance&#39;</span><span class="p">,</span><span class="s1">&#39;Ageusia&#39;</span><span class="p">,</span><span class="s1">&#39;Dysgeusia&#39;</span><span class="p">,</span><span class="s1">&#39;Hypogeusia&#39;</span><span class="p">,</span><span class="s1">&#39;Parageusia&#39;</span><span class="p">,</span><span class="s1">&#39;Lymphocytopenia&#39;</span><span class="p">,</span>
+                              <span class="s1">&#39;Lymphopenia&#39;</span><span class="p">,</span><span class="s1">&#39;Lymphocyte count low (peripheral blood)&#39;</span><span class="p">,</span>
+                              <span class="s1">&#39;Lactate dehydrogenase levels raised (plasma or serum)&#39;</span><span class="p">,</span><span class="s1">&#39;LDH raised&#39;</span><span class="p">,</span><span class="s1">&#39;Myocarditis&#39;</span><span class="p">,</span>
+                              <span class="s1">&#39;Pneumonia&#39;</span><span class="p">,</span><span class="s1">&#39;Pneumonitis&#39;</span><span class="p">,</span><span class="s1">&#39;Pulmonary inflammation&#39;</span><span class="p">]</span>
+
+
+
+<span class="n">symptom_and_phenotype_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">symptom_and_phenotype_list</span><span class="p">]</span>
+<span class="n">symptom_and_phenotype_list</span>
+<span class="c1"># symptom_and_phenotype_list </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;cough&#39;,
+ &#39;coughing&#39;,
+ &#39;diarrhoea&#39;,
+ &#39;loose stools&#39;,
+ &#39;diarrhea&#39;,
+ &#39;myalgia&#39;,
+ &#39;myodynia&#39;,
+ &#39;muscle pain&#39;,
+ &#39;pyrexia&#39;,
+ &#39;body temperature increased&#39;,
+ &#39;febrile&#39;,
+ &#39;fever&#39;,
+ &#39;hyperthermia&#39;,
+ &#39;taste disturbance&#39;,
+ &#39;ageusia&#39;,
+ &#39;dysgeusia&#39;,
+ &#39;hypogeusia&#39;,
+ &#39;parageusia&#39;,
+ &#39;lymphocytopenia&#39;,
+ &#39;lymphopenia&#39;,
+ &#39;lymphocyte count low (peripheral blood)&#39;,
+ &#39;lactate dehydrogenase levels raised (plasma or serum)&#39;,
+ &#39;ldh raised&#39;,
+ &#39;myocarditis&#39;,
+ &#39;pneumonia&#39;,
+ &#39;pneumonitis&#39;,
+ &#39;pulmonary inflammation&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3-Which-of-the-genes-related-to-COVID-19-are-related-to-symptoms-of-COVID-19?">1.3 Which of the genes related to COVID-19 are related to symptoms of COVID-19?<a class="anchor-link" href="#1.3-Which-of-the-genes-related-to-COVID-19-are-related-to-symptoms-of-COVID-19?">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.3.1-Genes-(from-1.1)--&gt;-Symptoms-(From-1.2.1)">1.3.1 Genes (from 1.1) -&gt; Symptoms (From 1.2.1)<a class="anchor-link" href="#1.3.1-Genes-(from-1.1)--&gt;-Symptoms-(From-1.2.1)">&#182;</a></h3><h4 id="1.3.1.1-Gene--&gt;-Phenotype-type-&quot;symptoms&quot;">1.3.1.1 Gene -&gt; Phenotype type "symptoms"<a class="anchor-link" href="#1.3.1.1-Gene--&gt;-Phenotype-type-&quot;symptoms&quot;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13921,6 +14117,8 @@ C0010531 FAILED
 C0030956 FAILED
 C1705526 FAILED
 C0033634 FAILED
+C0020364 FAILED
+C1142644 FAILED
 </pre>
 </div>
 </div>
@@ -13931,7 +14129,7 @@ C0033634 FAILED
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">top50gene_2_phenotypicFeature</span><span class="o">.</span><span class="n">shape</span>
@@ -13947,13 +14145,13 @@ C0033634 FAILED
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(1086, 9)</pre>
+<pre>(1058, 9)</pre>
 </div>
 
 </div>
@@ -13964,7 +14162,224 @@ C0033634 FAILED
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Get names for HP ids</span>
+<span class="n">HP_ids</span> <span class="o">=</span> <span class="n">top50gene_2_phenotypicFeature</span><span class="p">[</span><span class="n">top50gene_2_phenotypicFeature</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">&quot;HP:&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)][</span><span class="s2">&quot;output_name&quot;</span><span class="p">]</span>
+<span class="n">HP_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">HP_ids</span><span class="p">)</span>
+<span class="n">HP_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">HP_ids</span><span class="p">))</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">HP_ids</span><span class="p">)</span>
+<span class="n">HP_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">HP_ids</span><span class="p">:</span> 
+    <span class="n">HP_ID</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://biothings.ncats.io/hpo/phenotype/HP%3A&#39;</span> <span class="o">+</span> <span class="n">HP_ID</span><span class="p">)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">if</span><span class="p">((</span><span class="s1">&#39;_id&#39;</span> <span class="ow">in</span> <span class="n">res</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">res</span><span class="p">)):</span>
+        <span class="n">HP_dict</span><span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_similar_phen_indices</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">list2</span><span class="p">,</span><span class="n">similarity</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> 
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">)):</span>
+        <span class="n">append_i</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">lookup</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span><span class="p">(</span><span class="s1">&#39;HP:&#39;</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>  <span class="ow">in</span> <span class="n">HP_dict</span><span class="p">):</span>
+                <span class="n">lookup</span> <span class="o">=</span> <span class="n">HP_dict</span><span class="p">[</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">list2</span><span class="p">:</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">difflib</span><span class="o">.</span><span class="n">SequenceMatcher</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="n">lookup</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">.</span><span class="n">ratio</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">similarity</span><span class="p">):</span>
+    <span class="c1">#                 if(i &lt; 3):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched similar terms:&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">lookup</span> <span class="o">+</span> <span class="s1">&#39; and &#39;</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span>
+<span class="c1">#                     print()</span>
+                    <span class="n">append_i</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">append_i</span><span class="p">):</span> 
+            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">))</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">phen_indices</span> <span class="o">=</span> <span class="n">get_similar_phen_indices</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">top50gene_2_phenotypicFeature</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">]),</span><span class="n">symptom_and_phenotype_list</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Matched similar terms:
+fever and fever
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+myalgia and myalgia
+Matched similar terms:
+fever and fever
+4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top50gene_2_phenotypicFeature</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">phen_indices</span><span class="p">,:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[69]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>input</th>
+      <th>input_type</th>
+      <th>pred1</th>
+      <th>pred1_source</th>
+      <th>pred1_api</th>
+      <th>pred1_pubmed</th>
+      <th>output_type</th>
+      <th>output_name</th>
+      <th>output_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>22</th>
+      <td>TP53</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>None</td>
+      <td>BioLink API</td>
+      <td>None</td>
+      <td>PhenotypicFeature</td>
+      <td>HP:0001945</td>
+      <td>HP:HP:0001945</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>TP53</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>None</td>
+      <td>BioLink API</td>
+      <td>None</td>
+      <td>PhenotypicFeature</td>
+      <td>HP:0002014</td>
+      <td>HP:HP:0002014</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>FOS</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>None</td>
+      <td>BioLink API</td>
+      <td>None</td>
+      <td>PhenotypicFeature</td>
+      <td>HP:0003326</td>
+      <td>HP:HP:0003326</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>TH</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>None</td>
+      <td>BioLink API</td>
+      <td>10407773,9732974,0011551,21937992,20430833,252...</td>
+      <td>PhenotypicFeature</td>
+      <td>HP:0001945</td>
+      <td>HP:HP:0001945</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.3.1.2--Gene--&gt;-Bioprocess-type-&quot;symptoms&quot;">1.3.1.2  Gene -&gt; Bioprocess type "symptoms"<a class="anchor-link" href="#1.3.1.2--Gene--&gt;-Bioprocess-type-&quot;symptoms&quot;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14007,6 +14422,8 @@ C0010531 FAILED
 C0030956 FAILED
 C1705526 FAILED
 C0033634 FAILED
+C0020364 FAILED
+C1142644 FAILED
 </pre>
 </div>
 </div>
@@ -14017,7 +14434,7 @@ C0033634 FAILED
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">top50gene_2_bioprocesses</span><span class="o">.</span><span class="n">shape</span>
@@ -14033,13 +14450,1523 @@ C0033634 FAILED
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[71]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(15712, 9)</pre>
+<pre>(14172, 9)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Get names for go ids</span>
+<span class="n">go_ids</span> <span class="o">=</span> <span class="n">top50gene_2_bioprocesses</span><span class="p">[</span><span class="n">top50gene_2_bioprocesses</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">&quot;go:&quot;</span><span class="p">,</span><span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)][</span><span class="s2">&quot;output_name&quot;</span><span class="p">]</span>
+<span class="n">go_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">go_ids</span><span class="p">)</span>
+<span class="n">go_ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">fromkeys</span><span class="p">(</span><span class="n">go_ids</span><span class="p">))</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">go_ids</span><span class="p">)</span>
+<span class="n">go_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">go_ids</span><span class="p">:</span> 
+    <span class="n">go_ID</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://biothings.ncats.io/go_bp/geneset/GO%3A&#39;</span> <span class="o">+</span> <span class="n">go_ID</span><span class="p">)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">if</span><span class="p">(</span><span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">res</span><span class="p">):</span>
+        <span class="n">go_dict</span><span class="p">[</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_similar_bp_indices</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">list2</span><span class="p">,</span><span class="n">similarity</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> 
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">)):</span>
+        <span class="n">append_i</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">lookup</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span><span class="p">(</span><span class="s1">&#39;go:&#39;</span> <span class="ow">in</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]):</span>
+            <span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">in</span> <span class="n">go_dict</span><span class="p">:</span>
+                <span class="n">lookup</span> <span class="o">=</span> <span class="n">go_dict</span><span class="p">[</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">list2</span><span class="p">:</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">difflib</span><span class="o">.</span><span class="n">SequenceMatcher</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="n">lookup</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">.</span><span class="n">ratio</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">similarity</span><span class="p">):</span>
+    <span class="c1">#                 if(i &lt; 3):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched similar terms:&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">lookup</span> <span class="o">+</span> <span class="s1">&#39; and &#39;</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span>
+<span class="c1">#                     print()</span>
+                    <span class="n">append_i</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">append_i</span><span class="p">):</span> 
+            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">))</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bp_indices</span> <span class="o">=</span> <span class="n">get_similar_bp_indices</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">top50gene_2_bioprocesses</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">]),</span><span class="n">symptom_and_phenotype_list</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top50gene_2_bioprocesses</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">bp_indices</span><span class="p">,:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[75]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>input</th>
+      <th>input_type</th>
+      <th>pred1</th>
+      <th>pred1_source</th>
+      <th>pred1_api</th>
+      <th>pred1_pubmed</th>
+      <th>output_type</th>
+      <th>output_name</th>
+      <th>output_id</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1.3.1.3--Gene--&gt;-Disease-type-&quot;symptoms&quot;">1.3.1.3  Gene -&gt; Disease type "symptoms"<a class="anchor-link" href="#1.3.1.3--Gene--&gt;-Disease-type-&quot;symptoms&quot;">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">top_50_related_genes_covid_2_allNodes_2_genes</span><span class="p">:</span> 
+<span class="c1">#     print(x)</span>
+    <span class="k">try</span><span class="p">:</span> 
+        <span class="n">gene</span> <span class="o">=</span> <span class="n">ht</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="s2">&quot;Gene&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">fc</span> <span class="o">=</span> <span class="n">FindConnection</span><span class="p">(</span><span class="n">input_obj</span><span class="o">=</span><span class="n">gene</span><span class="p">,</span> <span class="n">output_obj</span><span class="o">=</span><span class="s1">&#39;Disease&#39;</span><span class="p">,</span> <span class="n">intermediate_nodes</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="n">fc</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">fc</span><span class="o">.</span><span class="n">display_table_view</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">rows</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+            <span class="n">df_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; FAILED&quot;</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">top50gene_2_diseases</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_list</span><span class="p">)</span>
+
+<span class="n">top50gene_2_diseases</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/json/decoder.py:353: RuntimeWarning: coroutine &#39;BioThingsCaller.call_one_api&#39; was never awaited
+  obj, end = self.scan_once(s, idx)
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>C0014442 FAILED
+C0017337 FAILED
+C0010762 FAILED
+C0164786 FAILED
+C1705556 FAILED
+C0010531 FAILED
+C0030956 FAILED
+C1705526 FAILED
+C0033634 FAILED
+C0020364 FAILED
+C1142644 FAILED
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[58]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(40877, 9)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_similar_disease_indices</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">list2</span><span class="p">,</span><span class="n">similarity</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span> 
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">)):</span>
+        <span class="n">append_i</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">lookup</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="c1">#         if(&#39;go:&#39; in list1[i]):</span>
+<span class="c1">#             if list1[i] in go_dict:</span>
+<span class="c1">#                 lookup = go_dict[list1[i]]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">list2</span><span class="p">:</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">difflib</span><span class="o">.</span><span class="n">SequenceMatcher</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span><span class="n">lookup</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="o">.</span><span class="n">ratio</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">similarity</span><span class="p">):</span>
+    <span class="c1">#                 if(i &lt; 3):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matched similar terms:&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="n">lookup</span> <span class="o">+</span> <span class="s1">&#39; and &#39;</span> <span class="o">+</span> <span class="n">j</span><span class="p">)</span>
+<span class="c1">#                     print()</span>
+                    <span class="n">append_i</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">append_i</span><span class="p">):</span> 
+            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">))</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">disease_indices</span> <span class="o">=</span> <span class="n">get_similar_disease_indices</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">top50gene_2_diseases</span><span class="p">[</span><span class="s2">&quot;output_name&quot;</span><span class="p">]),</span><span class="n">symptom_and_phenotype_list</span><span class="p">,</span><span class="mf">0.9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonitis and pneumonitis
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+coughing and coughing
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+fever and fever
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+fever and fever
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+fever and fever
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+lymphopenia and lymphopenia
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+myocarditis and myocarditis
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+pneumonia and pneumonia
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+Matched similar terms:
+diarrhea and diarrhoea
+Matched similar terms:
+diarrhea and diarrhea
+188
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># top50gene_2_diseases</span>
+<span class="n">relevant_top50gene_2_diseases</span> <span class="o">=</span> <span class="n">top50gene_2_diseases</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">disease_indices</span><span class="p">,:]</span>
+<span class="n">relevant_top50gene_2_diseases</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[85]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>input</th>
+      <th>input_type</th>
+      <th>pred1</th>
+      <th>pred1_source</th>
+      <th>pred1_api</th>
+      <th>pred1_pubmed</th>
+      <th>output_type</th>
+      <th>output_name</th>
+      <th>output_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1539</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>disrupts</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>1443236,16300807,22673618,9094446</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1540</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>10701765,15373964,16460809,1714101,17374708,17...</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1541</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>affects</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11593333,12879338,15855300,15965498,17967442,1...</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1542</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>disgenet</td>
+      <td>mydisease.info API</td>
+      <td>None</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1772</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>disrupts</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>16678268,8666420</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1849</th>
+      <td>IFNA1</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>DISEASE</td>
+      <td>DISEASES API</td>
+      <td>None</td>
+      <td>Disease</td>
+      <td>DIARRHEA</td>
+      <td>MONDO:MONDO:0001673</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>TLR7</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>19445181</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>TLR7</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>DISEASE</td>
+      <td>DISEASES API</td>
+      <td>None</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>400</th>
+      <td>TLR7</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>DISEASE</td>
+      <td>DISEASES API</td>
+      <td>None</td>
+      <td>Disease</td>
+      <td>DIARRHEA</td>
+      <td>MONDO:MONDO:0001673</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>CYP2B6</td>
+      <td>Gene</td>
+      <td>related_to</td>
+      <td>DISEASE</td>
+      <td>DISEASES API</td>
+      <td>None</td>
+      <td>Disease</td>
+      <td>DIARRHEA</td>
+      <td>MONDO:MONDO:0001673</td>
+    </tr>
+  </tbody>
+</table>
+<p>188 rows × 9 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">top50gene_2_diseases</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">disease_indices</span><span class="p">,:][</span><span class="s2">&quot;input&quot;</span><span class="p">])</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span><span class="n">i</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">i</span><span class="p">}</span>
+<span class="n">sorted_genes_from_symptoms</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">item</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="mi">1</span><span class="p">])}</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">sorted_genes_from_symptoms</span><span class="p">)))[</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">sorted_genes_from_symptoms</span><span class="p">[</span><span class="n">x</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>TNF: 29
+CD4: 20
+IFNA1: 14
+IL6: 11
+IL1B: 10
+INS: 10
+CAT: 10
+VEGFA: 8
+EPO: 7
+TH: 6
+MTOR: 6
+ALB: 6
+PPIG: 6
+ACE: 6
+EGFR: 5
+AKT1: 5
+MPO: 4
+BAX: 4
+ACE2: 4
+AR: 4
+FOS: 4
+ABCB1: 4
+TLR7: 3
+CDKN1A: 3
+APP: 3
+SOD1: 3
+TP53: 3
+CYP3A4: 3
+CASP3: 2
+SOD2: 2
+RELA: 2
+TLR9: 2
+SQSTM1: 2
+CYP2B6: 1
+CYP2C9: 1
+CYP1A2: 1
+ANG: 1
+CYP2D6: 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">relevant_top50gene_2_diseases</span><span class="p">[</span><span class="n">relevant_top50gene_2_diseases</span><span class="p">[</span><span class="s2">&quot;pred1&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;causes&quot;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[86]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>input</th>
+      <th>input_type</th>
+      <th>pred1</th>
+      <th>pred1_source</th>
+      <th>pred1_api</th>
+      <th>pred1_pubmed</th>
+      <th>output_type</th>
+      <th>output_name</th>
+      <th>output_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1540</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>10701765,15373964,16460809,1714101,17374708,17...</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1773</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>10223724,12576957,24632845,24823369,27350756</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>2150</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>21426732</td>
+      <td>Disease</td>
+      <td>COUGHING</td>
+      <td>MONDO:C0010200</td>
+    </tr>
+    <tr>
+      <th>2190</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>17016558</td>
+      <td>Disease</td>
+      <td>DIARRHEA</td>
+      <td>MONDO:MONDO:0001673</td>
+    </tr>
+    <tr>
+      <th>2348</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>2786048</td>
+      <td>Disease</td>
+      <td>LYMPHOPENIA</td>
+      <td>MONDO:MONDO:0003783</td>
+    </tr>
+    <tr>
+      <th>2388</th>
+      <td>TNF</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>19436834,9220311</td>
+      <td>Disease</td>
+      <td>MYOCARDITIS</td>
+      <td>MONDO:MONDO:0004496</td>
+    </tr>
+    <tr>
+      <th>804</th>
+      <td>INS</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>27572546</td>
+      <td>Disease</td>
+      <td>COUGHING</td>
+      <td>MONDO:C0010200</td>
+    </tr>
+    <tr>
+      <th>816</th>
+      <td>INS</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>19846801</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>877</th>
+      <td>INS</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>10357884,10535446,17389329</td>
+      <td>Disease</td>
+      <td>LYMPHOPENIA</td>
+      <td>MONDO:MONDO:0003783</td>
+    </tr>
+    <tr>
+      <th>537</th>
+      <td>IL6</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11259234</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>347</th>
+      <td>ACE</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>18405793</td>
+      <td>Disease</td>
+      <td>COUGHING</td>
+      <td>MONDO:C0010200</td>
+    </tr>
+    <tr>
+      <th>239</th>
+      <td>SOD1</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>22487139</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>829</th>
+      <td>CD4</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>23692566,25845946</td>
+      <td>Disease</td>
+      <td>MYOCARDITIS</td>
+      <td>MONDO:MONDO:0004496</td>
+    </tr>
+    <tr>
+      <th>843</th>
+      <td>CD4</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11981815,14573648,20495073</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>1066</th>
+      <td>CD4</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11054090,20099653,25724123,2667476</td>
+      <td>Disease</td>
+      <td>LYMPHOPENIA</td>
+      <td>MONDO:MONDO:0003783</td>
+    </tr>
+    <tr>
+      <th>1730</th>
+      <td>VEGFA</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>16200818</td>
+      <td>Disease</td>
+      <td>COUGHING</td>
+      <td>MONDO:C0010200</td>
+    </tr>
+    <tr>
+      <th>354</th>
+      <td>ALB</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>3502141</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>379</th>
+      <td>ALB</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>20057275</td>
+      <td>Disease</td>
+      <td>LYMPHOPENIA</td>
+      <td>MONDO:MONDO:0003783</td>
+    </tr>
+    <tr>
+      <th>465</th>
+      <td>CDKN1A</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11719966</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>EPO</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>15373964</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>824</th>
+      <td>IFNA1</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>11179313,20513754,23372935</td>
+      <td>Disease</td>
+      <td>PNEUMONIA</td>
+      <td>MONDO:MONDO:0005249</td>
+    </tr>
+    <tr>
+      <th>996</th>
+      <td>IFNA1</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>18079991,2214181,2258467,2450478,8915881</td>
+      <td>Disease</td>
+      <td>FEVER</td>
+      <td>MONDO:C0015967</td>
+    </tr>
+    <tr>
+      <th>1051</th>
+      <td>IFNA1</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>16868248,9781812</td>
+      <td>Disease</td>
+      <td>LYMPHOPENIA</td>
+      <td>MONDO:MONDO:0003783</td>
+    </tr>
+    <tr>
+      <th>1071</th>
+      <td>IFNA1</td>
+      <td>Gene</td>
+      <td>causes</td>
+      <td>SEMMED</td>
+      <td>SEMMED Gene API</td>
+      <td>12618521</td>
+      <td>Disease</td>
+      <td>MYOCARDITIS</td>
+      <td>MONDO:MONDO:0004496</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>How to Interpret above</strong>: Of the top genes associated with COVID-19, the above are genes that are known to cause symptoms described as symptoms in COVID-19</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.4-What-proteins/genes-are-in-pathways-of-known-COVID-19-related-genes?-Which-of-these-can-be-related-to-symptoms?">1.4 What proteins/genes are in pathways of known COVID-19 related genes? Which of these can be related to symptoms?<a class="anchor-link" href="#1.4-What-proteins/genes-are-in-pathways-of-known-COVID-19-related-genes?-Which-of-these-can-be-related-to-symptoms?">&#182;</a></h2><h3 id="1.4.1-Genes-(from-1.1.1)--&gt;-Pathways--&gt;-Genes">1.4.1 Genes (from 1.1.1) -&gt; Pathways -&gt; Genes<a class="anchor-link" href="#1.4.1-Genes-(from-1.1.1)--&gt;-Pathways--&gt;-Genes">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="1.4.2-COVID-19-Symptoms--&gt;-Pathways--&gt;-Genes">1.4.2 COVID-19 Symptoms -&gt; Pathways -&gt; Genes<a class="anchor-link" href="#1.4.2-COVID-19-Symptoms--&gt;-Pathways--&gt;-Genes">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">symptom_and_phenotype_list</span><span class="p">:</span>
+<span class="c1">#     print(x)</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">ht</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="s1">&#39;PhenotypicFeature&#39;</span><span class="p">]):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">ht</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="s1">&#39;PhenotypicFeature&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">disease_symptom_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">symptom_and_phenotype_list</span><span class="p">:</span>
+<span class="c1">#     print(x)</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">ht</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="s1">&#39;Disease&#39;</span><span class="p">]</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">res</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">y</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+                <span class="n">disease_symptom_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="n">disease_symptom_list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{&#39;MONDO&#39;: &#39;C0010200&#39;,
+  &#39;UMLS&#39;: &#39;C0010200&#39;,
+  &#39;name&#39;: &#39;Coughing&#39;,
+  &#39;primary&#39;: {&#39;identifier&#39;: &#39;MONDO&#39;, &#39;cls&#39;: &#39;Disease&#39;, &#39;value&#39;: &#39;C0010200&#39;},
+  &#39;display&#39;: &#39;MONDO(C0010200) UMLS(C0010200) name(Coughing)&#39;,
+  &#39;type&#39;: &#39;Disease&#39;},
+ {&#39;MONDO&#39;: &#39;C0015967&#39;,
+  &#39;UMLS&#39;: &#39;C0015967&#39;,
+  &#39;name&#39;: &#39;Fever&#39;,
+  &#39;primary&#39;: {&#39;identifier&#39;: &#39;MONDO&#39;, &#39;cls&#39;: &#39;Disease&#39;, &#39;value&#39;: &#39;C0015967&#39;},
+  &#39;display&#39;: &#39;MONDO(C0015967) UMLS(C0015967) name(Fever)&#39;,
+  &#39;type&#39;: &#39;Disease&#39;},
+ {&#39;MONDO&#39;: &#39;MONDO:0004496&#39;,
+  &#39;DOID&#39;: &#39;DOID:820&#39;,
+  &#39;UMLS&#39;: &#39;C0027059&#39;,
+  &#39;name&#39;: &#39;myocarditis&#39;,
+  &#39;MESH&#39;: &#39;D009205&#39;,
+  &#39;primary&#39;: {&#39;identifier&#39;: &#39;MONDO&#39;,
+   &#39;cls&#39;: &#39;Disease&#39;,
+   &#39;value&#39;: &#39;MONDO:0004496&#39;},
+  &#39;display&#39;: &#39;MONDO(MONDO:0004496) DOID(DOID:820) UMLS(C0027059) MESH(D009205) name(myocarditis)&#39;,
+  &#39;type&#39;: &#39;Disease&#39;},
+ {&#39;MONDO&#39;: &#39;MONDO:0005249&#39;,
+  &#39;DOID&#39;: &#39;DOID:552&#39;,
+  &#39;UMLS&#39;: &#39;C0032285&#39;,
+  &#39;name&#39;: &#39;pneumonia&#39;,
+  &#39;MESH&#39;: &#39;D011014&#39;,
+  &#39;primary&#39;: {&#39;identifier&#39;: &#39;MONDO&#39;,
+   &#39;cls&#39;: &#39;Disease&#39;,
+   &#39;value&#39;: &#39;MONDO:0005249&#39;},
+  &#39;display&#39;: &#39;MONDO(MONDO:0005249) DOID(DOID:552) UMLS(C0032285) MESH(D011014) name(pneumonia)&#39;,
+  &#39;type&#39;: &#39;Disease&#39;},
+ {&#39;MONDO&#39;: &#39;MONDO:0043905&#39;,
+  &#39;name&#39;: &#39;pneumonitis&#39;,
+  &#39;primary&#39;: {&#39;identifier&#39;: &#39;MONDO&#39;,
+   &#39;cls&#39;: &#39;Disease&#39;,
+   &#39;value&#39;: &#39;MONDO:0043905&#39;},
+  &#39;display&#39;: &#39;MONDO(MONDO:0043905) name(pneumonitis)&#39;,
+  &#39;type&#39;: &#39;Disease&#39;}]</pre>
 </div>
 
 </div>
