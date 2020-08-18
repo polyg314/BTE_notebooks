@@ -1,0 +1,38 @@
+gene,direct_disease_assoc,two_step_assoc_to_disease,two_step_pub_count,disease_symptoms_gene_is_associated_with,symptoms_associated_count,disease_symptom_gene_pub_count,causes_symptom_count,gene_connections_count,relevance_score
+EPO,0,14,26,"['coagulation', 'dyspnea', 'fever', 'hypoxemia', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure']",7,6,3,2163,0.07350901525658807
+ACE2,2,18,24,['acute kidney failure'],1,0,0,836,0.06698564593301436
+MPO,0,14,33,"['hypoxemia', 'acute kidney failure', 'acute kidney failure']",3,1,0,1110,0.05045045045045045
+TH,1,16,541,"['fever', 'pharyngitis']",2,9,0,5625,0.041777777777777775
+MARS1,1,7,5,"['cough', 'dyspnea']",2,0,0,947,0.04118268215417107
+TLR9,0,16,15,['pharyngitis'],1,0,0,775,0.04
+ACE,0,18,32,"['acute kidney failure', 'acute kidney failure', 'coughing', 'coughing', 'coughing']",5,4,1,2770,0.037184115523465705
+ANG,0,24,78,['dyspnea'],1,0,0,1747,0.03434459072696051
+PPIG,0,16,45,"['fever', 'acute kidney failure']",2,3,1,2544,0.02908805031446541
+CRP,1,10,0,"['coagulation', 'pharyngitis', 'pharyngitis', 'acute kidney failure']",4,0,0,2132,0.028142589118198873
+SOD1,0,15,26,"['dyspnea', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure']",4,2,0,2388,0.02763819095477387
+IL1B,0,15,39,"['fever', 'pharyngitis']",2,0,0,1834,0.026172300981461286
+SOD2,0,14,40,"['fever', 'hypoxemia']",2,0,0,1895,0.024802110817941952
+ALB,0,16,9,"['blood coagulation', 'fever', 'fever', 'pharyngitis', 'acute kidney failure', 'acute kidney failure']",6,5,1,4258,0.024424612494128698
+CYP2D6,0,25,18,"['acute kidney failure', 'acute kidney failure']",2,1,0,2241,0.02320392681838465
+IL6,0,23,58,"['coagulation', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'fever', 'fever', 'headache', 'pharyngitis', 'pharyngitis']",9,5,0,5945,0.02304457527333894
+CYP2C9,0,15,11,"['acute kidney failure', 'acute kidney failure']",2,1,0,1881,0.02126528442317916
+INS,0,27,53,"['coagulation', 'blood coagulation', 'coughing', 'fever', 'fever', 'chronic lung disease', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'pharyngitis']",11,6,2,9556,0.021033905399748847
+SQSTM1,0,17,45,['dyspnea'],1,0,0,2110,0.01990521327014218
+LEP,0,15,20,"['fever', 'fever', 'acute kidney failure', 'acute kidney failure', 'chronic lung disease', 'respiratory distress']",6,8,1,5731,0.019193857965451054
+TNF,0,44,114,"['coagulation', 'fever', 'fever', 'fever', 'fever', 'coughing', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'hypoxemia', 'pharyngitis', 'pharyngitis', 'pharyngitis']",13,37,4,19385,0.01697188547846273
+VEGFA,0,15,150,"['blood coagulation', 'chronic lung disease', 'chronic lung disease', 'coughing', 'coughing', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'hypoxemia']",9,10,1,11157,0.01658151832929999
+CAT,0,32,98,"['fever', 'acute kidney failure']",2,1,0,5283,0.016278629566534166
+BAX,0,15,30,"['fever', 'fever', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure']",5,5,0,4955,0.016145307769929364
+FOS,0,18,34,"['immunodeficiency', 'myalgia', 'headache', 'headache', 'coughing']",5,3,1,6908,0.014765489287782282
+IFNA1,0,15,15,"['blood coagulation', 'fever', 'fever', 'fever', 'acute kidney failure']",5,10,1,7483,0.013363624214887078
+CAMP,0,15,71,"['fever', 'fever', 'headache', 'pharyngitis', 'pharyngitis']",5,6,1,10391,0.01106726975267058
+CDKN1A,0,16,29,"['fever', 'acute kidney failure', 'chronic lung disease']",3,3,1,7189,0.01098901098901099
+MAPK8,0,14,24,"['coagulation', 'fever', 'fever']",3,2,1,7490,0.009879839786381843
+TP53,0,19,42,"['fever', 'dyspnea', 'headache', 'acute kidney failure', 'acute kidney failure', 'acute kidney failure', 'fever', 'pharyngitis']",8,4,0,13973,0.00837329134759894
+APP,0,17,21,['headache'],1,0,0,5291,0.006426006426006426
+EGFR,0,15,8,"['acute kidney failure', 'acute kidney failure', 'acute kidney failure']",3,1,0,8857,0.005532347295924128
+AR,0,17,11,['acute kidney failure'],1,1,0,6843,0.004676311559257636
+CA2,0,14,80,"['fever', 'acute kidney failure']",2,4,0,16710,0.0038898862956313583
+AKT1,0,25,51,"['coagulation', 'fever']",2,1,0,16327,0.0038586390641269066
+CD4,0,16,10,['pharyngitis'],1,0,0,7917,0.003663003663003663
+MAPK1,0,18,40,['coagulation'],1,0,0,11681,0.003509973461176269
