@@ -1,0 +1,60 @@
+,names,frequency,edges_out_count
+HP:0000524,['conjunctival telangiectasia'],Very frequent,52
+HP:0001029,['poikiloderma'],Very frequent,59
+HP:0001480,['freckling'],Very frequent,92
+HP:0100585,['telangiectasia of the skin'],Very frequent,136
+HP:0000963,['thin skin'],Very frequent,219
+HP:0000992,['cutaneous photosensitivity'],Very frequent,220
+HP:0006887,"['intellectual disability, progressive']",Very frequent,236
+HP:0001072,['thickened skin'],Very frequent,242
+HP:0001009,['telangiectasia'],Very frequent,289
+HP:0100543,['cognitive impairment'],Very frequent,315
+HP:0000958,['dry skin'],Very frequent,365
+HP:0000164,['abnormality of the dentition'],Very frequent,367
+HP:0002353,['eeg abnormality'],Very frequent,454
+HP:0002376,['developmental regression'],Very frequent,541
+HP:0000648,['optic atrophy'],Very frequent,671
+HP:0001508,['failure to thrive'],Very frequent,684
+HP:0002829,['arthralgia'],Very frequent,901
+HP:0000135,['hypogonadism'],Very frequent,1264
+HP:0012378,['fatigue'],Very frequent,1677
+HP:0001945,['fever'],Very frequent,2583
+HP:0002861,['melanoma'],Frequent,124
+HP:0001034,['hypermelanotic macule'],Frequent,142
+HP:0001053,['hypopigmented skin patches'],Frequent,196
+HP:0004334,['dermal atrophy'],Frequent,236
+HP:0010783,['erythema'],Frequent,299
+HP:0000491,['keratitis'],Frequent,416
+HP:0012740,['papilloma'],Frequent,479
+HP:0000518,['cataract'],Frequent,609
+HP:0012733,['macule'],Frequent,626
+HP:0000407,['sensorineural hearing impairment'],Frequent,650
+HP:0000962,['hyperkeratosis'],Frequent,659
+HP:0000028,['cryptorchidism'],Frequent,676
+HP:0000486,['strabismus'],Frequent,693
+HP:0010649,['flat nasal alae'],Occasional,12
+HP:0009755,['ankyloblepharon'],Occasional,41
+HP:0000621,['entropion'],Occasional,61
+HP:0004493,['craniofacial hyperostosis'],Occasional,63
+HP:0100012,['neoplasm of the eye'],Occasional,74
+HP:0000498,['blepharitis'],Occasional,131
+HP:0000656,['ectropion'],Occasional,134
+HP:0002664,['neoplasm'],Occasional,167
+HP:0000995,['melanocytic nevus'],Occasional,272
+HP:0007759,['opacification of the corneal stroma'],Occasional,276
+HP:0008734,['decreased testicular size'],Occasional,288
+HP:0002071,['abnormality of extrapyramidal motor function'],Occasional,306
+HP:0001315,['reduced tendon reflexes'],Occasional,309
+HP:0003355,['aminoaciduria'],Occasional,365
+HP:0001059,['pterygium'],Occasional,403
+HP:0009830,['peripheral neuropathy'],Occasional,525
+HP:0001257,['spasticity'],Occasional,564
+HP:0000365,['hearing impairment'],Occasional,576
+HP:0001251,['ataxia'],Occasional,591
+HP:0002750,['delayed skeletal maturation'],Occasional,618
+HP:0000252,['microcephaly'],Occasional,712
+HP:0001250,['seizure'],Occasional,746
+HP:0000613,['photophobia'],Occasional,758
+HP:0004322,['short stature'],Occasional,959
+HP:0001596,['alopecia'],Occasional,993
+HP:0002120,['cerebral cortical atrophy'],Occasional,1092

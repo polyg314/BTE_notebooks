@@ -12,9 +12,11 @@ from biothings_explorer.hint import Hint
 ht = Hint()
 
 # all intermediate node types
-NODE_TYPE_LIST = (['Gene', 'SequenceVariant', 'ChemicalSubstance', 'Disease', 
-                'MolecularActivity', 'BiologicalProcess', 'CellularComponent', 
-                'Pathway', 'AnatomicalEntity', 'PhenotypicFeature'])
+# node_type_list = (['Gene', 'SequenceVariant', 'ChemicalSubstance', 'Disease', 
+#                 'MolecularActivity', 'BiologicalProcess', 'CellularComponent', 
+#                 'Pathway', 'AnatomicalEntity', 'PhenotypicFeature'])
+
+# node_type_list = (['PhenotypicFeature'])
 
 # Check for list of intermediate node types node type using predict funciton
 def predict_many(input_object, intermediate_node_list, output_type):
@@ -73,13 +75,10 @@ def get_disease_to_gene_results(disease_input):
 
 
 
-def get_disease_to_node_to_gene_results(disease_input,max_two_step_gene_count,symptom_list,symptoms_hpids):
+def get_disease_to_node_to_gene_results(disease_all_nodes_genes,max_two_step_gene_count,symptom_list,symptoms_hpids):
     disease_to_node_to_gene_results = {}
 
-    # get all intermediates 
-    print("running disease -> any intermediate -> gene")
-    disease_all_nodes_genes = predict_many(disease_input, NODE_TYPE_LIST, 'Gene')
-
+    print("finding intermediate nodes that are symptoms")
     indices_with_symptom_as_intermediate = []
     go_dict = {}
     for index, row in disease_all_nodes_genes.iterrows():
@@ -112,13 +111,22 @@ def get_disease_to_node_to_gene_results(disease_input,max_two_step_gene_count,sy
 
     # print("indices")
     # print(indices_with_symptom_as_intermediate)
-    disease_all_nodes_genes.drop(disease_all_nodes_genes.index[indices_with_symptom_as_intermediate])
+    print("removing symptom intermediates")
+    disease_all_nodes_genes = disease_all_nodes_genes.drop(disease_all_nodes_genes.index[indices_with_symptom_as_intermediate])
 
+    print("getting gene counts from " + str(len(list(disease_all_nodes_genes["output_name"]))) + " gene entries" )
     i = list(disease_all_nodes_genes["output_name"])
-    d = {x:i.count(x) for x in i}
+    # d = {x:i.count(x) for x in i}
+    d = {}
+    for x in i: 
+        if x in d: 
+            d[x] = d[x] + 1
+        else:
+            d[x] = 1
+    print("sorting counts dictionary")
     sorted_disease_to_all_nodes_to_genes = {k: v for k, v in sorted(d.items(), key=lambda item: item[1])}
 
-    print("top genes occurrence counts")
+    print("top genes occurrence counts: ")
     for x in list(reversed(list(sorted_disease_to_all_nodes_to_genes)))[0:max_two_step_gene_count]:
         print(str(x) + ": " + str(sorted_disease_to_all_nodes_to_genes[x]))
     
@@ -128,14 +136,15 @@ def get_disease_to_node_to_gene_results(disease_input,max_two_step_gene_count,sy
     disease_to_node_to_gene_results["sorted_disease_to_all_nodes_to_genes"] = sorted_disease_to_all_nodes_to_genes
 
     # keep track of pubication counts for genes in two-step disease -> intermediate node -> gene
+    print("getting publicaiton counts")
     top_two_step_genes_pub_counts = {}
     for index, row in disease_all_nodes_genes.iterrows():
         if row["output_name"] in top_related_genes_to_disease:
             current_pubcount = 0
             if(row["pred1_pubmed"] != None):
-                current_pubcount = current_pubcount + row["pred1_pubmed"].count(",") + 1
+                current_pubcount = current_pubcount + str(row["pred1_pubmed"]).count(",") + 1
             if(row["pred2_pubmed"] != None):
-                current_pubcount = current_pubcount + row["pred2_pubmed"].count(",") + 1
+                current_pubcount = current_pubcount + str(row["pred2_pubmed"]).count(",") + 1
             if row["output_name"] in top_two_step_genes_pub_counts:
                 top_two_step_genes_pub_counts[row["output_name"]] = top_two_step_genes_pub_counts[row["output_name"]] + current_pubcount
             else: 
@@ -149,38 +158,108 @@ def get_disease_to_node_to_gene_results(disease_input,max_two_step_gene_count,sy
 def get_disease_symptoms(disease_name):
     r = requests.get('http://mydisease.info/v1/query?q=hpo.disease_name:"' + disease_name + '"&fields=hpo')
     res = r.json()
-    # print(res)
     result_number = 0
     disease_info = res['hits'][result_number]
-    print("disease symptoms for:")
-    print(disease_info['hpo']['disease_name'])
+    # print("disease symptoms for:")
+    # print(disease_info['hpo']['disease_name'])
     symptoms = []
     hp_ids = []
+    hp_symptom_dict = {}
     for x in disease_info['hpo']['phenotype_related_to_disease']:
-        # print(x)
-        if((x['aspect'].lower() == 'p')):
-            # r1 = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['frequency'])
-            # res1 = r1.json()
-            # print(res1)
-        #     print(res1['name'])
-            # in this case, only list symptoms if they are "frequent" or more. 
-            # if 'frequent' in res1['name'].lower():
+        if('frequency' in x):
+            r1 = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['frequency'])
+            res1 = r1.json()
             r = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['hpo_id'])
             res = r.json()
-    #         print(res['name'])
             if(('_id' in res) & ('name' in res)):
                 symptoms.append(res['name'].lower())
                 hp_ids.append(res['_id'])
+                hp_symptom_dict[res['_id']] = {
+                    'names' : [res['name'].lower()],
+                    'frequency' : res1['name'],
+                    'edges_out_count' : 0
+                }
             if('synonym' in res):
                 for z in res['synonym']:
                     if('EXACT' in z):
                         name = z.split('"')[1].lower()
                         if name not in symptoms: 
                             symptoms.append(name)
-                        
-    print(symptoms)
-    return([symptoms,hp_ids])
+                            hp_symptom_dict[res['_id']].append(name)
 
+    print(symptoms)
+    return([symptoms,hp_ids,hp_symptom_dict])
+
+
+def get_symtpom_prevalence(hp_symptom_dict):
+    for key in hp_symptom_dict:
+        edges_out_count = 0
+        # print("name: " + str(hp_symptom_dict[key]))
+        UMLS = ''
+        for y in ['PhenotypicFeature','Disease','BiologicalProcess']:
+            if y == 'PhenotypicFeature':
+                a = ht.query(key)[y]
+                if len(a) > 0: 
+                    b = a[0]
+                    if 'UMLS' in b: 
+                        # print("YAY UMLS")
+                        UMLS = b['UMLS']
+                    try: 
+                        fc = FindConnection(input_obj=b, output_obj='Gene', intermediate_nodes=None)
+                        fc.connect(verbose=False)
+                        df = fc.display_table_view()
+                        # print("phen")
+                        # print(hp_symptom_dict[key])
+                        # print(df.shape[0])
+                        if(df.shape[0] > 0):
+                            df = df[df["output_name"] != disease_name]
+                            edges_out_count = edges_out_count + df.shape[0]
+#                             print(df.shape)
+                        fc = FindConnection(input_obj=b, output_obj='Disease', intermediate_nodes=None)
+                        fc.connect(verbose=False)
+                        df = fc.display_table_view()
+                        # print("phen")
+                        # print(hp_symptom_dict[key])
+                        # print(df.shape[0])
+                        if(df.shape[0] > 0):
+                            df = df[df["output_name"] != disease_name]
+                            edges_out_count = edges_out_count + df.shape[0]
+                    except: 
+                        print("Nope")
+            if(y =='Disease') | (y == 'BiologicalProcess'):
+                for z in hp_symptom_dict[key]["names"]:
+                    if((y == 'Disease') & (len(UMLS) > 0)): 
+                        a = ht.query(UMLS)[y]
+                    else:
+                        a = ht.query(z)[y]
+                    # print(a)
+                    for b in a: 
+                        if b['name'].lower() == z:
+                            # print('match')
+                            # print(b)
+                            # print(z)
+                            try: 
+                                fc = FindConnection(input_obj=b, output_obj='Gene', intermediate_nodes=None)
+                                fc.connect(verbose=False)
+                                df = fc.display_table_view()
+                                # print("BD")
+                                # print(df.shape[0])
+                                if(df.shape[0] > 0):
+                                    df = df[df["output_name"] != disease_name]
+                                    edges_out_count = edges_out_count + df.shape[0]
+                                fc = FindConnection(input_obj=b, output_obj='Disease', intermediate_nodes=None)
+                                fc.connect(verbose=False)
+                                df = fc.display_table_view()
+                                # print("BD")
+                                # print(df.shape[0])
+                                if(df.shape[0] > 0):
+                                    df = df[df["output_name"] != disease_name]
+                                    edges_out_count = edges_out_count + df.shape[0]
+                            except: 
+                                print("Nope")
+
+        hp_symptom_dict[key]["edges_out_count"] = edges_out_count
+    return(hp_symptom_dict)
 
 
 def get_similar_phen_indices(list1,list2,similarity,HP_dict):
@@ -359,14 +438,14 @@ def create_causes_dict(all_gene_connections):
     return(causes_dict)
 
 # function that gets all connections to any node type from single gene node
-def get_connection_normalizing_count(gene_list):
+def get_connection_normalizing_count(gene_list, node_type_list):
     # dictionary that keeps track of all connections from a gene to any node type 
     connection_dict = {}
     for key in gene_list:
         # print(key)
         count = 0
         input_object = ht.query(key)['Gene'][0]
-        for x in NODE_TYPE_LIST:
+        for x in node_type_list:
             fc = FindConnection(input_obj=input_object, output_obj=x, intermediate_nodes=None)
             fc.connect(verbose=False)
             df = fc.display_table_view()
@@ -395,7 +474,7 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
     # assmeble results into final dataframe
     dataframe_input = []
     for key in results_dict:
-        connections_count = connection_dict[key]
+        connections_count = math.sqrt(connection_dict[key])
         # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
         relevance_score = ((((results_dict[key]["direct_associations_to_covid"]*10 
                             + results_dict[key]["two_step_associations_to_covid"]) 

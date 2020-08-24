@@ -1,0 +1,585 @@
+gene,direct_disease_assoc,two_step_assoc_to_disease,two_step_pub_count,disease_symptoms_gene_is_associated_with,symptoms_associated_count,disease_symptom_gene_pub_count,causes_symptom_count,gene_connections_count,relevance_score
+CFTR,16,1370,8135,"['exocrine pancreatic insufficiency', 'elevated sweat chloride', 'male infertility', 'bronchiectasis', 'meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'failure to thrive', 'dehydration', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'biliary cirrhosis', 'dehydration', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'meconium ileus', 'meconium ileus', 'cor pulmonale']",42,6632,2,1742,4619.851365146991
+TGFB1,8,2106,16133,"['failure to thrive', 'meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'exocrine pancreatic insufficiency', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'bronchiectasis', 'biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'male infertility']",30,70,1,8887,2087.1767283037448
+TNF,5,4854,48472,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'cor pulmonale', 'bronchiectasis', 'bronchiectasis', 'male infertility']",18,67,1,19385,1902.1471773341812
+CAT,3,3787,31046,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'male infertility', 'exocrine pancreatic insufficiency']",9,3,0,5283,1417.9000530633327
+INS,4,2871,26791,"['failure to thrive', 'exocrine pancreatic insufficiency', 'dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'chronic lung disease', 'dehydration', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'male infertility', 'bronchiectasis']",14,4,0,9556,1250.7007932583283
+LEP,4,1624,17273,"['recurrent pneumonia', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'chronic lung disease']",15,53,1,5731,989.3879426868829
+IL6,2,2476,14161,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility']",10,7,0,5945,971.158031745634
+IL1B,4,1394,7927,"['biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",9,3,0,1834,904.0932979427239
+VEGFA,2,2365,18684,"['chronic lung disease', 'chronic lung disease', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'biliary cirrhosis', 'biliary cirrhosis']",13,68,2,11157,880.9798939992356
+CCL5,1,940,0,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",14,23,1,2291,834.0229243395387
+TLR4,4,1641,10856,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'bronchiectasis']",11,19,1,4494,827.7928478112174
+PTH,3,1646,17766,"['hypercalciuria', 'hypercalciuria', 'hypercalciuria', 'hypercalciuria', 'hypercalciuria', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis', 'exocrine pancreatic insufficiency']",11,16,1,4624,813.6470588235294
+IL2,2,1851,12525,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'bronchiectasis']",10,23,1,5695,744.0513283907704
+CCL2,3,1480,6718,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis']",10,9,2,3780,737.4551551247749
+ALB,2,1934,11804,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'biliary cirrhosis', 'biliary cirrhosis']",8,5,1,4258,718.9822173321332
+IL13,1,776,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",13,40,1,1863,710.663459642968
+IL4,2,890,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'bronchiectasis']",12,14,0,2263,688.6548589847881
+AR,2,1558,10122,"['male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma', 'asthma']",12,19,1,6843,686.9721037589359
+POMC,0,1668,15827,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'hypercalciuria', 'hypercalciuria', 'chronic lung disease', 'male infertility']",10,78,1,5544,672.3249596518423
+CA2,4,2590,34478,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'dehydration', 'dehydration', 'exocrine pancreatic insufficiency', 'hypercalciuria', 'male infertility']",11,20,3,16710,671.8643505690189
+NOS2,2,1031,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis']",9,4,0,1784,671.8449470283555
+MPO,2,1777,13321,"['asthma', 'asthma', 'asthma', 'bronchiectasis']",4,0,0,1110,647.2437027973394
+IL10,2,1396,6732,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",9,15,1,3506,646.0233138799562
+MMP9,2,1769,10757,"['biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",7,1,0,3495,635.4860847795944
+CD4,1,2019,12736,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",9,51,1,7917,615.9195801938238
+CXCL8,4,1551,7895,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis']",7,0,0,2981,611.9394986571572
+ICAM1,1,836,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis']",10,4,1,1837,592.6238675994728
+FOS,0,1900,13418,"['failure to thrive', 'dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",8,7,1,6908,548.8821613962469
+IL5,2,685,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",10,5,0,1494,547.1861206229646
+HFE,3,335,0,"['exocrine pancreatic insufficiency', 'meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'failure to thrive', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'bronchiectasis', 'biliary cirrhosis']",15,80,0,907,545.3831735153675
+TSLP,1,413,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",12,16,1,810,535.7601084694161
+SPINK5,2,627,0,"['asthma', 'failure to thrive', 'dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",10,19,0,1439,511.6761077027973
+STAT3,1,1354,7891,"['failure to thrive', 'dehydration', 'recurrent pneumonia', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'bronchiectasis']",10,9,1,6529,506.66919922087015
+CD14,1,899,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",9,16,1,2371,504.44710181768795
+ESR1,2,1502,16534,"['asthma', 'asthma', 'asthma', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility']",8,8,0,5309,501.32519507293676
+CAMP,7,2339,28060,"['male infertility', 'male infertility', 'asthma', 'asthma', 'asthma', 'asthma', 'dehydration']",7,22,1,10391,496.47694241032616
+IFNA1,2,1712,11646,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",8,31,1,7483,480.7620326446414
+MTHFR,1,304,0,"['exocrine pancreatic insufficiency', 'meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'failure to thrive', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility']",18,6,0,1315,467.58495781586623
+CD79A,2,672,0,"['failure to thrive', 'dehydration', 'bronchiectasis', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",11,26,1,2421,464.51830499935227
+GSTM1,1,448,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'biliary cirrhosis']",12,23,0,1292,458.7084304311474
+NOS3,1,885,0,"['asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'male infertility', 'biliary cirrhosis']",7,4,1,1684,458.493495732986
+FAS,4,1868,10983,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'male infertility', 'male infertility']",6,10,1,5676,456.12357226775134
+NR3C1,1,966,0,"['male infertility', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",7,9,1,2089,448.8729868830147
+CRP,2,1324,3808,"['asthma', 'asthma', 'asthma', 'bronchiectasis', 'exocrine pancreatic insufficiency']",5,0,0,2132,436.61326647880367
+ADA,1,771,0,"['failure to thrive', 'failure to thrive', 'asthma', 'asthma', 'recurrent pneumonia', 'asthma', 'asthma', 'asthma']",8,90,0,1848,436.0249009927234
+ACE,1,941,0,"['asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'male infertility', 'male infertility', 'bronchiectasis']",8,4,0,2770,433.6625049863626
+TIMP1,2,1182,7016,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,9,1,2557,428.2652915577797
+MUC7,2,1340,11473,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'dehydration']",6,6,0,3347,423.13948904412956
+TP53,1,2267,25641,"['male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'asthma']",7,6,1,13973,404.68686292522654
+CTLA4,1,1089,1786,"['bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'asthma']",7,3,0,3292,402.2416837104482
+IFNG,1,990,0,"['asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",5,0,0,1404,400.32038451271785
+SOD1,0,1628,12316,"['asthma', 'asthma', 'asthma', 'asthma']",4,5,0,2388,399.7776266298164
+DCTN4,5,218,0,"['meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'failure to thrive', 'exocrine pancreatic insufficiency', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",17,4,0,1170,399.58763359628244
+EGFR,2,2024,14196,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,9,0,8857,390.93996903368
+TLR2,1,774,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,0,0,1328,387.24830924362755
+VIP,3,647,0,"['dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility']",7,6,1,1360,386.054865995526
+FEV,2,439,0,"['asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'cor pulmonale', 'exocrine pancreatic insufficiency']",6,0,0,463,383.967702475451
+NFKB1,1,655,0,"['bronchiectasis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'asthma', 'asthma', 'asthma']",7,2,0,1336,382.0654012186699
+BCL2,0,1172,7436,"['biliary cirrhosis', 'male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma', 'asthma']",7,3,0,4243,377.842138456277
+SERPINA1,3,463,0,"['exocrine pancreatic insufficiency', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis', 'asthma', 'asthma', 'asthma']",8,1,0,983,377.3821914359783
+IGHE,1,862,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'chronic lung disease']",8,461,1,3111,375.5714403177977
+STX1A,2,175,0,"['meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'failure to thrive', 'exocrine pancreatic insufficiency', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'bronchiectasis', 'biliary cirrhosis']",15,0,0,546,375.5353321783261
+ADRB2,1,403,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",11,17,0,1330,373.71297035362085
+CSF2,1,733,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,1,0,1288,372.6519407491384
+CYP1A1,2,830,0,"['male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'asthma']",7,6,0,2304,371.875
+ABCB4,1,355,0,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",8,7,1,570,367.7537314801086
+REN,1,1437,11662,"['asthma', 'asthma', 'asthma', 'dehydration', 'dehydration', 'biliary cirrhosis']",6,4,0,5036,367.02713657619387
+PTS,1,1257,5635,"['asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",5,3,1,2713,365.25802673804725
+HMOX1,1,744,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,1,0,983,360.7329771079204
+RNASE3,1,255,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",11,17,1,597,358.72756934995294
+IL33,1,587,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",7,5,0,1261,353.04989167411213
+FOXP3,1,590,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",8,4,0,1692,350.0759795949469
+TLR7,1,520,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",8,10,1,1342,347.7708446055752
+ELANE,7,750,0,"['asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis']",6,1,0,1809,347.0300430024304
+PTEN,1,948,0,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",9,10,1,5674,343.6531120227058
+STAT6,1,506,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",9,29,1,1660,342.43837190685406
+SLPI,5,715,0,"['asthma', 'asthma', 'asthma', 'chronic lung disease', 'biliary cirrhosis', 'bronchiectasis']",6,4,1,1632,341.3533654412085
+PSMB6,2,987,0,"['asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'male infertility', 'male infertility']",7,7,2,4131,329.6414904477938
+CLCA4,2,52,0,"['meconium ileus', 'hypercalciuria', 'asthma', 'rectal prolapse', 'elevated sweat chloride', 'failure to thrive', 'exocrine pancreatic insufficiency', 'dehydration', 'male infertility', 'cor pulmonale', 'recurrent pneumonia', 'chronic lung disease', 'recurrent bronchopulmonary infections', 'bronchiectasis', 'biliary cirrhosis']",15,0,0,98,327.28942443491627
+VDR,1,655,0,"['failure to thrive', 'failure to thrive', 'hypercalciuria', 'asthma', 'asthma']",5,12,0,930,327.09313559724654
+TNFRSF1A,5,574,0,"['asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",7,3,0,1620,325.57149752396936
+IL17F,1,355,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",8,18,1,752,320.1736563378786
+CXCL10,1,579,0,"['asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",7,1,0,1504,318.94123487437537
+CYP3A4,1,1493,11225,"['biliary cirrhosis', 'asthma', 'asthma', 'dehydration']",4,3,0,3372,310.59641857451726
+CISH,2,1585,10253,"['dehydration', 'dehydration', 'asthma', 'asthma', 'asthma']",5,5,0,6137,307.3181669868272
+GSR,1,1022,0,"['asthma', 'asthma', 'asthma', 'dehydration']",4,4,0,1637,306.0811635506392
+TLR6,1,269,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",8,6,1,498,300.9511561592251
+GSTP1,1,400,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'male infertility']",8,11,1,1116,295.15137966400005
+TAC1,1,572,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,7,1,1268,294.7570458671481
+IL9,1,551,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",7,4,1,1616,293.56084704170206
+IL3,1,561,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",7,7,1,1693,291.91115272772316
+PPARG,1,1120,6624,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma']",5,4,0,3388,291.20444625029097
+APP,0,1751,12086,"['dehydration', 'bronchiectasis', 'asthma', 'asthma']",4,2,1,5291,289.14234062014015
+TLR3,1,639,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,2,1,1663,286.9551141251008
+SLC26A4,2,743,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,3,1,1607,286.0000576585771
+MUC5AC,3,279,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,0,0,379,285.70074939664534
+SLC17A5,1,1062,0,"['failure to thrive', 'failure to thrive', 'biliary cirrhosis', 'asthma', 'asthma']",5,4,0,3176,285.32892327704576
+CXCR4,2,929,0,"['bronchiectasis', 'recurrent pneumonia', 'asthma', 'asthma', 'asthma', 'asthma']",6,2,1,3606,284.79610205350366
+AKT1,3,2375,22508,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'male infertility']",5,1,0,16153,283.84401624065345
+IL18,1,572,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,1,0,1023,272.9458068733353
+RHO,1,1153,8528,"['asthma', 'asthma', 'asthma', 'asthma', 'exocrine pancreatic insufficiency']",5,3,0,4131,271.4209562874292
+TLR1,1,392,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,8,0,724,268.9238221122248
+IL17A,2,613,0,"['asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",5,0,0,1257,267.81033344826454
+RELA,0,1435,9680,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis']",4,2,0,4175,266.5047212847567
+ESR2,1,744,0,"['male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma']",5,3,0,1840,263.66573452994874
+C5AR1,2,651,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'chronic lung disease']",6,16,1,2118,262.87579692341563
+SLC26A3,3,258,0,"['failure to thrive', 'dehydration', 'asthma', 'biliary cirrhosis', 'male infertility', 'male infertility']",6,22,0,399,259.5246087683998
+ALOX5,1,418,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",8,3,0,1621,255.13115979498536
+CD8A,3,415,0,"['bronchiectasis', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'bronchiectasis']",7,5,0,1371,252.38327891291826
+CD44,1,993,0,"['asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",5,7,0,3554,252.36753184813585
+MUC5B,5,291,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,4,0,594,251.84519054371475
+SBDS,2,769,0,"['failure to thrive', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'asthma']",5,43,0,2252,249.39289072297476
+PTPRC,1,573,0,"['dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",6,8,1,1783,248.99596025256633
+CCK,2,1019,0,"['biliary cirrhosis', 'biliary cirrhosis', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",4,3,0,2516,248.56585785576812
+PTGS2,1,1381,7812,"['asthma', 'asthma', 'asthma', 'asthma']",4,3,0,4580,246.64688618120053
+BAX,0,1441,12062,"['asthma', 'male infertility', 'male infertility', 'male infertility']",4,3,1,4955,245.9378737398063
+CLCA1,5,103,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,5,1,129,244.23708141472804
+ABCC2,1,678,0,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",4,2,1,1197,239.2067369260539
+EGF,1,1165,5947,"['chronic lung disease', 'asthma', 'asthma', 'asthma']",4,2,0,3542,236.91624148025724
+CCL11,1,343,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,0,0,725,235.98163575539752
+CD40LG,1,466,0,"['failure to thrive', 'biliary cirrhosis', 'asthma', 'asthma', 'bronchiectasis']",5,7,0,923,235.01596266755806
+ARG1,1,446,0,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma']",5,11,0,861,233.10657639412096
+HGS,2,1126,5095,"['male infertility', 'asthma', 'asthma', 'asthma']",4,4,1,3528,231.86368072621747
+DNAH5,2,127,0,"['asthma', 'bronchiectasis', 'male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis']",11,17,0,440,231.2623510215184
+CAPS,1,455,0,"['asthma', 'asthma', 'bronchiectasis', 'cor pulmonale']",4,1,0,583,231.09998727096044
+PTGDR,1,375,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",7,7,0,1228,230.71766133266507
+SCNN1B,6,219,0,"['bronchiectasis', 'elevated sweat chloride', 'failure to thrive', 'dehydration', 'bronchiectasis']",5,0,0,330,230.37666785269096
+HMGB1,2,611,0,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'chronic lung disease']",5,4,1,1756,226.34717548416262
+HLA-DQA1,1,272,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,17,0,503,226.32765354556952
+MBL2,2,258,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,4,0,490,226.05767730689388
+SMPD1,1,544,0,"['failure to thrive', 'failure to thrive', 'asthma']",3,7,0,512,220.35215068725785
+CCL17,1,304,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,5,1,681,217.3515122618789
+DNAAF3,1,142,0,"['bronchiectasis', 'bronchiectasis', 'asthma', 'male infertility', 'male infertility', 'bronchiectasis', 'bronchiectasis', 'asthma']",8,2,0,283,216.85109121172832
+MTOR,1,1176,7259,"['asthma', 'asthma', 'asthma', 'asthma', 'exocrine pancreatic insufficiency']",5,3,0,6872,214.6023002305911
+CCL20,1,449,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,3,0,1045,212.98342141829505
+S100A12,2,523,0,"['biliary cirrhosis', 'asthma', 'asthma', 'asthma', 'exocrine pancreatic insufficiency']",5,2,0,1481,211.64770296132406
+PDE4A,1,350,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'chronic lung disease']",7,5,1,1287,211.29048119512493
+CCL3,1,563,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,1,1,1113,206.7043758890463
+CEL,1,459,0,"['exocrine pancreatic insufficiency', 'asthma', 'asthma', 'asthma', 'exocrine pancreatic insufficiency']",5,8,1,1167,206.5197497252111
+PMEL,1,571,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,10,1,1789,206.5179184545913
+MAPK3,1,1337,7695,"['asthma', 'asthma', 'asthma']",3,1,0,3471,205.77035096909117
+NEUROD1,1,635,0,"['exocrine pancreatic insufficiency', 'asthma', 'asthma', 'asthma', 'asthma']",5,16,1,2252,204.29776726313816
+JAG1,1,446,0,"['failure to thrive', 'exocrine pancreatic insufficiency', 'asthma', 'asthma', 'asthma', 'asthma']",6,2,1,1628,203.9234090455452
+SFTPD,1,248,0,"['asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",5,1,0,361,203.68421052631578
+LPO,2,436,0,"['asthma', 'asthma', 'asthma', 'chronic lung disease']",4,4,0,770,197.19719183480393
+CHI3L1,1,253,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,2,0,402,196.7587165472306
+CDKN1A,0,1390,10585,"['asthma', 'asthma', 'biliary cirrhosis', 'chronic lung disease']",4,3,0,7189,196.7260194315431
+TTR,2,1179,6056,"['bronchiectasis', 'asthma', 'asthma']",3,0,0,3016,196.49252066272794
+ADRA1D,3,712,0,"['asthma', 'asthma', 'asthma', 'asthma', 'chronic lung disease']",5,6,1,3271,194.95509755890086
+CCR5,1,600,0,"['asthma', 'asthma', 'asthma', 'asthma', 'male infertility', 'biliary cirrhosis']",6,4,0,3218,193.5571952124767
+SCT,2,752,0,"['biliary cirrhosis', 'biliary cirrhosis', 'exocrine pancreatic insufficiency']",3,1,0,1330,190.5171118950002
+SCGB1A1,1,223,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'bronchiectasis']",6,14,1,490,190.36911514213645
+WDTC1,1,1428,10584,"['asthma', 'asthma', 'asthma']",3,1,0,4737,188.03976645435327
+SCNN1A,4,183,0,"['bronchiectasis', 'elevated sweat chloride', 'failure to thrive', 'dehydration', 'bronchiectasis']",5,0,0,323,186.12077872297283
+ITGAM,1,1036,0,"['asthma', 'asthma', 'asthma']",3,4,1,2642,183.53946661742106
+FGFR1,1,842,0,"['failure to thrive', 'failure to thrive', 'biliary cirrhosis', 'asthma', 'bronchiectasis']",5,3,0,4850,183.51010534269383
+ABCG2,1,642,0,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",4,1,0,1820,183.3973887431394
+CYP2E1,2,872,0,"['male infertility', 'asthma', 'asthma']",3,2,0,1939,182.3133449596787
+EBP,1,518,0,"['failure to thrive', 'failure to thrive', 'asthma', 'asthma', 'asthma']",5,8,1,1912,181.58357343730026
+B3GALNT1,1,584,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,8,1,1560,180.97652489785125
+S100A8,1,572,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,5,0,1497,180.50670164477927
+PARP9,1,447,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,8,1,938,179.71197045298294
+PPARA,1,1129,8036,"['asthma', 'asthma', 'asthma']",3,3,0,3280,178.99022404834864
+ABCB1,2,1173,7374,"['biliary cirrhosis', 'biliary cirrhosis', 'male infertility']",3,3,0,3618,178.5042956964609
+TUBB4B,1,701,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,16,1,2300,178.32152690161033
+LIF,1,600,0,"['asthma', 'asthma', 'asthma', 'male infertility']",4,3,1,1699,178.0735310490325
+C3,2,658,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,2,0,2096,177.7114051248551
+DNAI1,2,99,0,"['bronchiectasis', 'asthma', 'male infertility', 'male infertility', 'male infertility', 'male infertility', 'bronchiectasis', 'bronchiectasis', 'asthma']",9,17,0,329,177.13842405473676
+BGLAP,1,314,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,1,0,492,175.28457697934883
+SMAD3,1,567,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,14,0,2447,174.96455943310798
+SLC4A2,1,156,0,"['biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",5,3,0,205,173.90914364662498
+IGF1,1,918,0,"['failure to thrive', 'male infertility', 'asthma']",3,0,0,2311,173.7362778607727
+CXCR2,3,355,0,"['asthma', 'asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'bronchiectasis']",6,3,1,1611,173.15579648753183
+NANOS2,1,262,0,"['male infertility', 'male infertility', 'male infertility', 'male infertility', 'male infertility']",5,2,1,563,172.79439830404672
+JUN,1,767,0,"['asthma', 'asthma', 'bronchiectasis']",3,0,0,1660,171.63643454304977
+NLRP3,2,715,0,"['dehydration', 'asthma', 'asthma']",3,0,0,1493,171.1984958557031
+S100A9,1,591,0,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis']",4,6,0,1783,170.7969246092361
+TLR9,1,386,0,"['asthma', 'asthma', 'asthma', 'bronchiectasis']",4,1,0,775,170.69687904624686
+STAT1,1,545,0,"['bronchiectasis', 'asthma', 'asthma', 'bronchiectasis']",4,0,0,1549,169.2187646696817
+SLURP1,3,827,0,"['asthma', 'asthma', 'asthma']",3,4,0,2098,168.39166434697512
+PIK3CA,0,1210,7508,"['failure to thrive', 'asthma', 'asthma', 'asthma']",4,5,1,7493,167.9718634487626
+SST,1,1089,7831,"['asthma', 'asthma', 'exocrine pancreatic insufficiency']",3,2,0,3487,167.49977507058077
+DLL1,1,600,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,4,1,1938,166.73208210570147
+SFTPC,1,289,0,"['failure to thrive', 'chronic lung disease', 'bronchiectasis', 'asthma']",4,1,0,474,164.8022981282556
+DNAH8,1,832,0,"['asthma', 'asthma', 'biliary cirrhosis']",3,4,1,2145,164.05355314155284
+IL1R1,1,250,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,3,0,366,163.0850125286668
+HR,1,925,0,"['exocrine pancreatic insufficiency', 'asthma', 'asthma']",3,0,0,2759,160.20581294355748
+REST,1,616,0,"['bronchiectasis', 'asthma', 'exocrine pancreatic insufficiency']",3,0,0,1289,156.92436645788288
+YARS1,1,360,0,"['asthma', 'asthma', 'asthma', 'dehydration']",4,20,0,805,156.4894376607536
+GRK2,0,1155,10774,"['asthma', 'asthma', 'asthma']",3,9,1,4431,156.46182775111072
+CYBB,1,636,0,"['recurrent pneumonia', 'asthma', 'asthma']",3,14,0,1381,156.45094406897138
+CRYGFP,1,435,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,8,1,1180,156.03563261020798
+ABCC8,2,372,0,"['dehydration', 'failure to thrive', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",4,0,0,926,154.58303143266227
+TLR5,4,425,0,"['asthma', 'asthma', 'bronchiectasis']",3,0,0,743,153.53275940319583
+SFTPB,1,202,0,"['failure to thrive', 'chronic lung disease', 'asthma', 'asthma']",4,0,0,278,152.5789806091947
+MRLN,1,662,0,"['asthma', 'asthma', 'asthma']",3,2,0,1604,151.0113536383301
+TLR10,1,208,0,"['asthma', 'asthma', 'asthma', 'bronchiectasis']",4,1,0,301,150.78373327142788
+CASP3,1,1164,5888,"['male infertility', 'asthma']",2,0,0,2196,150.31529704121988
+RHOA,2,721,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,7,0,3549,149.2610369214188
+HLA-DRB1,1,243,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",7,19,0,1286,148.15602983253407
+PRF1,1,473,0,"['failure to thrive', 'asthma', 'asthma', 'asthma']",4,25,0,1531,148.1292355056751
+GGT1,1,288,0,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis']",4,2,1,591,147.91967454819292
+CSF3,1,449,0,"['asthma', 'asthma', 'bronchiectasis']",3,1,0,791,146.8814506881584
+MAPK14,1,729,0,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis']",4,1,0,3721,145.37704918032787
+OCLN,1,501,0,"['failure to thrive', 'male infertility', 'asthma']",3,0,0,1012,144.56832636557115
+MYD88,2,718,0,"['asthma', 'asthma', 'asthma']",3,1,1,2132,144.28162605564435
+AGER,2,401,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,4,1,1236,144.26799944350242
+TNFRSF10B,1,727,0,"['asthma', 'asthma', 'biliary cirrhosis']",3,8,1,2138,143.8843877050504
+TLR8,1,288,0,"['asthma', 'asthma', 'asthma', 'bronchiectasis']",4,2,1,633,142.92816830638614
+TFRC,2,670,0,"['failure to thrive', 'asthma', 'asthma']",3,2,0,1902,142.39224715718615
+CCND1,0,1103,6910,"['asthma', 'asthma', 'asthma']",3,2,1,4985,140.88330674127104
+ATP4A,1,259,0,"['asthma', 'asthma', 'exocrine pancreatic insufficiency', 'bronchiectasis']",4,0,0,525,140.8814699363567
+KCNJ11,2,313,0,"['dehydration', 'failure to thrive', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",4,0,0,833,138.45319394931238
+NOD2,2,832,0,"['asthma', 'asthma', 'asthma']",3,2,0,3070,138.39261526870592
+H19,2,355,0,"['asthma', 'asthma', 'male infertility', 'chronic lung disease']",4,5,0,1062,138.08619268474848
+CXCR1,4,232,0,"['asthma', 'asthma', 'bronchiectasis', 'bronchiectasis', 'chronic lung disease']",5,4,0,880,137.5367719425014
+SFTPA2,1,214,0,"['bronchiectasis', 'asthma', 'asthma', 'bronchiectasis']",4,0,0,383,137.35038382668182
+CAV1,1,502,0,"['failure to thrive', 'hypercalciuria', 'asthma']",3,1,1,1144,136.8296884318737
+MMP2,1,1315,8167,"['biliary cirrhosis', 'asthma']",2,0,0,3393,136.48194369552027
+LCN2,2,484,0,"['asthma', 'asthma', 'hypercalciuria']",3,2,0,1110,136.14809107256224
+ATP12A,2,372,0,"['asthma', 'exocrine pancreatic insufficiency', 'bronchiectasis']",3,0,0,686,134.6996659238619
+LTA,1,357,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,2,0,1083,133.82371502690063
+SCNN1G,5,117,0,"['bronchiectasis', 'failure to thrive', 'dehydration', 'bronchiectasis']",4,0,0,227,133.0101516446344
+CALR,1,619,0,"['asthma', 'bronchiectasis', 'biliary cirrhosis']",3,3,0,1814,132.9151585054512
+ANXA5,2,251,0,"['asthma', 'asthma', 'asthma', 'male infertility']",4,2,0,602,132.54162512971757
+MCOLN1,1,1234,11434,"['asthma', 'dehydration']",2,4,0,3208,131.7815013185673
+HPGDS,1,454,0,"['asthma', 'asthma', 'male infertility']",3,0,0,1037,129.6794356364993
+ACTB,1,335,0,"['failure to thrive', 'asthma', 'asthma', 'male infertility']",4,1,0,1031,128.93505459191002
+GLS2,1,738,0,"['male infertility', 'asthma']",2,1,0,1216,128.70222670138514
+PARP1,1,558,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,1,0,2805,128.69543701321112
+ELN,1,421,0,"['asthma', 'asthma', 'bronchiectasis']",3,0,0,939,126.58638086732024
+GC,1,1027,0,"['asthma', 'asthma']",2,0,0,2424,126.37573632890638
+MAPK1,1,2261,17186,"['asthma', 'asthma']",2,4,0,11681,126.07482460369651
+ASAH1,2,539,0,"['failure to thrive', 'failure to thrive', 'asthma']",3,5,0,1600,125.775
+TGM2,1,497,0,"['asthma', 'asthma', 'asthma']",3,5,1,1355,124.50311278137154
+ANXA1,2,433,0,"['asthma', 'asthma', 'asthma']",3,1,0,1075,124.34733424920584
+LYZ,1,867,0,"['biliary cirrhosis', 'dehydration']",2,2,0,1793,124.26839779470447
+PRTN3,2,398,0,"['biliary cirrhosis', 'asthma', 'bronchiectasis']",3,1,0,927,123.56029148180235
+NANOS1,1,453,0,"['asthma', 'asthma', 'asthma']",3,4,0,1142,123.30777136847415
+ERVK-2,1,364,0,"['asthma', 'asthma', 'asthma']",3,10,1,772,121.86480660175398
+PSMD3,1,616,0,"['asthma', 'asthma', 'asthma']",3,3,0,2179,120.69470776629052
+ASL,2,243,0,"['failure to thrive', 'failure to thrive', 'asthma']",3,30,0,409,117.04061736196302
+LTB,1,407,0,"['asthma', 'asthma', 'asthma']",3,8,1,1040,116.99576340127088
+EPO,1,885,0,"['asthma', 'asthma']",2,1,0,2163,115.46384775632698
+HP,3,681,0,"['asthma', 'asthma']",2,0,0,1370,115.25521031020521
+CYCS,1,684,0,"['asthma', 'asthma']",2,0,0,1320,114.61032794965415
+FPR1,1,772,0,"['asthma', 'asthma']",2,1,0,1681,114.4390243902439
+DLC1,1,350,0,"['asthma', 'asthma', 'asthma']",3,2,1,827,113.36130721457751
+CCL18,1,270,0,"['asthma', 'asthma', 'asthma']",3,1,0,496,113.1513402768682
+RFC4,1,521,0,"['asthma', 'asthma', 'asthma']",3,2,1,1869,111.00590944411104
+ATP6V0A1,1,503,0,"['asthma', 'asthma', 'asthma']",3,2,1,1754,110.7190374107088
+CLC,1,282,0,"['hypercalciuria', 'asthma', 'asthma']",3,2,1,574,110.52538453756993
+RFC1,1,539,0,"['asthma', 'asthma', 'asthma']",3,2,1,2028,110.16287251729744
+IL1A,1,430,0,"['asthma', 'asthma']",2,0,0,606,107.24266920871516
+ADCY10,1,302,0,"['hypercalciuria', 'biliary cirrhosis', 'male infertility']",3,1,0,702,105.98113039593417
+MAPK8,1,1489,10633,"['asthma', 'asthma']",2,1,0,7490,103.92307157897395
+GYPC,1,570,0,"['failure to thrive', 'asthma']",2,1,0,1144,102.88835690210037
+DDX41,2,790,0,"['asthma', 'asthma']",2,0,0,2247,102.5261697680959
+CASP14,1,1264,1729,"['asthma', 'male infertility']",2,0,0,5603,102.11989677758899
+NHS,2,487,0,"['asthma', 'asthma']",2,1,0,897,101.56942367704445
+EPHX1,2,314,0,"['failure to thrive', 'asthma']",2,0,0,390,101.4764845817834
+TIRAP,2,337,0,"['asthma', 'asthma', 'asthma']",3,4,0,1016,100.80077509544518
+SI,2,615,0,"['male infertility', 'asthma']",2,0,0,1480,99.03623415536192
+RLN2,1,805,0,"['bronchiectasis', 'asthma']",2,0,0,2479,98.21336603667206
+GAPDH,1,667,0,"['male infertility', 'asthma']",2,0,0,1727,97.74481979796383
+PI3,2,485,0,"['asthma', 'asthma']",2,0,0,984,96.59287202909574
+HRAS,1,480,0,"['failure to thrive', 'failure to thrive', 'asthma']",3,71,0,2134,95.4643856221356
+HSPA4,2,822,0,"['asthma', 'male infertility']",2,0,0,2804,95.40570327204289
+NCF4,1,118,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,3,0,260,95.2586761645121
+ABCB11,1,293,0,"['failure to thrive', 'failure to thrive']",2,3,0,365,95.15846912690085
+GGCT,1,195,0,"['asthma', 'asthma', 'male infertility']",3,2,0,383,94.27509604175147
+LDLR,1,472,0,"['male infertility', 'asthma']",2,1,0,967,93.00045034417433
+SLC27A5,1,209,0,"['asthma', 'asthma', 'asthma']",3,8,1,460,92.83085366032324
+APOE,1,641,0,"['asthma', 'asthma']",2,1,0,1811,91.785275072008
+C4A,1,584,0,"['asthma', 'asthma']",2,0,0,1515,91.56539620499775
+AMH,1,524,0,"['male infertility', 'male infertility']",2,1,0,1226,91.50551557200188
+TCOF1,2,537,0,"['failure to thrive', 'asthma']",2,0,0,1338,91.36469080808733
+FN1,1,489,0,"['asthma', 'asthma']",2,0,0,1085,90.89435808562176
+GYPA,1,568,0,"['biliary cirrhosis', 'asthma']",2,1,0,1461,90.73064135844169
+PNLIP,1,439,0,"['exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",2,0,0,886,90.50670005005342
+TRPV4,2,298,0,"['asthma', 'asthma', 'asthma']",3,3,0,1016,89.78892571527048
+F2,2,572,0,"['exocrine pancreatic insufficiency', 'asthma']",2,0,0,1570,89.64439300621221
+BRCA2,1,398,0,"['failure to thrive', 'failure to thrive', 'male infertility']",3,2,0,1678,89.6410003247027
+MUC1,2,454,0,"['asthma', 'bronchiectasis']",2,0,0,1009,89.53317981292344
+AHSA1,2,923,0,"['asthma', 'asthma']",2,3,0,4014,89.30468831063736
+NUP62,1,284,0,"['failure to thrive', 'failure to thrive', 'biliary cirrhosis', 'biliary cirrhosis']",4,5,0,1585,88.61636738110711
+CCDC6,1,573,0,"['biliary cirrhosis', 'asthma']",2,1,0,1583,87.9183133186911
+MSC,1,715,0,"['asthma', 'asthma']",2,2,0,2450,87.88327137604233
+LTB4R,1,141,0,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma']",5,7,1,679,87.69025182479366
+GGTLC3,1,163,0,"['asthma', 'asthma', 'asthma']",3,2,1,324,87.61111111111111
+MYC,1,832,0,"['asthma', 'asthma']",2,0,0,3343,87.37660244653719
+C5,1,580,0,"['asthma', 'asthma']",2,0,0,1667,86.70326700129736
+SFTPA1,1,307,0,"['asthma', 'asthma']",2,0,0,483,86.54399663776377
+CELA3B,2,107,0,"['exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",3,1,0,175,86.40267852990935
+GGT2,1,166,0,"['asthma', 'asthma', 'asthma']",3,2,1,346,86.23157422350344
+SYNPR,1,150,0,"['chronic lung disease', 'asthma', 'asthma']",3,2,0,282,85.75075212125957
+FLNC,2,124,0,"['failure to thrive', 'bronchiectasis', 'asthma', 'asthma']",4,0,0,408,85.54874771318467
+ERCC8,2,622,0,"['failure to thrive', 'male infertility']",2,1,0,2033,85.43141293335533
+TGM1,1,534,0,"['failure to thrive', 'dehydration']",2,0,0,1464,85.30600655345648
+GCG,1,437,0,"['exocrine pancreatic insufficiency', 'asthma']",2,0,0,1034,83.40623245988758
+NLRC4,1,161,0,"['failure to thrive', 'dehydration', 'asthma']",3,0,0,342,83.21958904008119
+CREB1,1,777,0,"['asthma', 'asthma']",2,1,0,3223,83.17557847026289
+NFASC,1,602,0,"['failure to thrive', 'asthma']",2,0,0,1970,82.73124490329353
+KHDRBS1,1,377,0,"['biliary cirrhosis', 'biliary cirrhosis', 'asthma']",3,4,0,1799,82.1179109955999
+GABPA,2,855,0,"['asthma', 'asthma']",2,2,0,4111,81.88145758699083
+TH,1,2035,12472,['asthma'],1,0,0,5625,81.8
+SARS2,1,535,0,"['failure to thrive', 'asthma']",2,0,0,1627,81.0688432432978
+SQSTM1,1,607,0,"['biliary cirrhosis', 'biliary cirrhosis']",2,4,0,2110,80.5926037084784
+DNASE1,3,183,0,"['asthma', 'bronchiectasis']",2,0,0,252,80.5064327509654
+HSD17B4,1,248,0,"['failure to thrive', 'failure to thrive', 'asthma']",3,13,0,842,80.02140449996656
+SMS,1,672,0,"['asthma', 'asthma']",2,3,0,2617,79.98964396096001
+TJP1,1,289,0,"['male infertility', 'asthma']",2,0,0,507,79.67433714816836
+COX2,1,639,0,"['failure to thrive', 'asthma']",2,0,0,2404,79.4197865512132
+AKR1B1,1,613,0,"['asthma', 'asthma']",2,1,0,2231,79.1388093351499
+KNG1,1,373,0,"['asthma', 'asthma']",2,0,0,848,78.91364398852184
+ITGAX,1,482,0,"['asthma', 'asthma']",2,0,0,1401,78.86735672744109
+REG1A,1,587,0,"['dehydration', 'asthma']",2,3,0,2065,78.82528570109699
+KCNMA1,1,319,0,"['dehydration', 'asthma']",2,1,1,653,78.03124987542478
+HSPD1,1,334,0,"['asthma', 'bronchiectasis']",2,0,0,700,78.0118672291045
+CASP1,1,417,0,"['asthma', 'asthma']",2,0,0,1081,77.92311018454386
+ITGAL,1,244,0,"['asthma', 'asthma', 'biliary cirrhosis']",3,2,0,861,77.90667158435096
+ANO1,4,242,0,"['asthma', 'asthma']",2,1,0,473,77.79824288629212
+MAL,3,385,0,"['asthma', 'asthma']",2,4,0,1029,77.62322095537442
+ABCA3,1,201,0,"['failure to thrive', 'chronic lung disease']",2,1,1,279,76.9908061354775
+DLEU1,1,71,0,['asthma'],1,0,0,10,76.84334714209162
+SERPINB6,1,303,0,"['asthma', 'bronchiectasis']",2,0,0,607,76.22566860016389
+KCNJ1,1,193,0,"['hypercalciuria', 'failure to thrive', 'dehydration']",3,0,0,586,75.47267434892471
+CBS,1,367,0,"['failure to thrive', 'failure to thrive']",2,83,0,927,74.2938275735877
+BCS1L,1,467,0,"['failure to thrive', 'asthma']",2,0,0,1503,73.82273638375666
+SRC,1,600,0,"['asthma', 'asthma']",2,0,0,2484,73.43537038231922
+PTX3,1,212,0,"['asthma', 'asthma']",2,0,0,334,72.88379726792242
+FOXJ1,1,65,0,"['asthma', 'bronchiectasis', 'asthma', 'bronchiectasis', 'male infertility']",5,0,0,239,72.77020057722947
+BCL2A1,1,417,0,"['asthma', 'asthma']",2,0,0,1240,72.755910967049
+LCN1,1,369,0,"['asthma', 'exocrine pancreatic insufficiency']",2,3,0,981,72.60323241976327
+CLPS,1,237,0,"['exocrine pancreatic insufficiency', 'asthma']",2,0,0,419,72.40043776816186
+LTA4H,1,151,0,"['asthma', 'asthma', 'asthma', 'asthma']",4,6,0,723,71.85185311932113
+HLA-E,1,500,0,"['asthma', 'exocrine pancreatic insufficiency']",2,3,0,1814,71.84603162456821
+BRD4,1,236,0,"['asthma', 'asthma', 'bronchiectasis']",3,0,0,951,71.79386896839523
+SORBS1,1,253,0,"['asthma', 'bronchiectasis']",2,0,0,486,71.57953359466399
+CAP1,1,243,0,"['asthma', 'bronchiectasis']",2,0,0,456,71.08686309905057
+SPINK1,3,160,0,"['exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",2,0,0,261,70.56422850727972
+MTPN,1,305,0,"['asthma', 'asthma']",2,1,0,720,70.43614129124337
+LNPEP,1,299,0,"['bronchiectasis', 'asthma']",2,0,0,697,70.22525756858346
+AQP5,2,230,0,"['chronic lung disease', 'asthma']",2,1,0,458,70.09039702739966
+PAEP,1,394,0,"['asthma', 'asthma']",2,2,0,1217,69.48440234519322
+CBL,1,280,0,"['exocrine pancreatic insufficiency', 'male infertility', 'male infertility']",3,1,0,1422,69.2134837232885
+TERT,1,543,0,"['failure to thrive', 'asthma']",2,0,0,2313,68.99038448762967
+MARS1,1,343,0,"['failure to thrive', 'male infertility']",2,1,0,947,68.82575216085084
+TCIRG1,1,377,0,"['failure to thrive', 'asthma']",2,10,0,1151,68.44229338568564
+GPI,1,1223,11738,['biliary cirrhosis'],1,1,0,2963,67.95454447458658
+AIRE,1,312,0,"['asthma', 'asthma']",2,0,0,823,67.34528644469744
+STIM1,1,288,0,"['asthma', 'asthma']",2,1,1,750,66.01882559795602
+CXCL1,1,548,0,['asthma'],1,0,0,659,65.20978170291657
+DAP,1,540,0,['bronchiectasis'],1,0,0,658,64.32369698579967
+FPR2,2,258,0,"['asthma', 'asthma']",2,0,0,676,64.15384615384616
+PCBD1,1,117,0,"['asthma', 'male infertility', 'bronchiectasis']",3,0,0,319,63.995714002254154
+SMOX,3,560,0,['asthma'],1,0,0,767,63.91099580365952
+TIMELESS,1,176,0,"['asthma', 'asthma', 'asthma']",3,12,1,704,63.84502721434145
+TST,2,724,0,['bronchiectasis'],1,0,0,1231,63.61582501647213
+SLC26A8,1,40,0,"['male infertility', 'male infertility', 'male infertility', 'male infertility']",4,3,1,95,63.61065782927956
+NBL1,1,852,0,['asthma'],1,2,0,1658,63.50914374294937
+NLRP1,1,267,0,"['failure to thrive', 'asthma']",2,0,0,696,62.99794742140687
+CDT1,1,132,0,"['failure to thrive', 'failure to thrive', 'male infertility', 'male infertility']",4,5,0,732,62.9816522853296
+ADH5,1,196,0,"['asthma', 'asthma']",2,1,0,387,62.82941097703313
+DNAH11,1,68,0,"['bronchiectasis', 'asthma', 'male infertility', 'bronchiectasis']",4,7,0,223,62.67919602507499
+SPDEF,1,88,0,"['asthma', 'asthma', 'asthma']",3,1,0,199,62.523322281735226
+DEFB1,3,136,0,"['asthma', 'asthma']",2,1,0,254,62.49459819176059
+CLCN5,1,99,0,"['hypercalciuria', 'hypercalciuria', 'hypercalciuria']",3,2,1,258,62.31953791710551
+PCYT1A,1,449,0,"['failure to thrive', 'asthma']",2,0,0,1967,62.095732706326416
+GPT,1,648,0,['asthma'],1,0,0,1018,61.86902319767288
+HTT,1,330,0,"['male infertility', 'dehydration']",2,2,1,1109,61.85879379443504
+TG,1,957,0,['asthma'],1,0,0,2220,61.57029601481018
+SAA1,1,225,0,"['asthma', 'bronchiectasis']",2,0,0,526,61.47892154776958
+HACD1,1,128,0,"['failure to thrive', 'bronchiectasis', 'asthma']",3,0,0,420,60.60339453010391
+TF,2,1000,0,['male infertility'],1,2,0,2579,60.2553696972773
+SERPINB1,2,173,0,"['bronchiectasis', 'asthma']",2,0,0,374,59.87875450142322
+RPS3A,1,252,0,"['asthma', 'male infertility']",2,0,0,690,59.845017227472844
+MMP12,2,259,0,"['asthma', 'bronchiectasis']",2,0,0,816,58.601721516572205
+CDC42,1,466,0,"['failure to thrive', 'asthma']",2,4,0,2417,58.09247475080343
+SON,1,222,0,"['failure to thrive', 'asthma']",2,0,0,588,57.40511247942565
+TYMS,1,852,0,['asthma'],1,0,0,2036,57.31121738810716
+CTSG,2,269,0,"['asthma', 'bronchiectasis']",2,0,0,923,57.0753052192641
+FCGR2A,2,220,0,"['asthma', 'asthma']",2,1,0,638,57.010145937472494
+H1-9P,1,150,0,"['asthma', 'male infertility', 'chronic lung disease']",3,5,0,654,56.308455864415805
+VIM,2,886,0,['biliary cirrhosis'],1,1,0,2367,55.866353287625586
+AQP2,2,167,0,"['failure to thrive', 'dehydration']",2,1,0,404,55.821586370780395
+PSMB5,1,175,0,"['asthma', 'asthma', 'asthma']",3,20,0,915,55.04320210853158
+ATP8B1,1,192,0,"['failure to thrive', 'failure to thrive']",2,4,0,491,54.696794307670736
+SLC26A9,4,50,0,"['asthma', 'bronchiectasis']",2,0,0,99,54.27204202399745
+NTM,1,421,0,['bronchiectasis'],1,0,0,570,54.15781034211623
+CSH1,2,858,0,['male infertility'],1,1,0,2386,53.92380766127978
+ETV5,1,143,0,"['male infertility', 'bronchiectasis']",2,0,0,292,53.721886563023936
+ARSB,2,186,0,"['failure to thrive', 'asthma']",2,39,0,532,53.58739611659061
+BBS9,1,973,0,['asthma'],1,0,0,3071,53.215097761465145
+SDHA,1,267,0,"['failure to thrive', 'failure to thrive']",2,0,0,984,52.98262485556341
+FER,1,197,0,"['male infertility', 'asthma']",2,1,0,567,52.15909727527335
+HSPA9,2,699,0,['male infertility'],1,1,0,1802,50.81275609549218
+SLC9A3,6,396,0,['male infertility'],1,0,0,725,50.80624452524139
+CXCL2,1,470,0,['asthma'],1,0,0,804,50.78488434181907
+HSP90AA1,1,313,0,"['asthma', 'male infertility']",2,0,0,1458,50.75455340516774
+PRDM10,1,123,0,"['asthma', 'male infertility']",2,0,0,254,50.07097325002505
+LIN9,1,623,0,['asthma'],1,0,0,1443,49.99099711047773
+MMAA,1,43,0,"['failure to thrive', 'failure to thrive', 'dehydration', 'dehydration']",4,22,0,164,49.66325628057673
+TRGC1,1,605,0,['dehydration'],1,1,0,1384,49.59390724512589
+PFDN4,1,625,0,['dehydration'],1,1,0,1492,49.31858053572691
+SDS,1,845,0,['asthma'],1,0,0,2720,49.181629909837625
+ABCC4,1,353,0,['biliary cirrhosis'],1,1,0,497,48.84832600737034
+GTF2E2,1,278,0,"['recurrent bronchopulmonary infections', 'asthma']",2,0,0,1288,48.14883756651048
+NOVA2,1,443,0,['asthma'],1,0,0,817,47.545391569382666
+SPG21,1,825,0,['asthma'],1,0,0,2784,47.47588997912882
+SPACA9,1,787,0,['asthma'],1,0,0,2587,47.00903777763677
+ARHGAP4,1,596,0,['dehydration'],1,1,0,1539,46.341978241853475
+DDT,1,471,0,['asthma'],1,1,0,976,46.189304435792224
+FST,2,506,0,['asthma'],1,1,0,1190,45.74393471297818
+APEX1,2,647,0,['dehydration'],1,1,0,1914,45.73788960429357
+ERVK-11,1,840,0,['male infertility'],1,1,0,3129,45.58662063395953
+RPS6,1,620,0,['asthma'],1,0,0,1720,45.57194669510395
+ERVK-10,5,811,0,['asthma'],1,4,0,3242,45.364685137436524
+IFNE,1,569,0,['asthma'],1,0,0,1470,45.304480113641596
+CAST,1,470,0,['bronchiectasis'],1,0,0,1017,45.15460168241267
+HMGCR,0,490,0,['asthma'],1,0,0,1069,44.96022564018628
+FRY,1,271,0,['asthma'],1,0,0,356,44.67891064226808
+MAX,1,451,0,['asthma'],1,0,0,959,44.65939922928133
+PIMREG,1,583,0,['asthma'],1,0,0,1605,44.405670261824326
+CD55,1,647,0,['asthma'],1,0,0,1984,44.25025628684667
+TXNRD2,1,537,0,['failure to thrive'],1,0,0,1376,44.23839520671061
+MOGS,0,298,0,['failure to thrive'],1,0,0,411,44.097767955828914
+PPY,2,398,0,['exocrine pancreatic insufficiency'],1,0,0,825,43.65867611368902
+FES,1,521,0,['asthma'],1,0,0,1343,43.46881183541512
+CELA1,1,71,0,"['exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",2,1,0,129,42.78991404742532
+EPCAM,1,417,0,['failure to thrive'],1,0,0,898,42.74752366523729
+FFAR2,1,126,0,"['asthma', 'asthma']",2,2,0,367,42.594853279305454
+LACTB,1,235,0,['bronchiectasis'],1,0,0,298,42.57740680771668
+MLH1,1,232,0,"['biliary cirrhosis', 'male infertility']",2,1,0,1173,42.395289995596706
+SLC6A2,1,852,0,['bronchiectasis'],1,0,0,3817,41.856936627400636
+PSMD4,1,575,0,['asthma'],1,0,0,1796,41.411785385559014
+SLC12A2,2,369,0,['asthma'],1,1,0,798,41.311352187369415
+FBXO8,1,473,0,['asthma'],1,1,0,1239,41.16543720573101
+LY96,2,283,0,['asthma'],1,0,0,491,41.022595730753046
+CDH1,1,521,0,['asthma'],1,0,0,1521,40.84615384615385
+TMEFF2,1,460,0,['male infertility'],1,1,0,1208,40.568191304214736
+PSMD2,1,713,0,['asthma'],1,0,0,2890,40.346942617089496
+TXN,1,347,0,['asthma'],1,0,0,705,40.33619355663469
+RPLP2,1,470,0,['asthma'],1,0,0,1285,40.17084139092029
+FIG4,1,519,0,['failure to thrive'],1,0,0,1602,39.650226347881066
+CRYGC,1,389,0,['asthma'],1,0,0,916,39.549993237237125
+DBP,1,269,0,['asthma'],1,0,0,450,39.45655839020935
+PMS2,1,147,0,"['asthma', 'cor pulmonale']",2,0,0,576,39.25
+BPI,3,211,0,['bronchiectasis'],1,0,0,340,39.210180250722104
+KCNN4,2,318,0,['asthma'],1,0,0,670,39.17423765081317
+UHMK1,1,391,0,['asthma'],1,0,0,967,38.68587197926754
+PRDX5,1,389,0,['male infertility'],1,0,0,962,38.592828931116784
+TYR,1,430,0,['asthma'],1,0,0,1182,38.394161992767906
+EPM2A,1,374,0,['bronchiectasis'],1,0,0,913,38.12563539771812
+PSMD1,1,697,0,['asthma'],1,0,0,3125,37.94160144221643
+FFAR3,1,100,0,"['asthma', 'asthma']",2,2,0,303,37.916009315014115
+C4B,1,471,0,['asthma'],1,0,0,1490,37.38291789488309
+FBLIM1,2,234,0,['asthma'],1,1,0,419,37.226136018447605
+CTSL,1,399,0,['asthma'],1,0,0,1094,37.09675328387585
+NOL3,1,308,0,['asthma'],1,1,0,666,36.96674912053453
+EXOSC10,1,521,0,['asthma'],1,0,0,1884,36.70078271957288
+RPS2,1,579,0,['asthma'],1,0,0,2360,36.37311938175392
+AQP1,1,294,0,['biliary cirrhosis'],1,1,0,636,36.16315230874737
+SULT1A1,2,283,0,['asthma'],1,1,0,640,35.93137991366321
+MITF,1,441,0,['asthma'],1,0,0,1432,35.754135987651324
+RNF130,1,331,0,['asthma'],1,0,0,832,35.46614379615059
+GUCY2C,2,77,0,"['meconium ileus', 'meconium ileus']",2,0,0,270,35.419392052000745
+CCL21,1,391,0,['asthma'],1,0,0,1175,35.09511695439343
+MMP8,1,195,0,"['asthma', 'bronchiectasis']",2,0,0,1233,35.0286639663872
+YY1,1,371,0,['asthma'],1,0,0,1067,34.99161768682813
+CTSS,1,271,0,"['asthma', 'asthma']",2,4,1,2400,34.82357917656751
+RPS3,1,526,0,['asthma'],1,0,0,2133,34.81694141194342
+MLN,1,335,0,['asthma'],1,0,0,888,34.73232585732576
+PSMC4,1,456,0,['asthma'],1,0,0,1623,34.70147311857079
+NT5E,1,428,0,['asthma'],1,0,0,1456,34.43615688631502
+SSB,1,381,0,['asthma'],1,1,0,1168,34.32231641526529
+FCGR3B,1,295,0,['asthma'],1,0,0,711,34.31518097824373
+PSMA7,1,418,0,['asthma'],1,0,0,1401,34.304094186326
+GSN,3,332,0,['asthma'],1,1,0,1006,34.23976969878514
+FGF7,1,266,0,['asthma'],1,0,0,589,34.11714563801563
+GYPB,1,327,0,['biliary cirrhosis'],1,0,0,886,33.96520926154566
+WLS,1,335,0,['biliary cirrhosis'],1,2,0,942,33.72212224434311
+SRSF5,1,503,0,['asthma'],1,0,0,2086,33.696241941752554
+HPGD,1,330,0,['asthma'],1,0,0,925,33.537393410292886
+RPS5,1,390,0,['asthma'],1,0,0,1292,33.38489304447943
+PSME3,1,396,0,['asthma'],1,0,0,1369,32.91891891891892
+CYP2D6,1,509,0,['asthma'],1,0,0,2241,32.89028860222041
+ERICD,1,52,0,['asthma'],1,0,0,32,32.880465325174455
+PPIB,1,991,0,['asthma'],1,0,0,8400,32.765416218934256
+PADI4,1,258,0,['asthma'],1,0,0,604,32.71429604260061
+DEFB4A,3,180,0,['asthma'],1,0,0,378,32.4037034920393
+PTPN6,1,407,0,['asthma'],1,1,0,1497,32.33303032039216
+NDUFB6,1,489,0,['asthma'],1,0,0,2161,32.20285799325624
+DYM,1,319,0,['failure to thrive'],1,0,0,942,32.15819773446053
+BRCA1,1,565,0,['failure to thrive'],1,0,0,2878,32.154643922484865
+ABCB6,1,317,0,['chronic lung disease'],1,1,1,979,31.992098743634685
+CXCL5,1,264,0,['asthma'],1,0,0,661,31.972094489119414
+SRL,1,201,0,['asthma'],1,0,0,392,31.97132803507747
+MUC4,3,208,0,['asthma'],1,0,0,508,31.678627386155263
+SDC1,0,365,0,['asthma'],1,0,0,1212,31.453053181773075
+FLT4,1,365,0,['dehydration'],1,1,0,1284,31.39568843545955
+TLE5,1,291,0,['asthma'],1,1,0,832,31.30589232446137
+TRB,1,59,0,"['asthma', 'asthma']",2,2,0,176,31.206424163798534
+GOPC,2,189,0,['male infertility'],1,0,0,408,31.04112547231874
+RFC2,1,417,0,['asthma'],1,0,0,1705,31.023224674559724
+PRKAA2,1,318,0,['asthma'],1,0,0,1012,30.931774982327028
+PIGS,1,327,0,['asthma'],1,0,0,1072,30.878327061056144
+SERPING1,1,206,0,['asthma'],1,0,0,442,30.822216821211214
+ADORA2B,1,173,0,"['asthma', 'asthma']",2,1,0,1274,30.762216625960864
+HHAT,1,204,0,['asthma'],1,0,0,436,30.746223755598958
+DNAJC21,1,34,0,"['failure to thrive', 'exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",3,0,0,168,30.552063292494196
+FAM13A,2,89,0,['asthma'],1,0,0,115,30.49290722945826
+PHEX,1,230,0,['asthma'],1,0,0,558,30.480030480045723
+FOXO3,1,437,0,['asthma'],1,1,0,1964,30.259241405357447
+ADK,1,274,0,['failure to thrive'],1,0,0,806,30.01042002661238
+HMGCL,1,279,0,['dehydration'],1,17,0,838,29.950018029247786
+ERVK-13,1,146,0,['asthma'],1,1,0,245,29.899423241997187
+CLEC7A,1,208,0,['asthma'],1,0,0,491,29.514606829386683
+NOD1,1,160,0,['asthma'],1,0,0,303,29.29873447069273
+ST8SIA4,2,201,0,['asthma'],1,1,0,513,29.272165091137467
+IL31RA,1,199,0,['bronchiectasis'],1,0,0,467,29.01409979909827
+PREP,1,275,0,['asthma'],1,1,0,871,28.970569808690055
+LAMP1,1,215,0,['asthma'],1,0,0,545,28.913823239273054
+LPCAT3,1,151,0,['asthma'],1,1,0,280,28.864770915425606
+DEFA1,1,258,0,['male infertility'],1,1,0,786,28.67773027525815
+FDFT1,1,230,0,['asthma'],1,0,0,634,28.594852948423355
+FBF1,1,271,0,['asthma'],1,0,0,870,28.58037667761716
+TNP2,1,43,0,"['male infertility', 'male infertility']",2,0,0,128,28.107494552165264
+PRSS1,2,140,0,"['exocrine pancreatic insufficiency', 'exocrine pancreatic insufficiency']",2,23,0,1184,27.899433298516627
+HSH2D,1,121,0,['asthma'],1,0,0,202,27.65138350790047
+DEFB103A,1,123,0,['asthma'],1,0,0,209,27.59940710825638
+P2RY2,2,138,0,['asthma'],1,0,0,296,27.55069038228517
+HBB,1,220,0,['asthma'],1,0,0,629,27.51210168759705
+PZP,1,104,0,['bronchiectasis'],1,0,0,155,27.470101048465462
+SLC15A2,1,126,0,['asthma'],1,1,0,223,27.321700831442943
+DDX58,1,203,0,['asthma'],1,0,0,551,27.222315229623288
+DUOX1,1,120,0,['asthma'],1,0,0,207,27.10687382741972
+ADORA1,1,175,0,"['asthma', 'asthma']",2,6,0,1710,26.842621254070433
+PRAP1,1,246,0,['asthma'],1,1,0,829,26.673742527252013
+SLC9A3R1,3,183,0,['asthma'],1,1,0,574,26.671344682593347
+AGTR2,1,261,0,['asthma'],1,0,0,948,26.405012470065298
+BTN1A1,1,156,0,['asthma'],1,0,0,358,26.32011784456816
+CXCL6,1,167,0,['asthma'],1,0,0,408,26.288417266030706
+PSG2,1,258,0,['asthma'],1,1,0,958,25.97606092399979
+BCHE,1,397,0,['asthma'],1,0,0,2227,25.873522292393776
+NRP1,1,204,0,['asthma'],1,0,0,629,25.59821635280769
+PFAS,1,176,0,['asthma'],1,0,0,477,25.54906489445616
+RNF31,1,171,0,['asthma'],1,0,0,452,25.540571576614663
+GTF2E1,1,274,0,['asthma'],1,0,0,1181,24.792175980319264
+PMAIP1,1,183,0,['bronchiectasis'],1,0,0,554,24.599352813534857
+CTSB,1,240,0,['asthma'],1,0,0,952,24.307639633206165
+CEACAM3,1,200,0,['asthma'],1,1,0,764,22.79260006671128
+CPA1,1,62,0,['exocrine pancreatic insufficiency'],1,0,0,92,22.519556718164075
+SLC6A14,2,55,0,['male infertility'],1,1,0,103,22.169908758696597
+LUM,1,144,0,['asthma'],1,0,0,435,22.15120452862475
+TAS2R38,1,165,0,['asthma'],1,0,0,567,22.04792759220492
+PRSS58,2,29,0,['exocrine pancreatic insufficiency'],1,0,0,45,21.913466179497938
+AKAP4,1,132,0,['male infertility'],1,0,0,389,21.599057391600578
+NEDD4L,2,152,0,['asthma'],1,1,0,579,21.444228181023274
+SAA2,1,56,0,['bronchiectasis'],1,0,0,86,21.350889094280806
+STUB1,1,149,0,['asthma'],1,0,0,512,21.080620914123948
+QRSL1,1,131,0,['asthma'],1,0,0,420,20.640286542861478
+MRO,1,70,0,['asthma'],1,0,0,137,20.50458378520226
+TARDBP,1,209,0,['male infertility'],1,1,0,1049,20.285122067952305
+TBL1X,1,132,0,['asthma'],1,0,0,446,20.17168463432212
+CTRC,1,72,0,['exocrine pancreatic insufficiency'],1,0,0,150,20.08581589082206
+P2RY4,1,141,0,['asthma'],1,0,0,514,19.98097344002276
+PSMD5,1,149,0,['asthma'],1,0,0,586,19.704688376812857
+ADSL,1,128,0,['asthma'],1,0,0,452,19.472921975540462
+DEFB103B,1,70,0,['asthma'],1,0,0,152,19.466570535691506
+BPIFA1,2,61,0,['asthma'],1,0,0,156,19.455570687318087
+GATA5,1,108,0,['asthma'],1,0,0,339,19.226640809412324
+NSF,1,141,0,['hypercalciuria'],1,1,0,569,18.99074790920943
+MED25,1,132,0,['recurrent pneumonia'],1,0,0,508,18.900693650563223
+GMCL1,1,94,0,['male infertility'],1,0,0,325,17.30664612222715
+H4C6,1,154,0,['asthma'],1,0,0,925,16.176860350847157
+CBSL,1,58,0,['asthma'],1,0,0,163,15.97851317975433
+HCFC1,1,100,0,['failure to thrive'],1,0,0,479,15.078084858703477
+KIDINS220,1,67,0,['asthma'],1,0,0,256,14.4375
+HDAC7,1,101,0,['asthma'],1,3,0,532,14.437380992576596
+ADORA2A,1,208,0,['asthma'],1,0,0,2058,14.416341553601159
+NDUFAF3,1,66,0,['failure to thrive'],1,0,0,349,12.204560188645914
+CA12,1,71,0,"['failure to thrive', 'dehydration']",2,0,0,2161,10.454635260335692
+ADORA3,1,137,0,['asthma'],1,0,0,2002,9.856132945702216
