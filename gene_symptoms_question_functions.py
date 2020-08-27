@@ -191,8 +191,9 @@ def get_disease_symptoms(disease_name):
     return([symptoms,hp_ids,hp_symptom_dict])
 
 
-def get_symtpom_prevalence(hp_symptom_dict):
+def get_symtpom_prevalence(hp_symptom_dict, disease_name):
     for key in hp_symptom_dict:
+        print(key)
         edges_out_count = 0
         # print("name: " + str(hp_symptom_dict[key]))
         UMLS = ''
@@ -202,28 +203,36 @@ def get_symtpom_prevalence(hp_symptom_dict):
                 if len(a) > 0: 
                     b = a[0]
                     if 'UMLS' in b: 
-                        # print("YAY UMLS")
                         UMLS = b['UMLS']
                     try: 
                         fc = FindConnection(input_obj=b, output_obj='Gene', intermediate_nodes=None)
                         fc.connect(verbose=False)
                         df = fc.display_table_view()
+                        print('gene')
+                        print(df.shape)
                         # print("phen")
                         # print(hp_symptom_dict[key])
                         # print(df.shape[0])
                         if(df.shape[0] > 0):
+                            print("OKKKk")
                             df = df[df["output_name"] != disease_name]
                             edges_out_count = edges_out_count + df.shape[0]
-#                             print(df.shape)
+                            print(edges_out_count)
+                    except: 
+                        print("Nope")
+                    try: 
                         fc = FindConnection(input_obj=b, output_obj='Disease', intermediate_nodes=None)
                         fc.connect(verbose=False)
                         df = fc.display_table_view()
+                        print(df.shape)
                         # print("phen")
                         # print(hp_symptom_dict[key])
                         # print(df.shape[0])
                         if(df.shape[0] > 0):
+                            print("ok edge phen to dis")
                             df = df[df["output_name"] != disease_name]
                             edges_out_count = edges_out_count + df.shape[0]
+                            print(edges_out_count)
                     except: 
                         print("Nope")
             if(y =='Disease') | (y == 'BiologicalProcess'):
@@ -247,6 +256,10 @@ def get_symtpom_prevalence(hp_symptom_dict):
                                 if(df.shape[0] > 0):
                                     df = df[df["output_name"] != disease_name]
                                     edges_out_count = edges_out_count + df.shape[0]
+
+                            except: 
+                                print("Nope")
+                            try: 
                                 fc = FindConnection(input_obj=b, output_obj='Disease', intermediate_nodes=None)
                                 fc.connect(verbose=False)
                                 df = fc.display_table_view()
@@ -257,7 +270,8 @@ def get_symtpom_prevalence(hp_symptom_dict):
                                     edges_out_count = edges_out_count + df.shape[0]
                             except: 
                                 print("Nope")
-
+        print("edges out")
+        print(edges_out_count)
         hp_symptom_dict[key]["edges_out_count"] = edges_out_count
     return(hp_symptom_dict)
 
@@ -474,30 +488,59 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
     # assmeble results into final dataframe
     dataframe_input = []
     for key in results_dict:
+
+        ### Weight --- number - min / range
+
+
         connections_count = math.sqrt(connection_dict[key])
         # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
-        relevance_score = ((((results_dict[key]["direct_associations_to_covid"]*10 
-                            + results_dict[key]["two_step_associations_to_covid"]) 
-                            * len(results_dict[key]["symptoms_associated"])*3) 
-                            # + round(top_two_step_genes_pub_counts[key] / 5) 
-                            # + round(top_symptom_pub_counts[key] / 5)
-                            + (causes_dict[key] if key in causes_dict else 0)*20)
-                            /connections_count)
+        # relevance_score = ((((results_dict[key]["direct_associations_to_covid"]*10 
+        #                     + results_dict[key]["two_step_associations_to_covid"]) 
+        #                     * len(results_dict[key]["symptoms_associated"])*3) 
+        #                     # + round(top_two_step_genes_pub_counts[key] / 5) 
+        #                     # + round(top_symptom_pub_counts[key] / 5)
+        #                     + (causes_dict[key] if key in causes_dict else 0)*20)
+        #                     /connections_count)
         # assemble each row                                               
         current_result = {'gene': key,
                         "direct_disease_assoc": results_dict[key]["direct_associations_to_covid"], 
                         "two_step_assoc_to_disease": results_dict[key]["two_step_associations_to_covid"],
-                        "two_step_pub_count": top_two_step_genes_pub_counts[key] if key in top_two_step_genes_pub_counts else 0,
+                        # "two_step_pub_count": top_two_step_genes_pub_counts[key] if key in top_two_step_genes_pub_counts else 0,
                         "disease_symptoms_gene_is_associated_with": results_dict[key]["symptoms_associated"],
                         "symptoms_associated_count": len(results_dict[key]["symptoms_associated"]),
-                        "disease_symptom_gene_pub_count": top_symptom_pub_counts[key],
-                        "causes_symptom_count": causes_dict[key] if key in causes_dict else 0,
-                        "gene_connections_count": connection_dict[key],
-                        "relevance_score": relevance_score
+                        # "disease_symptom_gene_pub_count": top_symptom_pub_counts[key],
+                        # "causes_symptom_count": causes_dict[key] if key in causes_dict else 0,
+                        "gene_connections_count": connection_dict[key]
+                        # "relevance_score": relevance_score
                         }
         dataframe_input.append(current_result)
         
+
+
+
     final_df = pd.DataFrame(dataframe_input)
+    range_direct = max(list(final_df["direct_disease_assoc"])) - min(list(final_df["direct_disease_assoc"]))
+    min_direct = min(list(final_df["direct_disease_assoc"]))
+
+    range_two_step = max(list(final_df["two_step_assoc_to_disease"])) - min(list(final_df["two_step_assoc_to_disease"]))
+    min_two_step = min(list(final_df["two_step_assoc_to_disease"]))
+
+    range_symptoms = max(list(final_df["symptoms_associated_count"])) - min(list(final_df["symptoms_associated_count"]))
+    min_symptoms = min(list(final_df["symptoms_associated_count"]))
+    relevance_score = []
+    for index, row in final_df.iterrows():
+        current_direct = final_df["direct_disease_assoc"][index]
+        current_two_step = final_df["two_step_assoc_to_disease"][index]
+        current_symptom = final_df["symptoms_associated_count"][index]
+        direct_weighted = (current_direct - min_direct)/range_direct
+        two_step_weighted = (current_two_step - min_two_step)/range_two_step
+        symptom_weighted = (current_symptom - min_symptoms)/range_symptoms
+        
+        current_rs = ((direct_weighted + two_step_weighted)*symptom_weighted)/math.sqrt(final_df["gene_connections_count"][index])
+        relevance_score.append(current_rs)
+    
+    relevance_score_norm = [(float(i) - min(relevance_score))/(max(relevance_score)-min(relevance_score)) for i in relevance_score]
+    final_df["relevance_score"] = relevance_score_norm
     # sort by relevance score
     final_df = final_df.sort_values(by=['relevance_score'], ascending=False)
     return(final_df)

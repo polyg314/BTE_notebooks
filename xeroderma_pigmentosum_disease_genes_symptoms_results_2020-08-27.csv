@@ -1,0 +1,190 @@
+gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,relevance_score
+XPA,5,243,"['entropion', 'entropion', 'ectropion', 'ectropion', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'poikiloderma', 'poikiloderma', 'ataxia', 'ataxia', 'craniofacial hyperostosis', 'arthralgia', 'cryptorchidism', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'optic atrophy', 'telangiectasia of the skin', 'fever', 'alopecia', 'freckling', 'dry skin', 'fatigue', 'intellectual disability, progressive', 'hypopigmented skin patches', 'hypermelanotic macule', 'cataract', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'melanoma', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy']",37,531,1.0
+ERCC3,6,248,"['cataract', 'cataract', 'cataract', 'optic atrophy', 'optic atrophy', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'ataxia', 'ataxia', 'freckling', 'freckling', 'dry skin', 'cryptorchidism', 'poikiloderma', 'ectropion', 'craniofacial hyperostosis', 'arthralgia', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'telangiectasia of the skin', 'fever', 'alopecia', 'fatigue', 'intellectual disability, progressive', 'hypopigmented skin patches', 'hypermelanotic macule', 'entropion', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'peripheral neuropathy', 'cataract', 'melanoma']",38,865,0.9399972033370406
+ERCC2,5,306,"['cataract', 'cataract', 'cataract', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'entropion', 'entropion', 'ectropion', 'ectropion', 'poikiloderma', 'poikiloderma', 'ataxia', 'ataxia', 'dry skin', 'optic atrophy', 'cryptorchidism', 'hyperkeratosis', 'freckling', 'craniofacial hyperostosis', 'arthralgia', 'papilloma', 'developmental regression', 'thin skin', 'erythema', 'blepharitis', 'failure to thrive', 'telangiectasia of the skin', 'fever', 'alopecia', 'fatigue', 'intellectual disability, progressive', 'hypopigmented skin patches', 'hypermelanotic macule', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'cataract', 'cataract', 'erythema']",46,1052,0.9316143471242658
+ERCC5,5,212,"['cutaneous photosensitivity', 'optic atrophy', 'ataxia', 'cataract', 'dry skin', 'poikiloderma', 'craniofacial hyperostosis', 'arthralgia', 'cryptorchidism', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'telangiectasia of the skin', 'fever', 'alopecia', 'freckling', 'fatigue', 'intellectual disability, progressive', 'hypopigmented skin patches', 'hypermelanotic macule', 'entropion', 'ectropion', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'melanoma']",29,471,0.8059103742942284
+DDB2,4,115,"['entropion', 'entropion', 'ectropion', 'ectropion', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'poikiloderma', 'poikiloderma', 'craniofacial hyperostosis', 'arthralgia', 'cryptorchidism', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'optic atrophy', 'telangiectasia of the skin', 'fever', 'alopecia', 'freckling', 'dry skin', 'fatigue', 'intellectual disability, progressive', 'ataxia', 'hypopigmented skin patches', 'hypermelanotic macule', 'cataract', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'melanoma']",33,395,0.7595266933374021
+XPC,4,163,"['entropion', 'entropion', 'ectropion', 'ectropion', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'poikiloderma', 'poikiloderma', 'craniofacial hyperostosis', 'arthralgia', 'cryptorchidism', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'optic atrophy', 'telangiectasia of the skin', 'fever', 'alopecia', 'freckling', 'dry skin', 'fatigue', 'intellectual disability, progressive', 'ataxia', 'hypopigmented skin patches', 'hypermelanotic macule', 'cataract', 'abnormality of extrapyramidal motor function', 'decreased testicular size', 'melanoma']",33,452,0.7460114166148227
+ERCC4,5,211,"['optic atrophy', 'optic atrophy', 'dry skin', 'dry skin', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'ataxia', 'cryptorchidism', 'cataract', 'hypopigmented skin patches', 'poikiloderma', 'craniofacial hyperostosis', 'arthralgia', 'papilloma', 'developmental regression', 'thin skin', 'hyperkeratosis', 'erythema', 'blepharitis', 'failure to thrive', 'telangiectasia of the skin', 'fever', 'alopecia', 'freckling', 'fatigue', 'intellectual disability, progressive', 'melanoma', 'melanoma', 'peripheral neuropathy']",29,707,0.6572657888664759
+TP53,2,1268,"['fever', 'papilloma', 'fatigue', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'erythema', 'alopecia', 'alopecia', 'alopecia', 'alopecia', 'alopecia', 'pterygium', 'pterygium', 'cataract', 'fever', 'peripheral neuropathy']",29,13974,0.19822050384722262
+ERCC6,1,151,"['entropion', 'entropion', 'ectropion', 'ectropion', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'poikiloderma', 'poikiloderma', 'ataxia', 'ataxia', 'ataxia', 'freckling', 'freckling', 'freckling', 'cryptorchidism', 'cryptorchidism', 'cataract', 'cataract', 'cataract', 'optic atrophy', 'optic atrophy', 'dry skin', 'dry skin', 'dry skin', 'failure to thrive', 'failure to thrive', 'cataract']",29,666,0.19078193717830225
+ERCC1,2,360,"['cutaneous photosensitivity', 'optic atrophy', 'cataract', 'cryptorchidism', 'failure to thrive', 'dry skin', 'ataxia', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'peripheral neuropathy', 'peripheral neuropathy']",15,908,0.1786668760202372
+POLH,5,156,"['cutaneous photosensitivity', 'dry skin', 'poikiloderma', 'entropion', 'ectropion', 'melanoma']",6,328,0.16475231761262288
+EGFR,2,633,"['papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'alopecia', 'alopecia', 'alopecia', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract', 'pterygium', 'hyperkeratosis']",26,8857,0.1382784837856151
+TERT,1,320,"['blepharitis', 'failure to thrive', 'telangiectasia of the skin', 'alopecia', 'ataxia', 'hypopigmented skin patches', 'hypermelanotic macule', 'cataract', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'papilloma', 'papilloma']",23,2314,0.11891951754871331
+PTEN,1,529,"['cataract', 'cataract', 'failure to thrive', 'ataxia', 'papilloma', 'hyperkeratosis', 'ataxia', 'ataxia', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'cataract', 'hyperkeratosis', 'peripheral neuropathy']",23,5675,0.10634051443958009
+HRAS,1,285,"['failure to thrive', 'failure to thrive', 'cryptorchidism', 'papilloma', 'hyperkeratosis', 'alopecia', 'hypopigmented skin patches', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy', 'alopecia']",21,2134,0.1050275854813966
+ATM,1,613,"['ataxia', 'ataxia', 'failure to thrive', 'telangiectasia of the skin', 'fever', 'fatigue', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'peripheral neuropathy', 'papilloma']",16,3536,0.10240811487400324
+AKT1,1,785,"['cataract', 'papilloma', 'hyperkeratosis', 'failure to thrive', 'ataxia', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'alopecia', 'alopecia', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'fever', 'peripheral neuropathy', 'peripheral neuropathy', 'hypogonadism']",26,16329,0.09618758012124924
+IFNA1,1,522,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'fatigue', 'fatigue', 'fatigue', 'fever', 'fever', 'fever', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'erythema', 'arthralgia', 'alopecia', 'papilloma']",24,7482,0.09589571075639874
+CDKN2A,1,548,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'fatigue', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract']",18,4724,0.09240529809974107
+BLM,2,330,"['cryptorchidism', 'cryptorchidism', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'erythema', 'failure to thrive', 'telangiectasia of the skin', 'hypopigmented skin patches', 'ataxia', 'hypogonadism']",10,1339,0.0909070905030932
+TNF,0,775,"['alopecia', 'alopecia', 'fever', 'fever', 'fever', 'fever', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'erythema', 'erythema', 'macule', 'fatigue', 'fatigue', 'fatigue', 'cataract', 'keratitis', 'keratitis', 'pterygium', 'papilloma', 'hypogonadism']",34,19388,0.09054916095304116
+ERCC8,1,269,"['cryptorchidism', 'cryptorchidism', 'cataract', 'cataract', 'optic atrophy', 'optic atrophy', 'dry skin', 'dry skin', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'ataxia', 'ataxia', 'failure to thrive', 'freckling', 'keratitis', 'keratitis', 'cataract', 'peripheral neuropathy']",18,2033,0.08845915190584218
+CCND1,1,488,"['fever', 'fatigue', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'fatigue', 'pterygium', 'pterygium', 'peripheral neuropathy', 'alopecia']",19,4986,0.08761674014782099
+TP63,0,391,"['cryptorchidism', 'cryptorchidism', 'blepharitis', 'blepharitis', 'blepharitis', 'hyperkeratosis', 'hyperkeratosis', 'thin skin', 'thin skin', 'thin skin', 'dry skin', 'dry skin', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'freckling', 'freckling', 'alopecia', 'entropion', 'papilloma', 'papilloma', 'melanoma', 'melanoma', 'melanoma', 'pterygium', 'melanocytic nevus']",25,2929,0.08460420754351759
+CDKN1A,2,601,"['fever', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'papilloma', 'alopecia', 'ataxia', 'pterygium', 'hyperkeratosis']",15,7189,0.08331915778877529
+NRAS,1,175,"['cryptorchidism', 'cryptorchidism', 'hyperkeratosis', 'hyperkeratosis', 'alopecia', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma']",17,1345,0.08192978643611457
+VEGFA,0,627,"['fatigue', 'fatigue', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'pterygium', 'pterygium', 'pterygium', 'erythema', 'erythema', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract', 'cataract', 'papilloma', 'papilloma', 'macule', 'alopecia', 'alopecia', 'keratitis', 'keratitis']",28,11159,0.07881037726817107
+RECQL4,1,165,"['cryptorchidism', 'cryptorchidism', 'cutaneous photosensitivity', 'cutaneous photosensitivity', 'poikiloderma', 'poikiloderma', 'alopecia', 'alopecia', 'optic atrophy', 'optic atrophy', 'cataract', 'cataract']",12,710,0.07546945385246549
+MC1R,1,91,"['freckling', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'erythema']",13,602,0.07138258199737067
+KIT,0,398,"['fatigue', 'hypermelanotic macule', 'cryptorchidism', 'erythema', 'telangiectasia of the skin', 'ataxia', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'alopecia', 'alopecia', 'alopecia', 'peripheral neuropathy', 'papilloma']",26,4700,0.0708430611366258
+BRCA2,1,367,"['failure to thrive', 'failure to thrive', 'cryptorchidism', 'hypopigmented skin patches', 'cataract', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'fever']",11,1680,0.06915112622954121
+WRN,1,311,"['hyperkeratosis', 'telangiectasia of the skin', 'cataract', 'melanoma', 'papilloma', 'short stature', 'cataract', 'alopecia', 'hypogonadism']",9,881,0.06887490772320426
+BRAF,0,402,"['hyperkeratosis', 'hyperkeratosis', 'hyperkeratosis', 'failure to thrive', 'failure to thrive', 'cryptorchidism', 'optic atrophy', 'dry skin', 'freckling', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'fatigue']",22,3756,0.06725032025824236
+ATRX,1,183,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'optic atrophy', 'optic atrophy', 'intellectual disability, progressive', 'intellectual disability, progressive', 'decreased testicular size', 'decreased testicular size', 'failure to thrive', 'fatigue', 'melanoma', 'hypogonadism']",13,1192,0.06665695645395617
+PTCH1,2,202,"['cataract', 'cataract', 'cryptorchidism', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'alopecia', 'papilloma']",9,1372,0.06605762185236014
+PCNA,1,508,"['cutaneous photosensitivity', 'telangiectasia of the skin', 'ataxia', 'fever', 'papilloma', 'papilloma', 'melanoma', 'melanoma', 'pterygium']",9,2027,0.06284389487599729
+MAPK8,2,527,"['melanoma', 'melanoma', 'melanoma', 'fever', 'fever', 'keratitis', 'keratitis', 'cataract', 'cataract', 'peripheral neuropathy', 'peripheral neuropathy', 'papilloma']",12,7491,0.059447009336773146
+CAT,1,567,"['fever', 'fever', 'cataract', 'cataract', 'cataract', 'cataract', 'papilloma', 'papilloma', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'keratitis', 'strabismus', 'alopecia', 'blepharitis']",15,8451,0.05833671323021813
+LIG4,1,111,"['failure to thrive', 'failure to thrive', 'cryptorchidism', 'cutaneous photosensitivity', 'erythema', 'telangiectasia of the skin', 'dry skin', 'fever', 'alopecia', 'cataract']",10,607,0.056955298662119715
+PHGDH,1,127,"['cryptorchidism', 'cryptorchidism', 'cataract', 'cataract', 'decreased testicular size', 'decreased testicular size', 'failure to thrive', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy']",13,1353,0.05346503775042198
+STAT3,0,473,"['erythema', 'failure to thrive', 'fever', 'ataxia', 'keratitis', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'fever', 'fever', 'papilloma', 'papilloma', 'peripheral neuropathy', 'alopecia']",19,6528,0.05160324556103831
+RRM2B,1,115,"['developmental regression', 'failure to thrive', 'ataxia', 'fatigue', 'cataract', 'abnormality of extrapyramidal motor function', 'melanoma', 'peripheral neuropathy']",8,524,0.04828734097008139
+BRCA1,1,655,"['cryptorchidism', 'failure to thrive', 'hypopigmented skin patches', 'cataract', 'papilloma', 'melanoma', 'peripheral neuropathy']",7,2878,0.04774504528699852
+APTX,1,68,"['ataxia', 'ataxia', 'ataxia', 'ataxia', 'cataract', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy']",8,404,0.04683955428023472
+MMP9,0,490,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'blepharitis', 'blepharitis', 'pterygium', 'pterygium', 'fatigue', 'fever', 'keratitis', 'papilloma']",18,7920,0.045864324439147265
+MYC,2,470,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'peripheral neuropathy']",7,3343,0.04559248662013617
+CD4,0,433,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'keratitis', 'keratitis', 'keratitis', 'alopecia', 'alopecia', 'fatigue', 'papilloma', 'papilloma', 'papilloma', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'hypogonadism']",20,7918,0.04520395296876991
+IL2,0,435,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'keratitis', 'keratitis', 'keratitis', 'fatigue', 'fever', 'peripheral neuropathy', 'alopecia', 'blepharitis']",17,5694,0.04510043787164208
+FOS,1,454,"['failure to thrive', 'papilloma', 'papilloma', 'papilloma', 'hyperkeratosis', 'hyperkeratosis', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy', 'photophobia', 'hypogonadism', 'pterygium']",12,6908,0.043247598071941756
+PIK3CA,0,447,"['failure to thrive', 'telangiectasia of the skin', 'optic atrophy', 'hypermelanotic macule', 'cataract', 'papilloma', 'fever', 'fatigue', 'ataxia', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'peripheral neuropathy']",18,7493,0.042946443772843436
+LEP,0,409,"['decreased testicular size', 'fever', 'fever', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'short stature', 'melanoma', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'arthralgia', 'fatigue']",17,5731,0.04221733193516911
+TGFB1,0,575,"['failure to thrive', 'optic atrophy', 'ataxia', 'fever', 'cataract', 'short stature', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'papilloma', 'erythema']",15,8889,0.04193979212767637
+TYR,1,87,"['freckling', 'hyperkeratosis', 'cutaneous photosensitivity', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy']",11,1182,0.04187267791958855
+FAS,1,501,"['blepharitis', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'keratitis', 'cataract', 'peripheral neuropathy', 'fever']",10,5678,0.04182556077559267
+INS,0,507,"['failure to thrive', 'ataxia', 'fever', 'fever', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract', 'fatigue', 'keratitis', 'papilloma', 'hypogonadism', 'hypogonadism', 'alopecia', 'melanoma']",17,9554,0.040688299715188364
+AR,0,449,"['cryptorchidism', 'arthralgia', 'arthralgia', 'hypogonadism', 'hypogonadism', 'hypogonadism', 'alopecia', 'alopecia', 'alopecia', 'alopecia', 'alopecia', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'melanoma', 'melanoma']",16,6849,0.03981602473416583
+ALB,1,302,"['fatigue', 'fever', 'fever', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'hypogonadism', 'keratitis', 'peripheral neuropathy']",11,4260,0.038465144564838405
+CDK4,1,334,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma']",8,2388,0.038246112712916586
+MDM2,1,445,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'pterygium', 'papilloma']",8,4163,0.034965580865103145
+CDK2,1,438,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma']",7,3168,0.033984451898883286
+MMP2,0,468,"['arthralgia', 'hypermelanotic macule', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'pterygium', 'cataract', 'peripheral neuropathy', 'peripheral neuropathy']",13,7219,0.03236250935087326
+ESR1,0,431,"['cataract', 'hypogonadism', 'hypogonadism', 'melanoma', 'melanoma', 'melanoma', 'alopecia', 'alopecia', 'arthralgia', 'fever', 'papilloma', 'peripheral neuropathy']",12,5309,0.031810340801741784
+PARP1,1,214,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'alopecia', 'alopecia', 'peripheral neuropathy', 'peripheral neuropathy']",9,2804,0.03130660293480658
+MSH2,1,288,"['developmental regression', 'fatigue', 'hypermelanotic macule', 'melanoma', 'melanoma']",5,985,0.03110853707254394
+BAX,1,527,"['fever', 'fever', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma']",7,4955,0.030952703060197696
+SMARCA2,1,48,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'failure to thrive', 'failure to thrive', 'alopecia', 'melanoma']",7,611,0.03022819993360172
+PALB2,1,165,"['cryptorchidism', 'failure to thrive', 'hypopigmented skin patches', 'cataract', 'melanoma']",5,586,0.03020778486665632
+CA2,0,496,"['failure to thrive', 'optic atrophy', 'fatigue', 'fatigue', 'fatigue', 'fatigue', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract', 'cataract', 'cataract', 'ataxia', 'melanoma', 'fever', 'photophobia']",17,16711,0.030087092217841324
+XRCC5,1,196,"['melanoma', 'melanoma', 'cataract', 'cataract', 'fever']",5,698,0.0300162880354284
+ATR,1,409,"['cryptorchidism', 'cryptorchidism', 'failure to thrive', 'alopecia', 'melanoma']",5,1659,0.029889568173863183
+MTOR,0,455,"['cryptorchidism', 'hypopigmented skin patches', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy', 'papilloma', 'alopecia']",12,6872,0.029546106912339883
+CDT1,1,116,"['cryptorchidism', 'cryptorchidism', 'failure to thrive', 'failure to thrive', 'short stature', 'peripheral neuropathy']",6,732,0.029274077341704036
+MLH1,1,301,"['developmental regression', 'fatigue', 'hypermelanotic macule', 'melanoma', 'melanoma']",5,1173,0.02926311826151596
+MGMT,0,342,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma']",7,1285,0.02784760085326128
+IL6,0,399,"['peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'melanoma', 'melanoma', 'melanoma', 'fatigue', 'fever', 'fever', 'hypogonadism', 'papilloma']",12,5945,0.027786583104005905
+TCEAL1,0,481,"['fever', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'papilloma', 'papilloma', 'alopecia', 'pterygium', 'hyperkeratosis']",10,5905,0.027595313437894148
+CUL4B,1,119,"['cryptorchidism', 'cryptorchidism', 'decreased testicular size', 'decreased testicular size', 'hypogonadism']",5,547,0.027347207926014916
+MAPK1,0,655,"['alopecia', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'cataract', 'peripheral neuropathy', 'papilloma']",10,11681,0.0268378925783874
+FASN,1,325,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'melanoma', 'hyperkeratosis']",7,3549,0.02643933319902102
+TNFRSF10B,1,268,"['melanoma', 'melanoma', 'melanoma', 'peripheral neuropathy', 'peripheral neuropathy', 'fever']",6,2138,0.025316615395144834
+PNKP,1,51,"['ataxia', 'developmental regression', 'failure to thrive', 'ataxia', 'peripheral neuropathy']",5,400,0.02520531613762332
+SLX4,1,126,"['cryptorchidism', 'cryptorchidism', 'hypopigmented skin patches', 'cataract']",4,424,0.02380421160591643
+FANCA,1,85,"['cryptorchidism', 'cryptorchidism', 'hypopigmented skin patches', 'cataract', 'melanoma']",5,590,0.023542767534846305
+CAMP,0,444,"['melanoma', 'melanoma', 'melanoma', 'alopecia', 'fever', 'fever', 'papilloma', 'keratitis', 'keratitis', 'cataract', 'ataxia', 'fatigue']",12,10392,0.023435338858844915
+GABPA,0,384,"['peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'cataract', 'cataract', 'melanoma', 'melanoma', 'fever']",9,4112,0.023366459404025135
+FXN,1,178,"['optic atrophy', 'ataxia', 'ataxia', 'ataxia', 'peripheral neuropathy', 'melanoma']",6,1771,0.022489818598855744
+RAD51C,1,149,"['cryptorchidism', 'cryptorchidism', 'hypopigmented skin patches', 'cataract']",4,548,0.022406794135167888
+GAPDH,1,108,"['melanoma', 'melanoma', 'melanoma', 'papilloma', 'peripheral neuropathy', 'hypogonadism', 'alopecia']",7,1727,0.022295047786533163
+FANCM,1,81,"['decreased testicular size', 'cryptorchidism', 'hypopigmented skin patches', 'cataract']",4,371,0.02195646235733871
+CHEK2,1,385,"['fever', 'melanoma', 'melanoma', 'melanoma']",4,1631,0.021720709515754
+PERP,1,62,"['erythema', 'alopecia', 'melanoma']",3,153,0.021263259491049888
+PMS2,1,134,"['developmental regression', 'fatigue', 'hypermelanotic macule', 'melanoma']",4,576,0.020921408651782204
+JUN,1,134,"['peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy', 'papilloma', 'melanoma', 'pterygium']",6,1660,0.02053983118324045
+GLI3,1,117,"['cryptorchidism', 'cryptorchidism', 'decreased testicular size', 'failure to thrive', 'optic atrophy', 'peripheral neuropathy']",6,1506,0.02047339349456017
+FASTK,1,214,"['fever', 'fever', 'melanoma', 'melanoma', 'erythema']",5,1654,0.020381080364535988
+HSPA1A,1,119,"['fatigue', 'fever', 'melanoma', 'melanoma', 'peripheral neuropathy']",5,997,0.020256251320281013
+BCL2,1,447,"['melanoma', 'melanoma', 'melanoma', 'melanoma', 'alopecia']",5,4246,0.019845238623172553
+FANCD2,1,149,"['cryptorchidism', 'cryptorchidism', 'hypopigmented skin patches', 'cataract']",4,699,0.019839531642212204
+HPRT1,1,222,"['abnormality of extrapyramidal motor function', 'abnormality of extrapyramidal motor function', 'erythema', 'peripheral neuropathy']",4,1079,0.019289368999139994
+SMUG1,1,110,"['melanoma', 'melanoma', 'melanoma', 'melanoma']",4,644,0.01837276614269606
+EP300,1,237,"['melanoma', 'melanoma', 'melanoma', 'melanoma']",4,1284,0.018308168263094712
+RAD51,1,125,"['cryptorchidism', 'hypopigmented skin patches', 'cataract', 'pterygium']",4,769,0.01762168645781545
+SMARCA4,1,215,"['cryptorchidism', 'cryptorchidism', 'cataract', 'melanoma']",4,1251,0.017618555017382773
+CDK1,1,456,"['fever', 'melanoma', 'melanoma', 'peripheral neuropathy']",4,3123,0.01759554764227037
+APAF1,1,92,"['melanoma', 'melanoma', 'peripheral neuropathy']",3,336,0.015978989798649326
+COL11A2,0,366,"['arthralgia', 'arthralgia', 'arthralgia', 'fatigue', 'peripheral neuropathy']",5,2127,0.015466815505808106
+FANCF,1,62,"['cryptorchidism', 'hypopigmented skin patches', 'cataract']",3,311,0.01491404194289085
+FANCL,1,75,"['cryptorchidism', 'hypopigmented skin patches', 'cataract']",3,346,0.014835881214687803
+MSH6,1,212,"['developmental regression', 'fatigue', 'hypermelanotic macule']",3,797,0.014609750800015977
+POLD1,1,136,"['cryptorchidism', 'hypogonadism', 'hypogonadism']",3,536,0.014544739026905371
+NBN,1,242,"['cutaneous photosensitivity', 'freckling', 'melanoma']",3,965,0.014239375449525343
+FANCI,1,110,"['cryptorchidism', 'hypopigmented skin patches', 'cataract']",3,478,0.0142171410943
+FANCC,1,92,"['cryptorchidism', 'cryptorchidism', 'hypopigmented skin patches', 'cataract']",4,972,0.014092144403088055
+FANCG,1,85,"['cryptorchidism', 'hypopigmented skin patches', 'cataract']",3,416,0.01401867150531648
+ZNRD2,0,393,"['fever', 'cataract', 'melanoma', 'macule', 'pterygium']",5,3194,0.013573595318347804
+RNF168,1,52,"['erythema', 'dry skin', 'ataxia']",3,352,0.013487579347369305
+IFI27,0,386,"['fever', 'cataract', 'melanoma', 'macule', 'pterygium']",5,3135,0.013451621871553488
+TOP1,1,180,"['melanoma', 'peripheral neuropathy', 'alopecia']",3,812,0.013355402343350385
+WDTC1,1,254,"['fatigue', 'fatigue', 'peripheral neuropathy', 'peripheral neuropathy', 'peripheral neuropathy']",5,4737,0.013201241431223617
+PSMD9,0,395,"['fever', 'cataract', 'melanoma', 'macule', 'pterygium']",5,3454,0.013120531306444576
+RFC1,1,184,"['optic atrophy', 'ataxia', 'peripheral neuropathy', 'melanoma']",4,2028,0.012809029214109868
+TDP1,1,78,"['ataxia', 'ataxia', 'peripheral neuropathy', 'peripheral neuropathy']",4,1163,0.012269618539885977
+MAD2L2,1,29,"['cryptorchidism', 'hypopigmented skin patches', 'cataract']",3,394,0.01159405875080658
+EDNRA,3,154,"['alopecia', 'peripheral neuropathy']",2,1228,0.011030727853806759
+E2F1,0,350,"['melanoma', 'melanoma', 'melanoma', 'melanoma']",4,2308,0.010638272010906573
+ERVK-19,1,401,"['ataxia', 'ataxia', 'melanoma']",3,3327,0.010415078304249488
+DHFR,1,47,"['ataxia', 'ataxia', 'fatigue']",3,574,0.010354163741550888
+ERVK-11,1,379,"['ataxia', 'ataxia', 'melanoma']",3,3129,0.010347727386268919
+ERVK-9,1,371,"['ataxia', 'ataxia', 'melanoma']",3,3079,0.010287773765610807
+HSPA9,1,212,"['keratitis', 'keratitis', 'peripheral neuropathy']",3,1798,0.009726959893714826
+DCTN6,0,355,"['fever', 'cataract', 'melanoma', 'macule']",4,2970,0.009515117090275754
+TMED7,0,352,"['fever', 'cataract', 'melanoma', 'macule']",4,2982,0.009413855112292206
+RPS3A,1,38,"['peripheral neuropathy', 'papilloma', 'melanoma']",3,690,0.009102450463023668
+REV3L,1,135,"['blepharitis', 'decreased testicular size']",2,353,0.008934786519417353
+REXO2,1,67,"['melanoma', 'melanoma']",2,249,0.008491692097093629
+CRK,0,455,"['cataract', 'peripheral neuropathy', 'melanoma', 'melanoma']",4,6751,0.00812992157042034
+CSH1,1,190,"['keratitis', 'keratitis', 'peripheral neuropathy']",3,2386,0.007995073766633429
+PMAIP1,1,140,"['melanoma', 'peripheral neuropathy']",2,554,0.007237904620906951
+SETX,1,19,"['ataxia', 'peripheral neuropathy']",2,252,0.006934795127958818
+PRDM10,1,13,"['papilloma', 'peripheral neuropathy']",2,254,0.006719906551664558
+PRKDC,1,149,"['melanoma', 'melanoma']",2,702,0.00659903136425939
+USP7,1,84,"['cryptorchidism', 'failure to thrive']",2,471,0.006564432873323915
+SOD1,0,340,"['fatigue', 'cataract', 'peripheral neuropathy']",3,2732,0.00632804216033551
+TAF1,1,138,"['failure to thrive', 'ataxia']",2,829,0.00588224736523192
+TIMELESS,1,106,"['photophobia', 'photophobia']",2,704,0.0057823718819714
+CDC45,1,50,"['cryptorchidism', 'failure to thrive']",2,495,0.005642084334227538
+UBE2V2,1,74,"['melanoma', 'keratitis']",2,665,0.005331383106708735
+SIRT1,1,414,"['melanoma', 'peripheral neuropathy']",2,3382,0.005276373647768276
+PSMD4,1,106,['peripheral neuropathy'],1,1798,0.0
+TRIAP1,1,51,['optic atrophy'],1,161,0.0
+RFC2,1,171,['melanoma'],1,1705,0.0
+POLI,1,110,['peripheral neuropathy'],1,1643,0.0
+BTG2,1,91,['melanoma'],1,619,0.0
+AEN,1,55,['melanoma'],1,156,0.0
+SFN,1,134,['melanoma'],1,589,0.0
+TERF2,1,59,['melanoma'],1,372,0.0
+CPD,1,43,['fever'],1,325,0.0
+DDX11,1,42,['melanoma'],1,253,0.0
+LRRC59,1,74,['melanoma'],1,522,0.0
+POLQ,2,77,['melanoma'],1,259,0.0
+GADD45A,2,264,['melanoma'],1,916,0.0
+RELA,0,389,['papilloma'],1,4176,0.0
+ENDOV,2,44,['melanoma'],1,108,0.0
+MSH3,1,116,['papilloma'],1,450,0.0
+PSMD5,1,31,['peripheral neuropathy'],1,586,0.0
+POLN,1,53,['melanoma'],1,118,0.0
+SUPT4H1,1,28,['melanoma'],1,256,0.0
+MCM7,1,50,['papilloma'],1,488,0.0
+APRT,1,114,['alopecia'],1,1072,0.0
+RAD52,1,208,['melanoma'],1,653,0.0
+DNA2,1,120,['peripheral neuropathy'],1,437,0.0
+UBE2I,1,194,['melanoma'],1,998,0.0
+LIG3,1,40,['peripheral neuropathy'],1,287,0.0
+KAT5,1,117,['melanoma'],1,802,0.0
+SIRT6,1,38,['peripheral neuropathy'],1,364,0.0
+TCHP,1,8,['papilloma'],1,278,0.0
+CLMP,1,9,['failure to thrive'],1,118,0.0
+PPM1D,1,31,['melanoma'],1,223,0.0
+CDA,1,72,['melanoma'],1,818,0.0
+TERF1,1,113,['melanoma'],1,706,0.0
+RBBP8,1,58,['melanoma'],1,541,0.0
+POLB,1,50,['peripheral neuropathy'],1,278,0.0
+WEE1,1,162,['melanoma'],1,803,0.0
+BARD1,1,162,['melanoma'],1,491,0.0
+PMS1,1,70,['melanoma'],1,200,0.0
+TAF1L,1,24,['melanoma'],1,159,0.0
+SIRT2,1,27,['peripheral neuropathy'],1,621,0.0
+UNG,1,77,['peripheral neuropathy'],1,343,0.0
+POLR2B,1,69,['keratitis'],1,369,0.0
