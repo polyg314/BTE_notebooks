@@ -468,7 +468,7 @@ def get_connection_normalizing_count(gene_list, node_type_list):
         connection_dict[key]  = count
     return(connection_dict)
 
-def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_disease_to_genes, sorted_disease_to_all_nodes_to_genes, top_two_step_genes_pub_counts, top_symptom_pub_counts, causes_dict):
+def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_disease_to_genes, sorted_disease_to_all_nodes_to_genes, top_two_step_genes_pub_counts, top_symptom_pub_counts, causes_dict, disease_symptoms_df):
 
     # make dictionary for final assembly of results
     results_dict = {}
@@ -514,24 +514,43 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
                         # "relevance_score": relevance_score
                         }
         dataframe_input.append(current_result)
-        
-
-
-
+    
     final_df = pd.DataFrame(dataframe_input)
+    
+    
+    symptom_score_dict = {}
+    for index, row in disease_symptoms_df.iterrows():
+        # print(row)
+        for x in row["names"]:
+            symptom_score_dict[x] = row["ISS"]
+
+
+    final_symptom_scores = []
+
+    for index, row in final_df.iterrows():
+        current_score = 0
+        current_symptoms = row["disease_symptoms_gene_is_associated_with"]
+        for x in current_symptoms:
+            current_score = current_score + symptom_score_dict[x]
+        final_symptom_scores.append(current_score)
+
+
+    final_df["final_symptom_score"] = final_symptom_scores
+
+
     range_direct = max(list(final_df["direct_disease_assoc"])) - min(list(final_df["direct_disease_assoc"]))
     min_direct = min(list(final_df["direct_disease_assoc"]))
 
     range_two_step = max(list(final_df["two_step_assoc_to_disease"])) - min(list(final_df["two_step_assoc_to_disease"]))
     min_two_step = min(list(final_df["two_step_assoc_to_disease"]))
 
-    range_symptoms = max(list(final_df["symptoms_associated_count"])) - min(list(final_df["symptoms_associated_count"]))
-    min_symptoms = min(list(final_df["symptoms_associated_count"]))
+    range_symptoms = max(list(final_df["final_symptom_score"])) - min(list(final_df["final_symptom_score"]))
+    min_symptoms = min(list(final_df["final_symptom_score"]))
     relevance_score = []
     for index, row in final_df.iterrows():
         current_direct = final_df["direct_disease_assoc"][index]
         current_two_step = final_df["two_step_assoc_to_disease"][index]
-        current_symptom = final_df["symptoms_associated_count"][index]
+        current_symptom = final_df["final_symptom_score"][index]
         direct_weighted = (current_direct - min_direct)/range_direct
         two_step_weighted = (current_two_step - min_two_step)/range_two_step
         symptom_weighted = (current_symptom - min_symptoms)/range_symptoms
