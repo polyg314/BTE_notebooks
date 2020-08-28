@@ -48,6 +48,8 @@ def get_disease_to_gene_results(disease_input):
     fc.connect(verbose=False)
     disease_to_genes = fc.display_table_view()
 
+    disease_to_genes = disease_to_genes[~disease_to_genes['output_id'].str.contains('UMLS')]
+
     # keep track of number of occurrences from direct disease -> gene connection
     print("running disease -> gene")
     i = list(disease_to_genes["output_name"])
