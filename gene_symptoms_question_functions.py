@@ -160,6 +160,7 @@ def get_disease_to_node_to_gene_results(disease_all_nodes_genes,max_two_step_gen
 def get_disease_symptoms(disease_name):
     r = requests.get('http://mydisease.info/v1/query?q=hpo.disease_name:"' + disease_name + '"&fields=hpo')
     res = r.json()
+    # print(res)
     result_number = 0
     disease_info = res['hits'][result_number]
     # print("disease symptoms for:")
@@ -168,26 +169,30 @@ def get_disease_symptoms(disease_name):
     hp_ids = []
     hp_symptom_dict = {}
     for x in disease_info['hpo']['phenotype_related_to_disease']:
-        if('frequency' in x):
+        try:
+            # if('frequency' in x):
             r1 = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['frequency'])
             res1 = r1.json()
-            r = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['hpo_id'])
-            res = r.json()
-            if(('_id' in res) & ('name' in res)):
-                symptoms.append(res['name'].lower())
-                hp_ids.append(res['_id'])
-                hp_symptom_dict[res['_id']] = {
-                    'names' : [res['name'].lower()],
-                    'frequency' : res1['name'],
-                    'edges_out_count' : 0
-                }
-            if('synonym' in res):
-                for z in res['synonym']:
-                    if('EXACT' in z):
-                        name = z.split('"')[1].lower()
-                        if name not in symptoms: 
-                            symptoms.append(name)
-                            hp_symptom_dict[res['_id']].append(name)
+            frequency = True
+        except:
+            frequency = False; 
+            # print('no frequency')
+        r = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['hpo_id'])
+        res = r.json()
+        if(('_id' in res) & ('name' in res)):
+            symptoms.append(res['name'].lower())
+            hp_ids.append(res['_id'])
+            hp_symptom_dict[res['_id']] = {
+                'names' : [res['name'].lower()],
+                'frequency' : res1['name'] if frequency else 'Unknown',
+                'edges_out_count' : 0
+            }
+        if('synonym' in res):
+            if('exact' in res['synonym']):
+                for name in res['synonym']['exact']:
+                    if name not in symptoms: 
+                        symptoms.append(name)
+                        hp_symptom_dict[res['_id']]['names'].append(name)
 
     print(symptoms)
     return([symptoms,hp_ids,hp_symptom_dict])
