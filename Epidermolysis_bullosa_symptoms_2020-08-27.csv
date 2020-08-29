@@ -1,51 +1,51 @@
-names,frequency,edges_out_count,ISS
-"['dystrophic toenail', 'Dystrophic toenail changes', 'Poor toenail formation']",Very frequent,59,2.6037782196164776
-"['dystrophic fingernails', 'Poor fingernail formation']",Very frequent,65,2.4806946917841692
-"['cheilitis', 'Inflammation of the lips']",Very frequent,80,2.23606797749979
-"['aplasia/hypoplasia of the skin', 'Absent/small skin', 'Absent/underdeveloped skin']",Very frequent,96,2.041241452319315
-"['abnormal blistering of the skin', 'Abnormal blistering of the skin', 'Blister', 'Blistering, generalized', 'Blisters', 'Skin bullae']",Very frequent,176,1.507556722888818
-"['abnormality of the nail', 'Abnormality of the nail']",Very frequent,227,1.327446623199944
-"['nail dystrophy', 'Dystrophic nails', 'Onychodystrophy', 'Poor nail formation']",Very frequent,323,1.1128297681493144
-"['flexion contracture of toe', 'Contractures involving the toes', 'Contractures of the toes', 'Toe contractures']",Frequent,34,2.5724787771376323
-['laryngeal stenosis'],Frequent,34,2.5724787771376323
-"['esophageal stricture', 'Narrowing of esophagus due to inflammation and scar tissue']",Frequent,46,2.211629342323457
-"['milia', 'Milk spot', 'Millium cyst']",Frequent,76,1.7206180040292132
-"['furrowed tongue', 'Fissured tongue', 'Grooved tongue', 'Lingual furrow', 'Lingue plicata', 'Plicated tongue', 'Prominent tongue grooves', 'Scrotal tongue']",Frequent,80,1.6770509831248421
-"['recurrent skin infections', 'Cutaneous infections', 'Recurrent skin infections', 'Skin infections, recurrent']",Frequent,123,1.3525044520011484
-"['abnormality of the hand', 'Abnormal hands', 'Abnormality of the hand', 'Hand anomalies', 'Hand deformities']",Frequent,129,1.3206763594884356
-"['abnormality of dental enamel', 'Abnormal tooth enamel', 'Enamel abnormalities', 'Enamel abnormality']",Frequent,177,1.1274690420042432
-"['hypopigmented skin patches', 'Patchy loss of skin color']",Frequent,183,1.1088319064318592
-"['neoplasm', 'Neoplasia', 'Oncological abnormality', 'Tumor', 'Tumour']",Frequent,230,0.9890707100936805
-"['abnormal foot morphology', 'Abnormal feet structure', 'Abnormality of the feet', 'Abnormality of the foot', 'Foot deformities', 'Foot deformity']",Frequent,243,0.9622504486493763
-"['toe syndactyly', 'Foot syndactyly', 'Fused toes', 'Syndactyly of feet', 'Syndactyly of toes', 'Webbed toes']",Frequent,317,0.8424839344525956
-"['finger syndactyly', 'Partial syndactyly']",Frequent,354,0.7972410051791008
-"['carious teeth', 'Caries', 'Cariosity of teeth', 'Dental caries', 'Dental cavities', 'Early dental caries', 'Frequent caries', 'Tooth cavities', 'Tooth decay']",Frequent,359,0.7916697209538893
-"['camptodactyly of finger', 'Camptodactyly of hands', 'Camptodactyly of proximal interphalangeal joint', 'Contractures of the proximal interphalangeal joints of the fingers', 'Flexion contractures of proximal interphalangeal joints', 'Permanent flexion of the finger', 'Proximal interphalangeal finger joint contractures']",Frequent,403,0.7472032220800768
-"['constipation', 'Constipation', 'Costiveness', 'Dyschezia']",Frequent,564,0.6316139407998892
-"['gangrene', 'Death of body tissue due to lack of blood flow or infection']",Frequent,567,0.629940788348712
-"['dysphagia', 'Difficulty swallowing', 'Poor swallowing', 'Swallowing difficulties', 'Swallowing difficulty']",Frequent,591,0.6170175523422953
-"['abnormality of the dentition', 'Abnormal dentition', 'Abnormal teeth', 'Dental abnormalities', 'Dental abnormality', 'Dental anomalies']",Frequent,636,0.5947886892886081
-['acute constipation'],Occasional,1,10.0
-['phimosis'],Occasional,22,2.1320071635561044
-"['ureteral stenosis', 'Narrowing of the ureter']",Occasional,24,2.041241452319315
-['immunologic hypersensitivity'],Occasional,24,2.041241452319315
-"['abnormality of the anus', 'Abnormality of the anus']",Occasional,28,1.889822365046136
-"['scarring', 'Scarring']",Occasional,31,1.7960530202677492
-"['nasolacrimal duct obstruction', 'Blocked tear duct', 'Lacrimal duct obstruction']",Occasional,45,1.4907119849998598
-"['interstitial pulmonary abnormality', 'Abnormal lung parenchyma morphology', 'Abnormality in area between air sacs in lung', 'Interstitial lung disease', 'Interstitial pulmonary disease']",Occasional,66,1.2309149097933272
-"['glomerulopathy', 'Diseased glomeruli']",Occasional,77,1.1396057645963795
-"['corneal erosion', 'Damage to outer layer of the cornea of the eye']",Occasional,86,1.078327732034384
-"['ectropion', 'Eyelid turned out']",Occasional,116,0.9284766908852594
-"['blepharitis', 'Cellulitis of eyelids', 'Inflammation of eyelids']",Occasional,131,0.8737040566610379
-"['urinary retention', 'Increased post-void residual urine volume']",Occasional,153,0.8084520834544433
-"['stroke', 'Cerebral vascular events', 'Cerebrovascular accident', 'Stroke']",Occasional,195,0.7161148740394329
-"['eczema', 'Eczema']",Occasional,397,0.5018856132284956
-"['chronic otitis media', 'Chronic infections of the middle ear', 'Otitis media, chronic']",Occasional,410,0.4938647983247948
-"['congestive heart failure', 'CHF', 'Cardiac failure', 'Cardiac failures', 'Cardiac insufficiency', 'Chronic heart failure', 'Heart failure']",Occasional,424,0.48564293117863205
-"['renal insufficiency', 'Renal failure', 'Renal failure in adulthood']",Occasional,493,0.450377349111045
-"['nephrotic syndrome', 'Nephrosis']",Occasional,643,0.3943615033625495
-"['hearing impairment', 'Congenital deafness', 'Congenital hearing loss', 'Deafness', 'Hearing defect', 'Hearing impairment']",Occasional,648,0.3928371006591931
-"['failure to thrive', 'Faltering weight', 'Postnatal failure to thrive', 'Weight faltering']",Occasional,672,0.38575837490522974
-"['dilated cardiomyopathy', 'Cardiomyopathy, dilated', 'Congestive cardiomyopathy', 'Stretched and thinned heart muscle']",Occasional,2062,0.22021944790965525
-['squamous cell carcinoma'],Occasional,3245,0.17554669175502144
-"['anemia', 'Anaemia', 'Low number of red blood cells or hemoglobin']",Occasional,3709,0.16419940661725654
+,names,frequency,edges_out_count,ISS
+HP:0001810,"['dystrophic toenail', 'Dystrophic toenail changes', 'Poor toenail formation']",Very frequent,59,2.6037782196164776
+HP:0008391,"['dystrophic fingernails', 'Poor fingernail formation']",Very frequent,65,2.4806946917841692
+HP:0100825,"['cheilitis', 'Inflammation of the lips']",Very frequent,80,2.23606797749979
+HP:0008065,"['aplasia/hypoplasia of the skin', 'Absent/small skin', 'Absent/underdeveloped skin']",Very frequent,96,2.041241452319315
+HP:0008066,"['abnormal blistering of the skin', 'Abnormal blistering of the skin', 'Blister', 'Blistering, generalized', 'Blisters', 'Skin bullae']",Very frequent,176,1.507556722888818
+HP:0001597,"['abnormality of the nail', 'Abnormality of the nail']",Very frequent,227,1.327446623199944
+HP:0008404,"['nail dystrophy', 'Dystrophic nails', 'Onychodystrophy', 'Poor nail formation']",Very frequent,323,1.1128297681493144
+HP:0005830,"['flexion contracture of toe', 'Contractures involving the toes', 'Contractures of the toes', 'Toe contractures']",Frequent,34,2.5724787771376323
+HP:0001602,['laryngeal stenosis'],Frequent,34,2.5724787771376323
+HP:0002043,"['esophageal stricture', 'Narrowing of esophagus due to inflammation and scar tissue']",Frequent,46,2.211629342323457
+HP:0001056,"['milia', 'Milk spot', 'Millium cyst']",Frequent,76,1.7206180040292132
+HP:0000221,"['furrowed tongue', 'Fissured tongue', 'Grooved tongue', 'Lingual furrow', 'Lingue plicata', 'Plicated tongue', 'Prominent tongue grooves', 'Scrotal tongue']",Frequent,80,1.6770509831248421
+HP:0001581,"['recurrent skin infections', 'Cutaneous infections', 'Recurrent skin infections', 'Skin infections, recurrent']",Frequent,123,1.3525044520011484
+HP:0001155,"['abnormality of the hand', 'Abnormal hands', 'Abnormality of the hand', 'Hand anomalies', 'Hand deformities']",Frequent,129,1.3206763594884356
+HP:0000682,"['abnormality of dental enamel', 'Abnormal tooth enamel', 'Enamel abnormalities', 'Enamel abnormality']",Frequent,177,1.1274690420042432
+HP:0001053,"['hypopigmented skin patches', 'Patchy loss of skin color']",Frequent,183,1.1088319064318592
+HP:0002664,"['neoplasm', 'Neoplasia', 'Oncological abnormality', 'Tumor', 'Tumour']",Frequent,230,0.9890707100936805
+HP:0001760,"['abnormal foot morphology', 'Abnormal feet structure', 'Abnormality of the feet', 'Abnormality of the foot', 'Foot deformities', 'Foot deformity']",Frequent,243,0.9622504486493763
+HP:0001770,"['toe syndactyly', 'Foot syndactyly', 'Fused toes', 'Syndactyly of feet', 'Syndactyly of toes', 'Webbed toes']",Frequent,317,0.8424839344525956
+HP:0006101,"['finger syndactyly', 'Partial syndactyly']",Frequent,354,0.7972410051791008
+HP:0000670,"['carious teeth', 'Caries', 'Cariosity of teeth', 'Dental caries', 'Dental cavities', 'Early dental caries', 'Frequent caries', 'Tooth cavities', 'Tooth decay']",Frequent,359,0.7916697209538893
+HP:0100490,"['camptodactyly of finger', 'Camptodactyly of hands', 'Camptodactyly of proximal interphalangeal joint', 'Contractures of the proximal interphalangeal joints of the fingers', 'Flexion contractures of proximal interphalangeal joints', 'Permanent flexion of the finger', 'Proximal interphalangeal finger joint contractures']",Frequent,403,0.7472032220800768
+HP:0002019,"['constipation', 'Constipation', 'Costiveness', 'Dyschezia']",Frequent,564,0.6316139407998892
+HP:0100758,"['gangrene', 'Death of body tissue due to lack of blood flow or infection']",Frequent,567,0.629940788348712
+HP:0002015,"['dysphagia', 'Difficulty swallowing', 'Poor swallowing', 'Swallowing difficulties', 'Swallowing difficulty']",Frequent,591,0.6170175523422953
+HP:0000164,"['abnormality of the dentition', 'Abnormal dentition', 'Abnormal teeth', 'Dental abnormalities', 'Dental abnormality', 'Dental anomalies']",Frequent,636,0.5947886892886081
+HP:0012451,['acute constipation'],Occasional,1,10.0
+HP:0001741,['phimosis'],Occasional,22,2.1320071635561044
+HP:0000071,"['ureteral stenosis', 'Narrowing of the ureter']",Occasional,24,2.041241452319315
+HP:0100326,['immunologic hypersensitivity'],Occasional,24,2.041241452319315
+HP:0004378,"['abnormality of the anus', 'Abnormality of the anus']",Occasional,28,1.889822365046136
+HP:0100699,"['scarring', 'Scarring']",Occasional,31,1.7960530202677492
+HP:0000579,"['nasolacrimal duct obstruction', 'Blocked tear duct', 'Lacrimal duct obstruction']",Occasional,45,1.4907119849998598
+HP:0006530,"['interstitial pulmonary abnormality', 'Abnormal lung parenchyma morphology', 'Abnormality in area between air sacs in lung', 'Interstitial lung disease', 'Interstitial pulmonary disease']",Occasional,66,1.2309149097933272
+HP:0100820,"['glomerulopathy', 'Diseased glomeruli']",Occasional,77,1.1396057645963795
+HP:0200020,"['corneal erosion', 'Damage to outer layer of the cornea of the eye']",Occasional,86,1.078327732034384
+HP:0000656,"['ectropion', 'Eyelid turned out']",Occasional,116,0.9284766908852594
+HP:0000498,"['blepharitis', 'Cellulitis of eyelids', 'Inflammation of eyelids']",Occasional,131,0.8737040566610379
+HP:0000016,"['urinary retention', 'Increased post-void residual urine volume']",Occasional,153,0.8084520834544433
+HP:0001297,"['stroke', 'Cerebral vascular events', 'Cerebrovascular accident', 'Stroke']",Occasional,195,0.7161148740394329
+HP:0000964,"['eczema', 'Eczema']",Occasional,397,0.5018856132284956
+HP:0000389,"['chronic otitis media', 'Chronic infections of the middle ear', 'Otitis media, chronic']",Occasional,410,0.4938647983247948
+HP:0001635,"['congestive heart failure', 'CHF', 'Cardiac failure', 'Cardiac failures', 'Cardiac insufficiency', 'Chronic heart failure', 'Heart failure']",Occasional,424,0.48564293117863205
+HP:0000083,"['renal insufficiency', 'Renal failure', 'Renal failure in adulthood']",Occasional,493,0.450377349111045
+HP:0000100,"['nephrotic syndrome', 'Nephrosis']",Occasional,643,0.3943615033625495
+HP:0000365,"['hearing impairment', 'Congenital deafness', 'Congenital hearing loss', 'Deafness', 'Hearing defect', 'Hearing impairment']",Occasional,648,0.3928371006591931
+HP:0001508,"['failure to thrive', 'Faltering weight', 'Postnatal failure to thrive', 'Weight faltering']",Occasional,672,0.38575837490522974
+HP:0001644,"['dilated cardiomyopathy', 'Cardiomyopathy, dilated', 'Congestive cardiomyopathy', 'Stretched and thinned heart muscle']",Occasional,2062,0.22021944790965525
+HP:0002860,['squamous cell carcinoma'],Occasional,3245,0.17554669175502144
+HP:0001903,"['anemia', 'Anaemia', 'Low number of red blood cells or hemoglobin']",Occasional,3709,0.16419940661725654

@@ -248,12 +248,20 @@ def get_symtpom_prevalence(hp_symptom_dict, disease_name):
             if(y =='Disease') | (y == 'BiologicalProcess'):
                 for z in hp_symptom_dict[key]["names"]:
                     if((y == 'Disease') & (len(UMLS) > 0)): 
-                        a = ht.query(UMLS)[y]
+                        try: 
+                            a = ht.query(UMLS)[y]
+                        except: 
+                            a = []
+                            # pass
                     else:
-                        a = ht.query(z)[y]
+                        try: 
+                            a = ht.query(z)[y]
+                        except: 
+                            a = []
+                            # pass
                     # print(a)
                     for b in a: 
-                        if b['name'].lower() == z:
+                        if b['name'].lower() == z.lower():
                             # print('match')
                             # print(b)
                             # print(z)
@@ -517,30 +525,31 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
 
         ### Weight --- number - min / range
 
-
-        connections_count = math.sqrt(connection_dict[key])
-        # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
-        # relevance_score = ((((results_dict[key]["direct_associations_to_genes"]*10 
-        #                     + results_dict[key]["two_step_associations_to_genes"]) 
-        #                     * len(results_dict[key]["symptoms_associated"])*3) 
-        #                     # + round(top_two_step_genes_pub_counts[key] / 5) 
-        #                     # + round(top_symptom_pub_counts[key] / 5)
-        #                     + (causes_dict[key] if key in causes_dict else 0)*20)
-        #                     /connections_count)
-        # assemble each row                                               
-        current_result = {'gene': key,
-                        "direct_disease_assoc": results_dict[key]["direct_associations_to_genes"], 
-                        "two_step_assoc_to_disease": results_dict[key]["two_step_associations_to_genes"],
-                        # "two_step_pub_count": top_two_step_genes_pub_counts[key] if key in top_two_step_genes_pub_counts else 0,
-                        "disease_symptoms_gene_is_associated_with": results_dict[key]["symptoms_associated"],
-                        "symptoms_associated_count": len(results_dict[key]["symptoms_associated"]),
-                        # "disease_symptom_gene_pub_count": top_symptom_pub_counts[key],
-                        # "causes_symptom_count": causes_dict[key] if key in causes_dict else 0,
-                        "gene_connections_count": connection_dict[key]
-                        # "relevance_score": relevance_score
-                        }
-        dataframe_input.append(current_result)
-    
+        if(connection_dict[key] != 'Unknown'):
+            
+            connections_count = math.sqrt(connection_dict[key])
+            # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
+            # relevance_score = ((((results_dict[key]["direct_associations_to_genes"]*10 
+            #                     + results_dict[key]["two_step_associations_to_genes"]) 
+            #                     * len(results_dict[key]["symptoms_associated"])*3) 
+            #                     # + round(top_two_step_genes_pub_counts[key] / 5) 
+            #                     # + round(top_symptom_pub_counts[key] / 5)
+            #                     + (causes_dict[key] if key in causes_dict else 0)*20)
+            #                     /connections_count)
+            # assemble each row                                               
+            current_result = {'gene': key,
+                            "direct_disease_assoc": results_dict[key]["direct_associations_to_genes"], 
+                            "two_step_assoc_to_disease": results_dict[key]["two_step_associations_to_genes"],
+                            # "two_step_pub_count": top_two_step_genes_pub_counts[key] if key in top_two_step_genes_pub_counts else 0,
+                            "disease_symptoms_gene_is_associated_with": results_dict[key]["symptoms_associated"],
+                            "symptoms_associated_count": len(results_dict[key]["symptoms_associated"]),
+                            # "disease_symptom_gene_pub_count": top_symptom_pub_counts[key],
+                            # "causes_symptom_count": causes_dict[key] if key in causes_dict else 0,
+                            "gene_connections_count": connection_dict[key]
+                            # "relevance_score": relevance_score
+                            }
+            dataframe_input.append(current_result)
+        
     final_df = pd.DataFrame(dataframe_input)
     
     

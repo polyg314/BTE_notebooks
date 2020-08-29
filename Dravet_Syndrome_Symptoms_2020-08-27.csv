@@ -1,0 +1,46 @@
+,names,frequency,edges_out_count,ISS
+HP:0007240,"['progressive gait ataxia', 'Gait ataxia, progressive']",Very frequent,69,2.407717061715384
+HP:0007359,"['focal-onset seizure', 'Focal onset seizure', 'Focal seizure', 'Focal seizures', 'Focal-onset seizures', 'Partial seizure', 'Partial seizures', 'Seizure affecting one half of brain']",Very frequent,179,1.4948701855038717
+HP:0002376,"['developmental regression', 'Loss of developmental milestones', 'Mental deterioration in childhood', 'Neurodevelopmental regression', 'Psychomotor regression', 'Psychomotor regression beginning in infancy', 'Psychomotor regression in infants', 'Psychomotor regression, progressive']",Very frequent,547,0.8551382496180255
+HP:0011468,"['facial tics', 'Cramping of facial muscles', 'Facial spasms', 'Facial tics', 'Jerking of facial muscles', 'Mimic spasms', 'Spasms of facial muscles', 'Twitching of facial muscles']",Frequent,9,5.0
+HP:0011172,"['complex febrile seizure', 'Complex febrile convulsion', 'Complex febrile seizures', 'Complex fever fit']",Frequent,10,4.743416490252569
+HP:0011182,"['interictal epileptiform activity', 'Epileptiform EEG discharges']",Frequent,12,4.330127018922194
+HP:0001327,"['photosensitive myoclonic seizure', 'Photically induced myoclonic seizure', 'Photomyoclonic seizure', 'Photomyoclonic seizures']",Frequent,13,4.160251471689219
+HP:0012847,"['epilepsia partialis continua', 'Epilepsia partialis continua of Kojevnikov', ""Kojevnikov's epilepsia"", ""Kozhevnikov's epilepsia""]",Frequent,14,4.008918628686366
+HP:0000466,"['limited neck range of motion', 'Limited cervical range of motion', 'Limited neck range of motion']",Frequent,19,3.4412360080584263
+HP:0006813,"['focal hemiclonic seizure', 'Hemiclonic seizure', 'Hemiclonic seizures', 'Unilateral clonic seizure', 'Unilateral clonic seizures']",Frequent,19,3.4412360080584263
+HP:0002349,"['focal aware seizure', 'Focal aware seizures', 'Focal seizure with retained awareness', 'Focal seizure without impairment of awareness', 'Focal seizure without impairment of consciousness or awareness', 'Focal seizures without impairment of consciousness or awareness', 'Partial seizure with retained awareness', 'Partial seizure without impairment of awareness', 'Simple partial seizure', 'Simple partial seizures']",Frequent,20,3.3541019662496843
+HP:0007207,"['photosensitive tonic-clonic seizure', 'Photically induced tonic-clonic seizure', 'Photosensitive tonic-clonic seizures', 'Seizures, tonic-clonic, photosensitive']",Frequent,24,3.061862178478973
+HP:0011169,"['generalized clonic seizure', 'Generalised clonic seizure', 'Generalised clonic seizures', 'Generalised onset clonic seizure', 'Generalised-onset clonic seizure', 'Generalized clonic seizures', 'Generalized onset clonic seizure', 'Generalized-onset clonic seizure']",Frequent,29,2.785430072655778
+HP:0007270,"['atypical absence seizure', 'Atypical absence', 'Atypical absence seizures', 'Atypical petit mal seizures']",Frequent,30,2.7386127875258306
+HP:0008770,"['obsessive-compulsive trait', 'Obsessive-compulsive trait', 'Obsessive-compulsive traits']",Frequent,36,2.5
+HP:0002396,['cogwheel rigidity'],Frequent,57,1.9867985355975657
+HP:0010841,"['multifocal epileptiform discharges', 'Multifocal EEG abnormality']",Frequent,72,1.7677669529663689
+HP:0002384,"['focal impaired awareness seizure', 'Complex focal seizures', 'Complex partial seizure', 'Complex partial seizures', 'Dyscognitive seizures', 'Focal dyscognitive seizure', 'Focal impaired awareness seizures', 'Focal seizure with impairment of awareness', 'Focal seizure with loss of awareness', 'Focal seizures with impairment of consciousness or awareness', 'Localised dyscognitive seizure', 'Localised seizure with impaired awareness', 'Localised seizure with loss of awareness', 'Localized dyscognitive seizure', 'Localized seizure with impaired awareness', 'Localized seizure with loss of awareness', 'Partial dyscognitive seizure', 'Partial seizure with impairment of awareness', 'Partial seizure with loss of awareness']",Frequent,92,1.563858105428061
+HP:0002373,"['febrile seizure (within the age range of 3 months to 6 years)', 'Febrile convulsion', 'Febrile seizures', 'Fever induced seizures', 'Seizures, febrile, in early childhood', 'Seizures, generalized, associated with fever']",Frequent,192,1.0825317547305484
+HP:0001300,['parkinsonism'],Frequent,267,0.9179850920431569
+HP:0002123,"['generalized myoclonic seizure', 'Generalised epileptic myoclonus', 'Generalised myoclonic seizure', 'Generalised myoclonic seizures', 'Generalized epileptic myoclonus', 'Generalized myoclonic seizures', 'Myoclonus seizures']",Frequent,279,0.8980265101338745
+HP:0002067,"['bradykinesia', 'Slow movements', 'Slowness of movements']",Frequent,390,0.75955452531275
+HP:0000739,"['anxiety', 'Anxiety', 'Anxiousness', 'Excessive, persistent worry and fear']",Frequent,485,0.6811149137797498
+HP:0100543,"['cognitive impairment', 'Abnormality of cognition', 'Cognitive abnormality', 'Cognitive defects', 'Cognitive deficits', 'Cognitive impairment', 'Intellectual impairment', 'Mental impairment']",Frequent,515,0.6609789738588476
+HP:0000729,"['autistic behavior', 'ASD', 'Autistic behaviour', 'Pervasive developmental disorder']",Frequent,522,0.6565321642986127
+HP:0001336,"['myoclonus', 'Myoclonic jerks']",Frequent,522,0.6565321642986127
+HP:0002063,"['rigidity', 'Muscle rigidity', 'Rigidity']",Frequent,657,0.5852057359806528
+HP:0031475,"['status epilepticus without prominent motor symptoms', 'Nonconvulsive status epilepticus']",Occasional,8,3.5355339059327373
+HP:0200048,['cyanotic episode'],Occasional,9,3.3333333333333335
+HP:0025101,"['dysgenesis of the hippocampus', 'Hippocampal dysgenesis']",Occasional,14,2.6726124191242437
+HP:0100694,['tibial torsion'],Occasional,21,2.182178902359924
+HP:0003066,"['limited knee extension', 'Limited knee extension']",Occasional,25,2.0
+HP:0011185,"['eeg with focal epileptiform discharges', 'Focal EEG Abnormality']",Occasional,43,1.5249857033260468
+HP:0011198,"['eeg with generalized epileptiform discharges', 'EEG with generalised epileptiform discharges']",Occasional,50,1.414213562373095
+HP:0008081,"['pes valgus', 'Valgus foot deformity']",Occasional,63,1.259881576697424
+HP:0007010,"['poor fine motor coordination', 'Fine motor disability', 'Fine motor impairment', 'Fine motor skill dysfunction', 'Impaired fine motor skills']",Occasional,70,1.1952286093343936
+HP:0002283,"['global brain atrophy', 'Diffuse brain atrophy', 'Generalized brain atrophy', 'Generalized brain degeneration', 'Generalized cerebral atrophy']",Occasional,103,0.9853292781642932
+HP:0002311,"['incoordination', 'Difficulties in coordination', 'Incoordination', 'Incoordination of limb movements', 'Limb incoordination']",Occasional,120,0.9128709291752769
+HP:0000736,"['short attention span', 'Poor attention span', 'Problem paying attention', 'Short attention span']",Occasional,158,0.79555728417573
+HP:0100710,"['impulsivity', 'Impulsive', 'Impulsivity']",Occasional,180,0.7453559924999299
+HP:0000980,['pallor'],Occasional,220,0.674199862463242
+HP:0008947,"['infantile muscular hypotonia', 'Decreased muscle tone in infant', 'Hypotonia early', 'Hypotonia in infancy', 'Hypotonia, early', 'Infantile hypotonia']",Occasional,272,0.6063390625908325
+HP:0002307,"['drooling', 'Dribbling', 'Drooling', 'Sialorrhea']",Occasional,312,0.5661385170722978
+HP:0002345,['action tremor'],Occasional,366,0.5227083734893166
+HP:0001763,"['pes planus', 'Flat feet', 'Flat foot']",Occasional,587,0.412744171706498
