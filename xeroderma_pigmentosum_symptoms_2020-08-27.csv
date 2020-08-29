@@ -1,60 +1,60 @@
 names,frequency,edges_out_count,ISS
-['conjunctival telangiectasia'],Very frequent,52,2.773500981126146
+"['conjunctival telangiectasia', 'Conjunctival telangiectases', 'Small dilated blood vessels near membrane covering front of eye and eyelids', 'Telangiectasia, conjunctival']",Very frequent,52,2.773500981126146
 ['poikiloderma'],Very frequent,59,2.6037782196164776
-['freckling'],Very frequent,78,2.264554068289191
-['telangiectasia of the skin'],Very frequent,103,1.9706585563285863
-['telangiectasia'],Very frequent,131,1.7474081133220758
-['thickened skin'],Very frequent,166,1.5523010514126656
-['thin skin'],Very frequent,221,1.3453455879926248
-['cutaneous photosensitivity'],Very frequent,222,1.3423121104280487
-"['intellectual disability, progressive']",Very frequent,235,1.3046561461068844
-['dry skin'],Very frequent,368,1.0425720702853738
-['cognitive impairment'],Very frequent,515,0.8813052984784635
-['eeg abnormality'],Very frequent,535,0.8646754023342339
-['developmental regression'],Very frequent,547,0.8551382496180255
-['abnormality of the dentition'],Very frequent,636,0.7930515857181442
-['failure to thrive'],Very frequent,672,0.7715167498104595
-['optic atrophy'],Very frequent,774,0.7188851546895895
-['arthralgia'],Very frequent,902,0.6659271582120269
-['hypogonadism'],Very frequent,1228,0.5707301455353496
-['fatigue'],Very frequent,1734,0.4802921064280742
-['fever'],Very frequent,2587,0.39321654351850077
-['melanoma'],Frequent,117,1.3867504905630728
-['hypermelanotic macule'],Frequent,119,1.3750477455423171
-['dermal atrophy'],Frequent,131,1.310556084991557
-['hypopigmented skin patches'],Frequent,183,1.1088319064318592
-['erythema'],Frequent,282,0.8932370012631206
-['keratitis'],Frequent,351,0.8006407690254357
+"['freckling', 'Freckling']",Very frequent,78,2.264554068289191
+"['telangiectasia of the skin', 'Teleangiectasia of the skin']",Very frequent,103,1.9706585563285863
+"['telangiectasia', 'Cutaneous telangiectasia', 'Telangiectases']",Very frequent,131,1.7474081133220758
+"['thickened skin', 'Pachydermia', 'Thick skin', 'Thickened skin']",Very frequent,166,1.5523010514126656
+"['thin skin', 'Thin skin']",Very frequent,221,1.3453455879926248
+"['cutaneous photosensitivity', 'Photosensitive skin', 'Photosensitive skin rashes', 'Photosensitivity', 'Sensitivity to sunlight', 'Skin photosensitivity', 'Sun sensitivity']",Very frequent,222,1.3423121104280487
+"['intellectual disability, progressive', 'Intellectual disability, progressive', 'Mental retardation, progressive', 'Progressive mental retardation']",Very frequent,235,1.3046561461068844
+"['dry skin', 'Dry skin', 'Xerosis']",Very frequent,368,1.0425720702853738
+"['cognitive impairment', 'Abnormality of cognition', 'Cognitive abnormality', 'Cognitive defects', 'Cognitive deficits', 'Cognitive impairment', 'Intellectual impairment', 'Mental impairment']",Very frequent,515,0.8813052984784635
+"['eeg abnormality', 'Abnormal EEG', 'Abnormal electroencephalogram', 'EEG abnormalities', 'Electroencephalogram abnormal', 'Electroencephalogram abnormalities']",Very frequent,535,0.8646754023342339
+"['developmental regression', 'Loss of developmental milestones', 'Mental deterioration in childhood', 'Neurodevelopmental regression', 'Psychomotor regression', 'Psychomotor regression beginning in infancy', 'Psychomotor regression in infants', 'Psychomotor regression, progressive']",Very frequent,547,0.8551382496180255
+"['abnormality of the dentition', 'Abnormal dentition', 'Abnormal teeth', 'Dental abnormalities', 'Dental abnormality', 'Dental anomalies']",Very frequent,636,0.7930515857181442
+"['failure to thrive', 'Faltering weight', 'Postnatal failure to thrive', 'Weight faltering']",Very frequent,672,0.7715167498104595
+"['optic atrophy', 'Optic nerve atrophy', 'Optic-nerve degeneration']",Very frequent,774,0.7188851546895895
+"['arthralgia', 'Arthralgias', 'Joint pain']",Very frequent,902,0.6659271582120269
+"['hypogonadism', 'Decreased activity of gonads']",Very frequent,1228,0.5707301455353496
+"['fatigue', 'Fatigue', 'Tired', 'Tiredness']",Very frequent,1734,0.4802921064280742
+"['fever', 'Fever', 'Hyperthermia', 'Pyrexia']",Very frequent,2587,0.39321654351850077
+"['melanoma', 'Malignant melanoma']",Frequent,117,1.3867504905630728
+"['hypermelanotic macule', 'Hyperpigmented macules', 'Hyperpigmented spots']",Frequent,119,1.3750477455423171
+"['dermal atrophy', 'Atrophic skin', 'Skin atrophy', 'Skin degeneration']",Frequent,131,1.310556084991557
+"['hypopigmented skin patches', 'Patchy loss of skin color']",Frequent,183,1.1088319064318592
+"['erythema', 'Redness of skin or mucous membrane']",Frequent,282,0.8932370012631206
+"['keratitis', 'Corneal inflammation']",Frequent,351,0.8006407690254357
 ['papilloma'],Frequent,440,0.7150969419341943
-['macule'],Frequent,536,0.6479013191860201
+"['macule', 'Flat, discolored area of skin']",Frequent,536,0.6479013191860201
 ['hyperkeratosis'],Frequent,636,0.5947886892886081
-['sensorineural hearing impairment'],Frequent,679,0.5756471673400022
-['cryptorchidism'],Frequent,696,0.5685735326841775
-['strabismus'],Frequent,754,0.5462677805469223
-['cataract'],Frequent,2104,0.3270155401477105
-['neoplasm of the eye'],Occasional,11,3.015113445777636
-['flat nasal alae'],Occasional,12,2.886751345948129
-['ankyloblepharon'],Occasional,41,1.5617376188860608
-['craniofacial hyperostosis'],Occasional,56,1.3363062095621219
-['entropion'],Occasional,59,1.3018891098082388
-['ectropion'],Occasional,116,0.9284766908852594
-['blepharitis'],Occasional,131,0.8737040566610379
-['melanocytic nevus'],Occasional,193,0.7198157507486945
-['aminoaciduria'],Occasional,218,0.6772854614785964
-['neoplasm'],Occasional,230,0.659380473395787
-['opacification of the corneal stroma'],Occasional,231,0.657951694959769
-['abnormality of extrapyramidal motor function'],Occasional,237,0.6495698024616309
-['reduced tendon reflexes'],Occasional,252,0.629940788348712
-['decreased testicular size'],Occasional,268,0.6108472217815261
+"['sensorineural hearing impairment', 'Hearing loss, sensorineural', 'Sensorineural deafness', 'Sensorineural hearing loss']",Frequent,679,0.5756471673400022
+"['cryptorchidism', 'Cryptorchism', 'Undescended testes', 'Undescended testis']",Frequent,696,0.5685735326841775
+"['strabismus', 'Cross-eyed', 'Squint', 'Squint eyes']",Frequent,754,0.5462677805469223
+"['cataract', 'Cataracts', 'Clouding of the lens of the eye', 'Cloudy lens', 'Lens opacities', 'Lens opacity']",Frequent,2104,0.3270155401477105
+"['neoplasm of the eye', 'Eye tumor']",Occasional,11,3.015113445777636
+"['flat nasal alae', 'Depressed nasal alae']",Occasional,12,2.886751345948129
+"['ankyloblepharon', 'Adhesion of eyelids', 'Ankyloblepharon filiforme adnatum', 'Eyelid synechiae', 'Eyelids stuck together']",Occasional,41,1.5617376188860608
+"['craniofacial hyperostosis', 'Excessive bone growth of the skull and face', 'Hyperostosis of craniofacial bones', 'Increased ossification of craniofacial bones']",Occasional,56,1.3363062095621219
+"['entropion', 'Eyelid turned in']",Occasional,59,1.3018891098082388
+"['ectropion', 'Eyelid turned out']",Occasional,116,0.9284766908852594
+"['blepharitis', 'Cellulitis of eyelids', 'Inflammation of eyelids']",Occasional,131,0.8737040566610379
+"['melanocytic nevus', 'Beauty mark', 'Melanocytic naevus', 'Melanocytic nevi', 'Nevocellular nevi', 'Pigmented naevi', 'Pigmented nevi']",Occasional,193,0.7198157507486945
+"['aminoaciduria', 'High urine amino acid levels', 'Hyperaminoaciduria', 'Increased levels of animo acids in urine']",Occasional,218,0.6772854614785964
+"['neoplasm', 'Neoplasia', 'Oncological abnormality', 'Tumor', 'Tumour']",Occasional,230,0.659380473395787
+"['opacification of the corneal stroma', 'Cloudy cornea', 'Corneal stromal opacity']",Occasional,231,0.657951694959769
+"['abnormality of extrapyramidal motor function', 'Extrapyramidal dysfunction', 'Extrapyramidal signs', 'Extrapyramidal symptoms', 'Extrapyramidal syndrome', 'Extrapyramidal tract signs']",Occasional,237,0.6495698024616309
+"['reduced tendon reflexes', 'Absent or decreased deep tendon reflexes', 'Decreased deep tendon reflexes', 'Decreased tendon reflexes', 'Decreased to absent deep tendon reflexes', 'Decreased/absent deep tendon reflexes', 'Depressed tendon reflexes', 'Diminished deep tendon reflexes', 'Diminished or absent deep tendon reflexes', 'Diminished or absent tendon reflexes', 'Hypoactive to absent deep tendon reflexes', 'Impaired tendon reflexes', 'Reduced/absent deep tendon reflexes', 'Weak or absent deep tendon reflexes']",Occasional,252,0.629940788348712
+"['decreased testicular size', 'Decreased testicular size', 'Hypoplastic testes', 'Small testes', 'Small testis', 'Testicular hypoplasia']",Occasional,268,0.6108472217815261
 ['pterygium'],Occasional,373,0.5177803730784977
-['delayed skeletal maturation'],Occasional,623,0.40064154010750197
-['hearing impairment'],Occasional,648,0.3928371006591931
-['spasticity'],Occasional,677,0.3843312210120439
-['ataxia'],Occasional,685,0.38208035995043504
-['photophobia'],Occasional,760,0.36273812505500586
-['microcephaly'],Occasional,815,0.3502847220520294
-['seizure'],Occasional,945,0.3253000243161777
-['alopecia'],Occasional,988,0.31814238148788887
-['short stature'],Occasional,1148,0.2951406680504776
-['cerebral cortical atrophy'],Occasional,1305,0.27681826617913324
-['peripheral neuropathy'],Occasional,2024,0.2222771122371935
+"['delayed skeletal maturation', 'Delayed bone age', 'Delayed bone age before puberty', 'Delayed bone maturation', 'Delayed skeletal development', 'Retarded bone age', 'Skeletal maturation retardation']",Occasional,623,0.40064154010750197
+"['hearing impairment', 'Congenital deafness', 'Congenital hearing loss', 'Deafness', 'Hearing defect', 'Hearing impairment']",Occasional,648,0.3928371006591931
+"['spasticity', 'Involuntary muscle stiffness, contraction, or spasm', 'Muscle spasticity', 'Muscular spasticity']",Occasional,677,0.3843312210120439
+"['ataxia', 'Cerebellar ataxia']",Occasional,685,0.38208035995043504
+"['photophobia', 'Extreme sensitivity of the eyes to light', 'Light hypersensitivity']",Occasional,760,0.36273812505500586
+"['microcephaly', 'Abnormally small cranium', 'Abnormally small skull', 'Decreased circumference of cranium', 'Decreased size of cranium', 'Decreased size of skull', 'Reduced head circumference', 'Small head circumference', 'small calvarium', 'small cranium']",Occasional,815,0.3502847220520294
+"['seizure', 'Epileptic seizure', 'Seizures']",Occasional,945,0.3253000243161777
+"['alopecia', 'Hair loss']",Occasional,988,0.31814238148788887
+"['short stature', 'Decreased body height', 'Height less than 3rd percentile', 'Short stature', 'Small stature', 'Stature below 3rd percentile']",Occasional,1148,0.2951406680504776
+"['cerebral cortical atrophy', 'Cerebral cortex atrophy', 'Cortical atrophy', 'Decrease in size of the outer layer of the brain due to loss of brain cells']",Occasional,1305,0.27681826617913324
+"['peripheral neuropathy', 'Peripheral nerve damage', 'Peripheral neuritis']",Occasional,2024,0.2222771122371935

@@ -1,0 +1,128 @@
+gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+NF1,8,481,"['cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'deficiency of speech development', 'deficiency of speech development', 'pectus excavatum inferiorly', 'pectus excavatum inferiorly', 'pectus carinatum superiorly', 'pectus carinatum superiorly', 'axillary freckling', 'axillary freckling', 'axillary freckling', 'axillary freckling', 'muscle weakness', 'muscle weakness', 'specific learning disability', 'specific learning disability', 'specific learning disability', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'atrial septal defect, ostium secundum type', 'atrial septal defect, ostium secundum type', 'low hairline at back of neck', 'low hairline at back of neck', 'scoliosis', 'scoliosis', 'scoliosis', 'cubitus valgus', 'cubitus valgus', 'decreased body height', 'decreased body height', 'decreased body height', 'decreased body height', 'plexiform neurofibroma', 'plexiform neurofibroma', 'freckles in groin region', 'cancer of early nerve cells', 'decreased size of midface', 'neurofibroma', 'neurofibroma', 'neurofibroma', 'neurofibroma', 'neurofibroma', 'neurofibroma', 'neurofibroma', 'plexiform neurofibroma', 'plexiform neurofibroma', 'plexiform neurofibroma', 'plexiform neurofibroma', 'short stature', 'scoliosis', 'scoliosis', 'scoliosis', 'optic nerve glioma', 'intellectual disability', 'intellectual disability', 'intellectual disability']",65,1396,37.339688763056834,1.0
+PTPN11,2,345,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'cubitus valgus', 'cubitus valgus', 'cubitus valgus', 'decreased body height', 'decreased body height', 'decreased body height', 'antimongoloid eye slant', 'antimongoloid eye slant', 'pectus excavatum inferiorly', 'pectus excavatum inferiorly', 'pectus carinatum superiorly', 'pectus carinatum superiorly', 'low hairline at back of neck', 'low hairline at back of neck', 'scoliosis', 'decreased size of midface', 'muscle weakness', 'cancer of early nerve cells', 'scoliosis', 'scoliosis', 'short stature', 'intellectual disability']",33,2704,11.850738376357446,0.0903771284968742
+MAP2K2,1,76,"['excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'cryptorchidism', 'scoliosis', 'cubitus valgus', 'low hairline at back of neck', 'specific learning disability', 'plexiform neurofibroma', 'axillary freckling', 'freckles in groin region', 'cancer of early nerve cells', 'atrial septal defect, ostium secundum type', 'decreased size of midface', 'muscle weakness', 'decreased size of malar bone', 'deficiency of speech development', 'pectus excavatum inferiorly', 'pectus carinatum superiorly', 'intellectual disability', 'pulmonary valve stenosis']",28,820,12.471535060372396,0.05765637781291681
+LZTR1,3,44,"['decreased body height', 'decreased body height', 'cryptorchidism', 'antimongoloid eye slant', 'excessive orbital separation', 'narrowing of pulmonic valve', 'low hairline at back of neck', 'ear, posterior angulation, increased', 'decreased size of midface', 'muscle weakness', 'scoliosis', 'pulmonary valve stenosis']",12,265,2.503304473376956,0.040884159988484714
+SOS1,1,84,"['cryptorchidism', 'cryptorchidism', 'excessive orbital separation', 'excessive orbital separation', 'antimongoloid eye slant', 'antimongoloid eye slant', 'pectus excavatum inferiorly', 'pectus excavatum inferiorly', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'scoliosis', 'scoliosis', 'cubitus valgus', 'cubitus valgus', 'decreased body height', 'decreased body height', 'low hairline at back of neck', 'decreased size of midface', 'muscle weakness', 'intellectual disability', 'pulmonary valve stenosis']",21,960,6.846769434729707,0.03013948516141265
+EVI2A,1,21,"['plexiform neurofibroma', 'neurofibroma']",2,55,2.4386317557967336,0.029861181459701985
+PTEN,1,672,"['antimongoloid eye slant', 'antimongoloid eye slant', 'deficiency of speech development', 'scoliosis', 'scoliosis', 'scoliosis', 'decreased body height', 'plexiform neurofibroma', 'neurofibroma', 'intellectual disability', 'intellectual disability', 'intellectual disability']",12,5675,4.238288601234053,0.02922808104013982
+OMG,2,34,['plexiform neurofibroma'],1,100,1.5811388300841895,0.027325083822304957
+BRAF,0,462,"['excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'decreased body height', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'scoliosis', 'cryptorchidism', 'cubitus valgus', 'low hairline at back of neck', 'cancer of early nerve cells', 'neurofibroma', 'intellectual disability']",20,3756,4.895953428770156,0.024070503281933654
+SPRED1,1,30,"['excessive orbital separation', 'excessive orbital separation', 'antimongoloid eye slant', 'antimongoloid eye slant', 'axillary freckling', 'axillary freckling', 'specific learning disability', 'specific learning disability', 'low hairline at back of neck', 'low hairline at back of neck', 'intellectual disability']",11,287,4.087087749308696,0.023897443511699944
+NRAS,1,219,"['cryptorchidism', 'cryptorchidism', 'excessive orbital separation', 'excessive orbital separation', 'deficiency of speech development', 'deficiency of speech development', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'antimongoloid eye slant', 'low hairline at back of neck', 'decreased size of midface', 'muscle weakness', 'neurofibroma']",15,1345,3.733593071860023,0.02258425389613498
+SUZ12,2,45,"['cryptorchidism', 'antimongoloid eye slant', 'excessive orbital separation', 'deficiency of speech development', 'scoliosis', 'neurofibroma', 'neurofibroma']",7,491,2.6730029510969278,0.022574317304950162
+NF2,3,349,"['neurofibroma', 'neurofibroma', 'intellectual disability']",3,1518,1.8783287315212884,0.021740705426164422
+RASA2,1,27,"['decreased body height', 'cryptorchidism', 'low hairline at back of neck', 'antimongoloid eye slant', 'decreased size of midface', 'muscle weakness', 'excessive orbital separation', 'scoliosis', 'pulmonary valve stenosis', 'neurofibroma']",10,147,2.736270704525551,0.021507320486115738
+KRAS,1,187,"['excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'decreased body height', 'cryptorchidism', 'low hairline at back of neck', 'scoliosis', 'decreased size of midface', 'muscle weakness', 'cubitus valgus', 'intellectual disability']",20,1641,4.278238649933338,0.021338207587241302
+HRAS,1,341,"['excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'cryptorchidism', 'low hairline at back of neck', 'decreased size of midface', 'muscle weakness', 'scoliosis', 'intellectual disability']",16,2134,3.2478033680250924,0.021054532543404496
+SHOC2,1,55,"['excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'cryptorchidism', 'low hairline at back of neck', 'antimongoloid eye slant', 'decreased size of midface', 'muscle weakness', 'scoliosis', 'pulmonary valve stenosis', 'scoliosis', 'intellectual disability']",17,406,3.5225964327919925,0.020053748453519742
+VEGFA,2,862,"['neurofibroma', 'intellectual disability', 'plexiform neurofibroma']",3,11159,2.601974635892934,0.017478402867114908
+ATRX,1,131,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'decreased size of malar bone', 'excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'decreased body height', 'decreased body height', 'decreased size of midface', 'antimongoloid eye slant', 'deficiency of speech development', 'intellectual disability']",18,1192,3.3427018619904207,0.015850710351186265
+RAF1,1,303,"['decreased body height', 'decreased body height', 'cryptorchidism', 'excessive orbital separation', 'antimongoloid eye slant', 'scoliosis', 'low hairline at back of neck', 'decreased size of midface', 'muscle weakness', 'cubitus valgus', 'narrowing of pulmonic valve', 'cancer of early nerve cells']",12,2285,2.5626653820310663,0.014548075771655008
+MAP2K1,1,197,"['excessive orbital separation', 'excessive orbital separation', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'scoliosis', 'cubitus valgus', 'cryptorchidism', 'low hairline at back of neck', 'intellectual disability']",14,2248,3.1055924670012587,0.013478744375261142
+CDKN2A,1,630,"['neurofibroma', 'neurofibroma', 'intellectual disability']",3,4724,1.8783287315212884,0.012836517654521921
+MECP2,1,39,"['scoliosis', 'scoliosis', 'decreased body height', 'decreased body height', 'cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'deficiency of speech development', 'deficiency of speech development', 'decreased size of midface', 'decreased size of midface', 'antimongoloid eye slant', 'intellectual disability', 'intellectual disability', 'intellectual disability', 'intellectual disability', 'scoliosis']",18,838,3.273523803052885,0.01175634361226191
+SMARCB1,2,147,"['cryptorchidism', 'cryptorchidism', 'scoliosis', 'scoliosis', 'decreased body height', 'decreased body height', 'muscle weakness', 'intellectual disability']",8,890,1.3774178761322784,0.011017656561194232
+RET,2,352,"['excessive orbital separation', 'excessive orbital separation', 'scoliosis', 'scoliosis', 'muscle weakness', 'cancer of early nerve cells', 'antimongoloid eye slant', 'ear, posterior angulation, increased']",8,2402,1.429382662240491,0.010626775348349578
+CREBBP,1,216,"['cryptorchidism', 'cryptorchidism', 'antimongoloid eye slant', 'antimongoloid eye slant', 'deficiency of speech development', 'deficiency of speech development', 'low hairline at back of neck', 'low hairline at back of neck', 'scoliosis', 'scoliosis', 'decreased body height', 'decreased body height', 'decreased body height', 'intellectual disability', 'intellectual disability']",15,3755,2.959131742027392,0.010503961336719065
+MTOR,1,547,"['cryptorchidism', 'antimongoloid eye slant', 'specific learning disability', 'decreased size of midface', 'excessive orbital separation', 'neurofibroma', 'intellectual disability']",7,6872,2.052596094561019,0.010420712723138508
+NGFR,1,165,['plexiform neurofibroma'],1,875,1.5811388300841895,0.009418370760785272
+CCND1,1,449,"['plexiform neurofibroma', 'intellectual disability']",2,4986,1.7444817101803898,0.008751793481938658
+SOX10,1,113,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'muscle weakness', 'neurofibroma', 'intellectual disability']",6,882,1.7458121502653856,0.008560276215641866
+TMEM127,1,33,['neurofibroma'],1,77,0.8574929257125441,0.008478730915891037
+RAC2,1,83,"['intellectual disability', 'plexiform neurofibroma']",2,693,1.7444817101803898,0.008414808642680417
+VAV1,1,94,['plexiform neurofibroma'],1,708,1.5811388300841895,0.007875639502017997
+KIT,1,619,"['cryptorchidism', 'neurofibroma', 'intellectual disability']",3,4700,1.2103603167034702,0.007786823318464192
+CDC42,1,241,"['cryptorchidism', 'antimongoloid eye slant', 'narrowing of pulmonic valve', 'ear, posterior angulation, increased', 'decreased size of midface', 'excessive orbital separation', 'scoliosis', 'intellectual disability']",8,2450,1.6106159348281104,0.007268077772776517
+STAT3,0,510,"['scoliosis', 'decreased body height', 'muscle weakness', 'excessive orbital separation', 'neurofibroma', 'intellectual disability']",6,6528,1.703801670386574,0.006611063590224726
+EVI2B,1,33,['neurofibroma'],1,133,0.8574929257125441,0.00645134689072531
+TBL1XR1,1,16,"['deficiency of speech development', 'deficiency of speech development', 'cryptorchidism', 'decreased size of malar bone', 'scoliosis', 'decreased body height', 'ear, posterior angulation, increased', 'decreased size of midface', 'excessive orbital separation', 'intellectual disability']",10,625,1.8548686336458329,0.006369551183916452
+PIK3CA,1,523,"['scoliosis', 'scoliosis', 'excessive orbital separation', 'excessive orbital separation', 'antimongoloid eye slant', 'antimongoloid eye slant', 'decreased body height']",7,7493,1.3002242905674222,0.005821444150268321
+ARID1B,1,37,"['decreased body height', 'cryptorchidism', 'scoliosis', 'antimongoloid eye slant', 'ear, posterior angulation, increased', 'intellectual disability']",6,358,1.0860835152116601,0.005332917489137441
+MSH6,1,105,"['cancer of early nerve cells', 'axillary freckling']",2,797,1.1210898699241207,0.005298103660256847
+MMP9,0,595,"['decreased body height', 'neurofibroma', 'intellectual disability']",3,7920,1.1684061398339831,0.004598514064943748
+KIAA1549,1,23,['optic nerve glioma'],1,278,0.9284766908852594,0.004590723562417389
+LSR,1,36,['neurofibroma'],1,298,0.8574929257125441,0.004393596377345612
+ERBB2,1,342,['neurofibroma'],1,2860,0.8574929257125441,0.004173634880679065
+BRCA1,0,357,"['decreased body height', 'excessive orbital separation', 'cryptorchidism', 'deficiency of speech development', 'scoliosis', 'intellectual disability']",6,2878,1.0715960543023142,0.004124298641431346
+AKT1,1,898,"['scoliosis', 'decreased body height', 'antimongoloid eye slant', 'excessive orbital separation', 'intellectual disability']",5,16329,0.8872401923925308,0.004002967754003427
+SNRPE,0,350,['neurofibroma'],1,1783,0.8574929257125441,0.00394591893252799
+UTP6,1,4,['neurofibroma'],1,242,0.8574929257125441,0.003884935154926981
+POLE,1,55,"['decreased body height', 'cryptorchidism', 'ear, posterior angulation, increased', 'decreased size of malar bone', 'scoliosis']",5,572,0.9154778559419215,0.0038440794180562973
+NOTCH1,1,298,"['narrowing of pulmonic valve', 'scoliosis', 'scoliosis', 'intellectual disability']",4,2667,0.8272114515659077,0.003744870785218079
+TSC1,1,230,"['specific learning disability', 'specific learning disability', 'intellectual disability']",3,1352,0.6697125636380337,0.003385809641991283
+TSC2,1,226,"['specific learning disability', 'specific learning disability', 'intellectual disability']",3,1329,0.6697125636380337,0.003376119981646229
+IFI27,0,378,['neurofibroma'],1,3135,0.8574929257125441,0.003216625947934182
+SYP,1,101,"['antimongoloid eye slant', 'decreased size of midface', 'deficiency of speech development', 'intellectual disability']",4,841,0.7573079551205695,0.0031733044736390608
+TGFB1,0,635,"['muscle weakness', 'muscle weakness', 'scoliosis', 'scoliosis', 'short stature']",5,8889,0.8438584519938511,0.003161030052434485
+ZNRD2,0,371,['neurofibroma'],1,3194,0.8574929257125441,0.003127132907328007
+TMED7,0,353,['neurofibroma'],1,2982,0.8574929257125441,0.0030776507781489788
+TP63,0,274,"['cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'decreased body height', 'decreased body height']",6,2929,1.054332650474782,0.0030685575736653665
+DCTN6,0,351,['neurofibroma'],1,2970,0.8574929257125441,0.003066189425315648
+PSMD9,0,377,['neurofibroma'],1,3454,0.8574929257125441,0.0030562958841245484
+BIRC5,0,277,['neurofibroma'],1,2120,0.8574929257125441,0.00285523887440209
+SDHB,1,165,"['cancer of early nerve cells', 'decreased body height', 'muscle weakness', 'scoliosis']",4,1055,0.6168042629336657,0.002807530856657955
+FIG4,1,87,"['cryptorchidism', 'cryptorchidism', 'excessive orbital separation', 'excessive orbital separation', 'decreased body height']",5,1601,0.9011222989512595,0.0026635468155151256
+TH,0,324,"['deficiency of speech development', 'deficiency of speech development', 'short stature', 'intellectual disability', 'intellectual disability', 'intellectual disability']",6,5626,1.0219301953258835,0.002530329399133145
+APEX1,1,262,"['scoliosis', 'scoliosis', 'scoliosis']",3,1959,0.5752237416355278,0.0025134880323782454
+SDHD,1,117,"['decreased body height', 'muscle weakness', 'scoliosis']",3,564,0.495714393009545,0.0023716169977727715
+PDGFRB,1,125,"['antimongoloid eye slant', 'decreased size of midface', 'scoliosis']",3,1219,0.5935407117301899,0.002135786407488371
+GFAP,1,116,"['muscle weakness', 'scoliosis', 'intellectual disability']",3,1051,0.5114869390805066,0.0018084265018329675
+LOX,0,315,"['scoliosis', 'excessive orbital separation', 'intellectual disability']",3,2372,0.5423355988763274,0.0017099315028935365
+FOS,1,454,"['muscle weakness', 'scoliosis', 'intellectual disability']",3,6908,0.5114869390805066,0.0017092585870591116
+LEP,0,468,"['short stature', 'intellectual disability', 'scoliosis']",3,5731,0.5026544613332817,0.0014762869139498527
+TNF,0,902,"['muscle weakness', 'muscle weakness', 'intellectual disability']",3,19388,0.4761485036411275,0.0014374252573383843
+AR,0,424,"['cryptorchidism', 'intellectual disability', 'scoliosis']",3,6849,0.5446086382027687,0.0013667996190400717
+INS,0,541,"['muscle weakness', 'intellectual disability', 'scoliosis']",3,9554,0.5114869390805065,0.00135618917677008
+IDH1,1,54,"['decreased body height', 'scoliosis', 'intellectual disability']",3,1008,0.5026544613332817,0.0013314193012966397
+ATM,0,359,"['decreased body height', 'decreased body height', 'intellectual disability']",3,3536,0.4584835481466779,0.0012590649663885164
+SDHC,1,62,"['decreased body height', 'scoliosis']",2,459,0.3393115812370814,0.001113991836682094
+FASN,0,283,"['muscle weakness', 'intellectual disability', 'intellectual disability']",3,3549,0.48308857196486416,0.0010658695870499754
+TP53,1,1008,"['decreased body height', 'intellectual disability']",2,13975,0.31091321412143913,0.001058637491513166
+CA2,0,425,"['decreased body height', 'decreased body height', 'muscle weakness', 'intellectual disability']",4,16711,0.6148863599191414,0.0010323531458415697
+RHOA,1,309,"['decreased size of malar bone', 'intellectual disability']",2,3549,0.35341436041362667,0.0010090092762559016
+CAT,0,569,"['scoliosis', 'intellectual disability']",2,8451,0.3550841273080429,0.0008651234830540375
+PTH,0,412,"['scoliosis', 'intellectual disability']",2,4624,0.3550841273080429,0.0008445686452910865
+TERT,0,304,"['decreased body height', 'scoliosis']",2,2314,0.3393115812370814,0.0008111326066852886
+MMP2,0,502,"['decreased body height', 'excessive orbital separation']",2,7177,0.33482180559352337,0.0007466547694263861
+IL6,0,397,"['scoliosis', 'intellectual disability']",2,5945,0.3550841273080429,0.0007174643472474681
+NFASC,1,101,"['excessive orbital separation', 'intellectual disability']",2,1969,0.3505943516644848,0.000690543925970523
+SOD1,0,289,"['muscle weakness', 'intellectual disability']",2,2732,0.31974569186866386,0.0006368134703241688
+SDHA,1,50,"['decreased body height', 'muscle weakness']",2,984,0.3039731457977024,0.00058002654042423
+EZR,2,34,['deficiency of speech development'],1,531,0.19216561050602196,0.0003688796139526747
+KITLG,1,207,['scoliosis'],1,2727,0.1917412472118426,0.00018848027961547545
+GRK2,0,359,['scoliosis'],1,4431,0.1917412472118426,0.00015979036563401367
+EGFR,1,842,['intellectual disability'],1,8857,0.1633428800962003,0.00010953349259186111
+EPB41,1,19,['intellectual disability'],1,200,0.1633428800962003,0.00010629182543076347
+MYC,1,411,['intellectual disability'],1,3343,0.1633428800962003,9.853487341399217e-05
+OLIG2,1,26,['intellectual disability'],1,265,0.1633428800962003,9.694102837668119e-05
+RHEB,1,75,['intellectual disability'],1,506,0.1633428800962003,9.346001264989066e-05
+EGR2,1,79,['intellectual disability'],1,564,0.1633428800962003,9.032612183636978e-05
+NTRK1,1,265,['intellectual disability'],1,2096,0.1633428800962003,9.032176138571307e-05
+RDX,1,50,['intellectual disability'],1,421,0.1633428800962003,8.942554912280768e-05
+NLGN3,1,19,['intellectual disability'],1,287,0.1633428800962003,8.873070150253313e-05
+NES,1,185,['intellectual disability'],1,1382,0.1633428800962003,8.820942609872624e-05
+EGR1,1,269,['intellectual disability'],1,2391,0.1633428800962003,8.544168201370647e-05
+EGF,1,348,['intellectual disability'],1,3542,0.1633428800962003,8.440144019975542e-05
+SST,1,332,['intellectual disability'],1,3486,0.1633428800962003,8.217735130054221e-05
+MAP2K7,1,77,['intellectual disability'],1,669,0.1633428800962003,8.210809788640282e-05
+MSN,1,131,['intellectual disability'],1,1100,0.1633428800962003,8.145234255455553e-05
+ESR1,0,459,['intellectual disability'],1,5309,0.1633428800962003,6.681032327294408e-05
+MAPK1,0,665,['intellectual disability'],1,11681,0.1633428800962003,6.5433475233331e-05
+RHO,0,395,['intellectual disability'],1,4133,0.1633428800962003,6.507026777532315e-05
+RHOD,0,336,['intellectual disability'],1,3226,0.1633428800962003,6.253806526132701e-05
+MAPK8,0,485,['intellectual disability'],1,7491,0.1633428800962003,5.9458468271823524e-05
+SRC,1,151,['intellectual disability'],1,2484,0.1633428800962003,5.849641489619503e-05
+MAPK3,0,314,['intellectual disability'],1,3471,0.1633428800962003,5.6295402187032364e-05
+CD4,0,472,['intellectual disability'],1,7918,0.1633428800962003,5.626996480858202e-05
+CHRFAM7A,1,35,['intellectual disability'],1,895,0.1633428800962003,5.5968203050264696e-05
+FGF2,0,267,['intellectual disability'],1,2552,0.1633428800962003,5.569984064084171e-05
+CCL2,0,323,['intellectual disability'],1,3780,0.1633428800962003,5.551154596023368e-05
+PDGFRA,1,190,['muscle weakness'],1,1152,0.1564028117724636,5.4985869616441014e-05
+HSPA4,0,274,['intellectual disability'],1,2804,0.1633428800962003,5.455232925833557e-05
+POMC,0,379,['intellectual disability'],1,5544,0.1633428800962003,5.3883797593581e-05
+SIRT1,0,271,['intellectual disability'],1,3382,0.1633428800962003,4.912052488879153e-05
+TLR4,0,298,['intellectual disability'],1,4498,0.1633428800962003,4.690035651566142e-05
+ALB,0,283,['intellectual disability'],1,4260,0.1633428800962003,4.573386894347883e-05
+AP1B1,1,13,['decreased body height'],1,296,0.1475703340252388,0.0
+SPINK5,2,107,['decreased body height'],1,1439,0.1475703340252388,0.0

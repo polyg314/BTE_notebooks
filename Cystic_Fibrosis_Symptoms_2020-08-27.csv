@@ -1,0 +1,17 @@
+names,frequency,edges_out_count,ISS
+"['exocrine pancreatic insufficiency', 'Inability to properly digest food due to lack of pancreatic digestive enzymes']",Frequent,91,1.5724272550828775
+"['dehydration', 'Dehydration']",Occasional,1374,0.26977806394251297
+"['meconium ileus', 'Meconium ileus in neonates']",Unknown,16,1.25
+"['elevated sweat chloride', 'Elevated sweat Cl', 'Elevated sweat Cl-', 'Elevated sweat chloride']",Unknown,19,1.1470786693528088
+['recurrent bronchopulmonary infections'],Unknown,27,0.9622504486493763
+['biliary cirrhosis'],Unknown,38,0.8111071056538127
+"['rectal prolapse', 'Rectum protrudes through anus']",Unknown,47,0.7293249574894728
+['cor pulmonale'],Unknown,52,0.6933752452815365
+"['recurrent pneumonia', 'Multiple pulmonary infections', 'Pneumonia, recurrent', 'Pneumonia, recurrent episodes', 'Pulmonary infection', 'Pulmonary infections', 'Recurrent pneumonia', 'Recurrent pulmonary infections', 'pulmonary infections, recurrent']",Unknown,183,0.3696106354772864
+"['hypercalciuria', 'Elevated urine calcium levels', 'Hypercalcinuria']",Unknown,420,0.2439750182371333
+"['chronic lung disease', 'Chronic lung disease']",Unknown,548,0.21358941442919022
+"['autosomal recessive inheritance', 'Autosomal recessive']",Unknown,594,0.20515248496555455
+"['failure to thrive', 'Faltering weight', 'Postnatal failure to thrive', 'Weight faltering']",Unknown,672,0.19287918745261487
+"['bronchiectasis', 'Permanent enlargement of the airways of the lungs']",Unknown,1098,0.15089291007086422
+"['male infertility', 'Male infertility']",Unknown,1144,0.14782809899727065
+"['asthma', 'Asthma', 'Bronchial asthma']",Unknown,7373,0.05823014712249575

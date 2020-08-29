@@ -158,41 +158,44 @@ def get_disease_to_node_to_gene_results(disease_all_nodes_genes,max_two_step_gen
 
 
 def get_disease_symptoms(disease_name):
-    r = requests.get('http://mydisease.info/v1/query?q=hpo.disease_name:"' + disease_name + '"&fields=hpo')
+    request_url = 'http://mydisease.info/v1/query?q=hpo.disease_name:"' + disease_name + '"&fields=hpo'
+    print("request url: " + request_url)
+    r = requests.get(request_url)
     res = r.json()
     # print(res)
     result_number = 0
     disease_info = res['hits'][result_number]
-    # print("disease symptoms for:")
-    # print(disease_info['hpo']['disease_name'])
+    print("disease symptoms for:")
+    print(disease_info['hpo']['disease_name'])
     symptoms = []
     hp_ids = []
     hp_symptom_dict = {}
     for x in disease_info['hpo']['phenotype_related_to_disease']:
-        try:
-            # if('frequency' in x):
-            r1 = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['frequency'])
-            res1 = r1.json()
-            frequency = True
-        except:
-            frequency = False; 
-            # print('no frequency')
-        r = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['hpo_id'])
-        res = r.json()
-        if(('_id' in res) & ('name' in res)):
-            symptoms.append(res['name'].lower())
-            hp_ids.append(res['_id'])
-            hp_symptom_dict[res['_id']] = {
-                'names' : [res['name'].lower()],
-                'frequency' : res1['name'] if frequency else 'Unknown',
-                'edges_out_count' : 0
-            }
-        if('synonym' in res):
-            if('exact' in res['synonym']):
-                for name in res['synonym']['exact']:
-                    if name not in symptoms: 
-                        symptoms.append(name)
-                        hp_symptom_dict[res['_id']]['names'].append(name)
+        if(x["aspect"].lower() == 'p'):
+            try:
+                # if('frequency' in x):
+                r1 = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['frequency'])
+                res1 = r1.json()
+                frequency = True
+            except:
+                frequency = False; 
+                # print('no frequency')
+            r = requests.get('https://biothings.ncats.io/hpo/phenotype/' + x['hpo_id'])
+            res = r.json()
+            if(('_id' in res) & ('name' in res)):
+                symptoms.append(res['name'].lower())
+                hp_ids.append(res['_id'])
+                hp_symptom_dict[res['_id']] = {
+                    'names' : [res['name'].lower()],
+                    'frequency' : res1['name'] if frequency else 'Unknown',
+                    'edges_out_count' : 0
+                }
+            if('synonym' in res):
+                if('exact' in res['synonym']):
+                    for name in res['synonym']['exact']:
+                        if name not in symptoms: 
+                            symptoms.append(name)
+                            hp_symptom_dict[res['_id']]['names'].append(name)
 
     print(symptoms)
     return([symptoms,hp_ids,hp_symptom_dict])
@@ -367,8 +370,9 @@ def determined_genes_to_symptoms(gene_list, symptom_list):
             HP_dict[res['_id']] = res['name'].lower()
 
     phen_indices = get_similar_phen_indices(list(top_gene_to_phenotypicFeature["output_name"]),symptom_list,0.95, HP_dict)
-
     phen_top = top_gene_to_phenotypicFeature.iloc[phen_indices,:]
+    
+    # phen_top = top_gene_to_phenotypicFeature
     # phen_top
     for index in range(phen_top.shape[0]):
     #     if("HP:" in row['output_name']):
@@ -411,6 +415,7 @@ def determined_genes_to_symptoms(gene_list, symptom_list):
     bp_indices = get_similar_bp_indices(list(top_gene_to_bioprocesses["output_name"]),symptom_list,0.95,go_dict)
     bioprocess_top = top_gene_to_bioprocesses.iloc[bp_indices,:]
 
+    # bioprocess_top = top_gene_to_bioprocesses
     # Genes -> disease type "symptoms"
     print("Genes -> Diseases")
     df_list = []
@@ -429,8 +434,9 @@ def determined_genes_to_symptoms(gene_list, symptom_list):
         top_gene_to_diseases = pd.concat(df_list)
 
     disease_indices = get_similar_disease_indices(list(top_gene_to_diseases["output_name"]),symptom_list,0.95)
-
     relevant_top_gene_to_diseases = top_gene_to_diseases.iloc[disease_indices,:]
+
+    # relevant_top_gene_to_diseases = top_gene_to_diseases
 
     ## make dataframe with all genes -> symptoms
     all_gene_connections = pd.concat([bioprocess_top,phen_top,relevant_top_gene_to_diseases])
@@ -462,17 +468,30 @@ def create_causes_dict(all_gene_connections):
 def get_connection_normalizing_count(gene_list, node_type_list):
     # dictionary that keeps track of all connections from a gene to any node type 
     connection_dict = {}
-    for key in gene_list:
-        # print(key)
-        count = 0
-        input_object = ht.query(key)['Gene'][0]
-        for x in node_type_list:
-            fc = FindConnection(input_obj=input_object, output_obj=x, intermediate_nodes=None)
-            fc.connect(verbose=False)
-            df = fc.display_table_view()
-            rows = df.shape[0]
-            count = count + rows
-        connection_dict[key]  = count
+    for gene_symbol in gene_list:
+        gene_found = False
+        gene_query = ht.query(gene_symbol)['Gene']
+        for i in gene_query:
+            if(i['SYMBOL'].lower() == gene_symbol.lower()):
+                gene = i
+                gene_found = True
+        if(gene_found == True):
+            count = 0
+            input_object = gene
+            for x in node_type_list:
+                try: 
+                    ## only look at direct connections
+                    fc = FindConnection(input_obj=input_object, output_obj=x, intermediate_nodes=None)
+                    fc.connect(verbose=False)
+                    df = fc.display_table_view()
+                    rows = df.shape[0]
+                    count = count + rows
+                except: 
+                    print("gene " + str(gene_symbol) + " for node intermediate " + str(x) + " failed")
+            connection_dict[gene_symbol]  = count
+        else:
+            print(gene_symbol + ' could not be found')
+            connection_dict[gene_symbol] = 'Unknown'
     return(connection_dict)
 
 def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_disease_to_genes, sorted_disease_to_all_nodes_to_genes, top_two_step_genes_pub_counts, top_symptom_pub_counts, causes_dict, disease_symptoms_df):
@@ -484,8 +503,8 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
             results_dict[all_gene_connections.iloc[i]["input"]]["symptoms_associated"].append(all_gene_connections.iloc[i]["output_name"])
         else:
             results_dict[all_gene_connections.iloc[i]["input"]] = {
-                "two_step_associations_to_covid" : sorted_disease_to_all_nodes_to_genes[all_gene_connections.iloc[i]["input"]] if all_gene_connections.iloc[i]["input"] in sorted_disease_to_all_nodes_to_genes else 0,
-                "direct_associations_to_covid" : sorted_disease_to_genes[all_gene_connections.iloc[i]["input"]] if all_gene_connections.iloc[i]["input"] in sorted_disease_to_genes else 0,
+                "two_step_associations_to_genes" : sorted_disease_to_all_nodes_to_genes[all_gene_connections.iloc[i]["input"]] if all_gene_connections.iloc[i]["input"] in sorted_disease_to_all_nodes_to_genes else 0,
+                "direct_associations_to_genes" : sorted_disease_to_genes[all_gene_connections.iloc[i]["input"]] if all_gene_connections.iloc[i]["input"] in sorted_disease_to_genes else 0,
                 "symptoms_associated" : [all_gene_connections.iloc[i]["output_name"]]
             }
 
@@ -501,8 +520,8 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
 
         connections_count = math.sqrt(connection_dict[key])
         # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
-        # relevance_score = ((((results_dict[key]["direct_associations_to_covid"]*10 
-        #                     + results_dict[key]["two_step_associations_to_covid"]) 
+        # relevance_score = ((((results_dict[key]["direct_associations_to_genes"]*10 
+        #                     + results_dict[key]["two_step_associations_to_genes"]) 
         #                     * len(results_dict[key]["symptoms_associated"])*3) 
         #                     # + round(top_two_step_genes_pub_counts[key] / 5) 
         #                     # + round(top_symptom_pub_counts[key] / 5)
@@ -510,8 +529,8 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
         #                     /connections_count)
         # assemble each row                                               
         current_result = {'gene': key,
-                        "direct_disease_assoc": results_dict[key]["direct_associations_to_covid"], 
-                        "two_step_assoc_to_disease": results_dict[key]["two_step_associations_to_covid"],
+                        "direct_disease_assoc": results_dict[key]["direct_associations_to_genes"], 
+                        "two_step_assoc_to_disease": results_dict[key]["two_step_associations_to_genes"],
                         # "two_step_pub_count": top_two_step_genes_pub_counts[key] if key in top_two_step_genes_pub_counts else 0,
                         "disease_symptoms_gene_is_associated_with": results_dict[key]["symptoms_associated"],
                         "symptoms_associated_count": len(results_dict[key]["symptoms_associated"]),
@@ -529,16 +548,23 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
     for index, row in disease_symptoms_df.iterrows():
         # print(row)
         for x in row["names"]:
-            symptom_score_dict[x] = row["ISS"]
+            symptom_score_dict[x.lower()] = row["ISS"]
 
-
+    # print(symptom_score_dict)
     final_symptom_scores = []
 
     for index, row in final_df.iterrows():
         current_score = 0
         current_symptoms = row["disease_symptoms_gene_is_associated_with"]
         for x in current_symptoms:
-            current_score = current_score + symptom_score_dict[x]
+            singular = x.lower()[0:-1]
+            plural = x.lower() + 's'
+            if(x.lower() in symptom_score_dict):
+                current_score = current_score + symptom_score_dict[x.lower()]
+            elif(plural in symptom_score_dict):
+                current_score = current_score + symptom_score_dict[plural]
+            elif(singular in symptom_score_dict):
+                current_score = current_score + symptom_score_dict[singular]
         final_symptom_scores.append(current_score)
 
 

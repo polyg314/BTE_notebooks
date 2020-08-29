@@ -1,0 +1,6 @@
+,names,frequency,edges_out_count,ISS
+HP:0012175,"['resistance to activated protein c', 'Activated protein C resistance']",Unknown,4,2.5
+HP:0100602,"['preeclampsia', 'Pre-eclampsia']",Unknown,36,0.8333333333333334
+HP:0002625,"['deep venous thrombosis', 'Blood clot in a deep vein', 'Deep vein thrombosis', 'Multiple deep venous thrombosis']",Unknown,38,0.8111071056538127
+HP:0100724,"['hypercoagulability', 'Blood hyperviscosity', 'Thrombophilia']",Unknown,47,0.7293249574894728
+HP:0003645,"['prolonged partial thromboplastin time', 'Abnormal partial thromboplastin time', 'Delayed thromboplastin generation', 'Partial thromboplastin time prolonged', 'Prolonged PTT', 'Prolonged activated partial thromboplastin time']",Unknown,76,0.5735393346764044
