@@ -1,38 +1,38 @@
-names,frequency,edges_out_count,ISS
-"['inguinal freckling', 'Freckles in groin region']",Unknown,8,1.7677669529663687
-['plexiform neurofibroma'],Unknown,10,1.5811388300841895
-"['superior pectus carinatum', 'Pectus carinatum superiorly']",Unknown,12,1.4433756729740645
-"['pectus excavatum of inferior sternum', 'Pectus excavatum inferiorly']",Unknown,16,1.25
-"['lisch nodules', 'Iris hamartomas']",Unknown,19,1.1470786693528088
-['axillary freckling'],Unknown,25,1.0
-"['prominent nasolabial fold', 'Deep laugh lines', 'Deep nasolabial crease', 'Deep nasolabial fold', 'Deep nasolabial groove', 'Deep smile lines', 'Nasolabial crease, prominent', 'Prominent laugh lines', 'Prominent nasolabial groove', 'Prominent smile lines']",Unknown,28,0.944911182523068
-"['optic nerve glioma', 'Optic glioma']",Unknown,29,0.9284766908852594
-"['neurofibromas', 'Neurofibromata', 'Neurofibromatosis']",Unknown,34,0.8574929257125441
-"['secundum atrial septal defect', 'Atrial septal defect, ostium secundum type', 'Ostium secundum atrial septal defect', 'Patent ostium secundum']",Unknown,47,0.7293249574894728
-['multiple cafe-au-lait spots'],Unknown,111,0.4745789978762495
-"['cubitus valgus', 'Outward turned elbows']",Unknown,145,0.41522739926869984
-"['low posterior hairline', 'Low hairline at back of neck', 'Low posterior hair line']",Unknown,238,0.3241018617760822
-"['thick vermilion border', 'Full lips', 'Increased volume of lip', 'Increased volume of lip vermillion', 'Plump lips', 'Prominent lips', 'Thick lips']",Unknown,259,0.31068488300060004
-"['webbed neck', 'Neck webbing', 'Pterygium colli', 'Webbed neck']",Unknown,286,0.2956561979945413
-"['pulmonic stenosis', 'Narrowing of pulmonic valve', 'Pulmonary stenosis', 'Pulmonary valve stenosis', 'Pulmonic valve stenosis']",Unknown,318,0.28038607704602214
-['specific learning disability'],Unknown,390,0.25318484177091666
-"['midface retrusion', 'Decreased size of midface', 'Flat midface', 'Hypoplasia of midface', 'Midface deficiency', 'Midface hypoplasia', 'Midface retrusion', 'Midface, flat', 'Retrusive midface', 'Underdevelopment of midface']",Unknown,598,0.2044652050273827
-"['downslanted palpebral fissures', 'Antimongoloid eye slant', 'Antimongoloid slant of palpebral fissures', 'Antimongoloid slanted palpebral fissures', 'Down slanting palpebral fissures', 'Down-slanted palpebral fissures', 'Down-slanting palpebral fissure', 'Down-slanting palpebral fissures', 'Downslanting palpebral fissure', 'Downslanting palpebral fissures', 'Downward slanted palpebral fissures', 'Downward slanting of the opening between the eyelids', 'Downward slanting palpebral fissures', 'Downward-slanting palpebral fissures', 'Palpebral fissures down-slanted']",Unknown,642,0.1973342594909646
-"['posteriorly rotated ears', 'Ear, posterior angulation, increased', 'Ears rotated toward back of head', 'Posteriorly angulated ears', 'Posteriorly rotated', 'Posteriorly rotated auricles', 'Posteriorly-angulated ears', 'Posteriorly-rotated ears']",Unknown,647,0.19657028349268788
-"['epicanthus', 'Epicanthal fold', 'Epicanthal folds', 'Epicanthic folds', 'Eye folds', 'Palpebronasal fold', 'Plica palpebronasalis', 'Prominent eye folds']",Unknown,649,0.19626716799471491
-"['pectus excavatum', 'Funnel chest']",Unknown,651,0.19596545041740512
-"['short neck', 'Cervical shortening', 'Decreased cervical height', 'Decreased cervical length', 'Decreased length of neck', 'Short neck']",Unknown,661,0.1944774603961035
-"['delayed speech and language development', 'Deficiency of speech development', 'Delayed language development', 'Delayed speech', 'Delayed speech acquisition', 'Delayed speech and language development', 'Delayed speech development', 'Impaired speech and language development', 'Impaired speech development', 'Language delay', 'Language delayed', 'Language development deficit', 'Late-onset speech development', 'Poor language development', 'Speech and language delay', 'Speech and language difficulties', 'Speech delay']",Unknown,677,0.19216561050602196
-['scoliosis'],Unknown,680,0.1917412472118426
-"['ptosis', 'Blepharoptosis', 'Drooping upper eyelid', 'Eyelid ptosis']",Unknown,681,0.19160041630983685
-"['depressed nasal bridge', 'Depressed bridge of nose', 'Depressed nasal bridge', 'Depressed nasal root', 'Flat bridge of nose', 'Flat nasal bridge', 'Flat nasal root', 'Flat, nasal bridge', 'Flattened nasal bridge', 'Low nasal bridge', 'Low nasal root', 'Retruded bridge of nose', 'Retruded nasal bridge']",Unknown,685,0.19104017997521752
-"['malar flattening', 'Decreased size of malar bone', 'Depressed malar region', 'Flat cheekbone', 'Malar hypoplasia', 'Underdevelopment of malar bone', 'Zygomatic flattening']",Unknown,692,0.19007148031742638
-"['cryptorchidism', 'Cryptorchism', 'Undescended testes', 'Undescended testis']",Unknown,696,0.18952451089472586
-"['low-set ears', 'Low set ears', 'Low-set ears', 'Lowset ears', 'Melotia']",Unknown,711,0.18751465015433733
-"['hypertelorism', 'Excessive orbital separation', 'Increased distance between eye sockets', 'Increased distance between eyes', 'Increased interpupillary distance', 'Ocular hypertelorism', 'Wide-set eyes', 'Widely spaced eyes', 'Widened interpupillary distance']",Unknown,713,0.18725147156828453
-"['macrocephaly', 'Increased size of cranium', 'Increased size of skull', 'Large head', 'Large head circumference', 'Macrocrania', 'Megacephaly']",Unknown,714,0.18712029714127992
-"['intellectual disability', 'Intellectual disability', 'Mental deficiency', 'Mental retardation', 'Mental retardation, nonspecific', 'Mental-retardation', 'Nonprogressive intellectual disability', 'Nonprogressive mental retardation']",Unknown,937,0.1633428800962003
-"['global developmental delay', 'Delayed cognitive development', 'Delayed development', 'Delayed developmental milestones', 'Delayed intellectual development', 'Delayed milestones', 'Delayed psychomotor development', 'Developmental delay', 'Developmental delay in early childhood', 'Developmental delay, global', 'Developmental retardation', 'Lack of psychomotor development', 'Motor and developmental delay', 'Psychomotor delay', 'Psychomotor development deficiency', 'Psychomotor development failure', 'Psychomotor developmental delay', 'Retarded development', 'Retarded mental development', 'Retarded psychomotor development']",Unknown,1006,0.15764166527985793
-"['muscle weakness', 'Muscle weakness', 'Muscular weakness']",Unknown,1022,0.1564028117724636
-"['short stature', 'Decreased body height', 'Height less than 3rd percentile', 'Short stature', 'Small stature', 'Stature below 3rd percentile']",Unknown,1148,0.1475703340252388
-"['neuroblastoma', 'Cancer of early nerve cells']",Unknown,1705,0.1210898699241207
+,names,frequency,edges_out_count,ISS
+HP:0030052,"['inguinal freckling', 'Freckles in groin region']",Unknown,8,1.7677669529663687
+HP:0009732,['plexiform neurofibroma'],Unknown,10,1.5811388300841895
+HP:0000917,"['superior pectus carinatum', 'Pectus carinatum superiorly']",Unknown,12,1.4433756729740645
+HP:0000915,"['pectus excavatum of inferior sternum', 'Pectus excavatum inferiorly']",Unknown,16,1.25
+HP:0009737,"['lisch nodules', 'Iris hamartomas']",Unknown,19,1.1470786693528088
+HP:0000997,['axillary freckling'],Unknown,25,1.0
+HP:0005272,"['prominent nasolabial fold', 'Deep laugh lines', 'Deep nasolabial crease', 'Deep nasolabial fold', 'Deep nasolabial groove', 'Deep smile lines', 'Nasolabial crease, prominent', 'Prominent laugh lines', 'Prominent nasolabial groove', 'Prominent smile lines']",Unknown,28,0.944911182523068
+HP:0009734,"['optic nerve glioma', 'Optic glioma']",Unknown,29,0.9284766908852594
+HP:0001684,"['secundum atrial septal defect', 'Atrial septal defect, ostium secundum type', 'Ostium secundum atrial septal defect', 'Patent ostium secundum']",Unknown,85,0.5423261445466404
+HP:0007565,['multiple cafe-au-lait spots'],Unknown,111,0.4745789978762495
+HP:0002967,"['cubitus valgus', 'Outward turned elbows']",Unknown,145,0.41522739926869984
+HP:0002162,"['low posterior hairline', 'Low hairline at back of neck', 'Low posterior hair line']",Unknown,238,0.3241018617760822
+HP:0012471,"['thick vermilion border', 'Full lips', 'Increased volume of lip', 'Increased volume of lip vermillion', 'Plump lips', 'Prominent lips', 'Thick lips']",Unknown,259,0.31068488300060004
+HP:0000465,"['webbed neck', 'Neck webbing', 'Pterygium colli', 'Webbed neck']",Unknown,302,0.287717668824218
+HP:0001642,"['pulmonic stenosis', 'Narrowing of pulmonic valve', 'Pulmonary stenosis', 'Pulmonary valve stenosis', 'Pulmonic valve stenosis']",Unknown,318,0.28038607704602214
+HP:0001328,['specific learning disability'],Unknown,390,0.25318484177091666
+HP:0011800,"['midface retrusion', 'Decreased size of midface', 'Flat midface', 'Hypoplasia of midface', 'Midface deficiency', 'Midface hypoplasia', 'Midface retrusion', 'Midface, flat', 'Retrusive midface', 'Underdevelopment of midface']",Unknown,598,0.2044652050273827
+HP:0000494,"['downslanted palpebral fissures', 'Antimongoloid eye slant', 'Antimongoloid slant of palpebral fissures', 'Antimongoloid slanted palpebral fissures', 'Down slanting palpebral fissures', 'Down-slanted palpebral fissures', 'Down-slanting palpebral fissure', 'Down-slanting palpebral fissures', 'Downslanting palpebral fissure', 'Downslanting palpebral fissures', 'Downward slanted palpebral fissures', 'Downward slanting of the opening between the eyelids', 'Downward slanting palpebral fissures', 'Downward-slanting palpebral fissures', 'Palpebral fissures down-slanted']",Unknown,642,0.1973342594909646
+HP:0000358,"['posteriorly rotated ears', 'Ear, posterior angulation, increased', 'Ears rotated toward back of head', 'Posteriorly angulated ears', 'Posteriorly rotated', 'Posteriorly rotated auricles', 'Posteriorly-angulated ears', 'Posteriorly-rotated ears']",Unknown,647,0.19657028349268788
+HP:0000286,"['epicanthus', 'Epicanthal fold', 'Epicanthal folds', 'Epicanthic folds', 'Eye folds', 'Palpebronasal fold', 'Plica palpebronasalis', 'Prominent eye folds']",Unknown,649,0.19626716799471491
+HP:0000767,"['pectus excavatum', 'Funnel chest']",Unknown,651,0.19596545041740512
+HP:0001067,"['neurofibromas', 'Neurofibromata', 'Neurofibromatosis']",Unknown,653,0.1956651200487081
+HP:0000470,"['short neck', 'Cervical shortening', 'Decreased cervical height', 'Decreased cervical length', 'Decreased length of neck', 'Short neck']",Unknown,678,0.19202384316064214
+HP:0002650,['scoliosis'],Unknown,680,0.1917412472118426
+HP:0000508,"['ptosis', 'Blepharoptosis', 'Drooping upper eyelid', 'Eyelid ptosis']",Unknown,681,0.19160041630983685
+HP:0005280,"['depressed nasal bridge', 'Depressed bridge of nose', 'Depressed nasal bridge', 'Depressed nasal root', 'Flat bridge of nose', 'Flat nasal bridge', 'Flat nasal root', 'Flat, nasal bridge', 'Flattened nasal bridge', 'Low nasal bridge', 'Low nasal root', 'Retruded bridge of nose', 'Retruded nasal bridge']",Unknown,685,0.19104017997521752
+HP:0000272,"['malar flattening', 'Decreased size of malar bone', 'Depressed malar region', 'Flat cheekbone', 'Malar hypoplasia', 'Underdevelopment of malar bone', 'Zygomatic flattening']",Unknown,692,0.19007148031742638
+HP:0000028,"['cryptorchidism', 'Cryptorchism', 'Undescended testes', 'Undescended testis']",Unknown,696,0.18952451089472586
+HP:0000316,"['hypertelorism', 'Excessive orbital separation', 'Increased distance between eye sockets', 'Increased distance between eyes', 'Increased interpupillary distance', 'Ocular hypertelorism', 'Wide-set eyes', 'Widely spaced eyes', 'Widened interpupillary distance']",Unknown,713,0.18725147156828453
+HP:0000256,"['macrocephaly', 'Increased size of cranium', 'Increased size of skull', 'Large head', 'Large head circumference', 'Macrocrania', 'Megacephaly']",Unknown,714,0.18712029714127992
+HP:0000369,"['low-set ears', 'Low set ears', 'Low-set ears', 'Lowset ears', 'Melotia']",Unknown,719,0.18646853515705036
+HP:0000750,"['delayed speech and language development', 'Deficiency of speech development', 'Delayed language development', 'Delayed speech', 'Delayed speech acquisition', 'Delayed speech and language development', 'Delayed speech development', 'Impaired speech and language development', 'Impaired speech development', 'Language delay', 'Language delayed', 'Language development deficit', 'Late-onset speech development', 'Poor language development', 'Speech and language delay', 'Speech and language difficulties', 'Speech delay']",Unknown,728,0.1853123291652753
+HP:0001249,"['intellectual disability', 'Intellectual disability', 'Mental deficiency', 'Mental retardation', 'Mental retardation, nonspecific', 'Mental-retardation', 'Nonprogressive intellectual disability', 'Nonprogressive mental retardation']",Unknown,937,0.1633428800962003
+HP:0001263,"['global developmental delay', 'Delayed cognitive development', 'Delayed development', 'Delayed developmental milestones', 'Delayed intellectual development', 'Delayed milestones', 'Delayed psychomotor development', 'Developmental delay', 'Developmental delay in early childhood', 'Developmental delay, global', 'Developmental retardation', 'Lack of psychomotor development', 'Motor and developmental delay', 'Psychomotor delay', 'Psychomotor development deficiency', 'Psychomotor development failure', 'Psychomotor developmental delay', 'Retarded development', 'Retarded mental development', 'Retarded psychomotor development']",Unknown,1006,0.15764166527985793
+HP:0001324,"['muscle weakness', 'Muscle weakness', 'Muscular weakness']",Unknown,1436,0.1319449534923149
+HP:0004322,"['short stature', 'Decreased body height', 'Height less than 3rd percentile', 'Short stature', 'Small stature', 'Stature below 3rd percentile']",Unknown,1471,0.1303657981697152
+HP:0003006,"['neuroblastoma', 'Cancer of early nerve cells']",Unknown,1705,0.1210898699241207

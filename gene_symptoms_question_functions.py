@@ -79,11 +79,12 @@ def get_disease_to_gene_results(disease_input):
 
 def get_disease_to_node_to_gene_results(disease_all_nodes_genes,max_two_step_gene_count,symptom_list,symptoms_hpids):
     disease_to_node_to_gene_results = {}
-
     print("finding intermediate nodes that are symptoms")
     indices_with_symptom_as_intermediate = []
     go_dict = {}
-    for index, row in disease_all_nodes_genes.iterrows():
+    # print(disease_all_nodes_genes.shape)
+    for index, row in enumerate(disease_all_nodes_genes.iterrows()):
+        row = disease_all_nodes_genes.iloc[index]
         if row["node1_type"] == 'Disease':
             if row["node1_name"].lower() in symptom_list:
                 indices_with_symptom_as_intermediate.append(index)
@@ -525,7 +526,7 @@ def assemble_final_data_frame(all_gene_connections, connection_dict, sorted_dise
 
         ### Weight --- number - min / range
 
-        if(connection_dict[key] != 'Unknown'):
+        if((connection_dict[key] != 'Unknown') & (int(connection_dict[key]) > 0)):
             
             connections_count = math.sqrt(connection_dict[key])
             # calculate "relevance_score" based on occurrences, publication counts, gene_normalizing counts 
