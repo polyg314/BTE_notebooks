@@ -1,0 +1,44 @@
+,gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+9,BRAF,0,267,"['excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'narrowing of pulmonic valve', 'decreased body height', 'decreased body height', 'decreased body height', 'ear, posterior angulation, increased', 'ear, posterior angulation, increased', 'antimongoloid eye slant', 'antimongoloid eye slant', 'scoliosis', 'cryptorchidism', 'cubitus valgus', 'low hairline at back of neck', 'cancer of early nerve cells', 'neurofibroma', 'intellectual disability']",20,3758,4.18251201553975,0.02208553370942006
+24,FGFR1,0,174,"['cryptorchidism', 'cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'excessive orbital separation', 'excessive orbital separation', 'excessive orbital separation', 'antimongoloid eye slant', 'antimongoloid eye slant', 'antimongoloid eye slant', 'deficiency of speech development', 'decreased body height', 'decreased body height', 'decreased size of midface', 'ear, posterior angulation, increased', 'intellectual disability']",17,4853,3.1128959806177536,0.009265589676967051
+37,BRCA1,0,213,"['decreased body height', 'excessive orbital separation', 'cryptorchidism', 'deficiency of speech development', 'scoliosis', 'intellectual disability']",6,2886,1.0475382371060438,0.0045375286346867605
+44,STAT3,0,268,"['scoliosis', 'decreased body height', 'muscle weakness', 'excessive orbital separation', 'neurofibroma', 'intellectual disability']",6,6534,1.0003114705870657,0.00360948875030674
+46,TGFB1,0,398,"['muscle weakness', 'muscle weakness', 'scoliosis', 'scoliosis', 'short stature']",5,8898,0.7777381995780301,0.003430854713362367
+47,TP63,0,164,"['cryptorchidism', 'cryptorchidism', 'decreased size of malar bone', 'decreased size of malar bone', 'decreased body height', 'decreased body height']",6,2924,1.0199235787637349,0.0033520354751748424
+52,TH,0,181,"['deficiency of speech development', 'deficiency of speech development', 'short stature', 'intellectual disability', 'intellectual disability', 'intellectual disability']",6,5631,0.9910190967888666,0.0025837633163271648
+53,LOX,0,229,"['scoliosis', 'excessive orbital separation', 'intellectual disability']",3,2383,0.5423355988763274,0.002413843175358702
+55,MMP9,0,405,"['decreased body height', 'neurofibroma', 'intellectual disability']",3,7923,0.4893737983146236,0.0020520247911596733
+58,LEP,0,334,"['short stature', 'intellectual disability', 'scoliosis']",3,5737,0.4854499254777581,0.00196387607682887
+60,TERT,0,190,"['decreased body height', 'scoliosis', 'intellectual disability']",3,2321,0.4854499254777581,0.0017443456527714547
+62,AR,0,252,"['cryptorchidism', 'intellectual disability', 'scoliosis']",3,6856,0.5446086382027687,0.0015765806969616125
+63,TNF,0,577,"['muscle weakness', 'muscle weakness', 'intellectual disability']",3,19388,0.4272327870808301,0.0015488328314942602
+64,INS,0,331,"['muscle weakness', 'intellectual disability', 'scoliosis']",3,9555,0.4870290808003578,0.0015146564970506225
+66,ATM,0,224,"['decreased body height', 'decreased body height', 'intellectual disability']",3,3540,0.4240744764356307,0.0013807170036171947
+67,PTH,0,318,"['scoliosis', 'intellectual disability']",2,4616,0.3550841273080429,0.0013186010051599733
+69,CAT,0,384,"['scoliosis', 'intellectual disability']",2,8459,0.3550841273080429,0.0011781516937625284
+70,WT1,0,167,"['cryptorchidism', 'intellectual disability']",2,1649,0.3528673909909261,0.0011372708200525171
+73,CA2,0,240,"['decreased body height', 'decreased body height', 'muscle weakness', 'intellectual disability']",4,16692,0.5560194299279455,0.0009882066063391767
+74,MMP2,0,335,"['decreased body height', 'excessive orbital separation']",2,7220,0.3176172697379997,0.0009259594664528864
+76,SOD1,0,185,"['muscle weakness', 'intellectual disability']",2,2736,0.2952878335885152,0.0007262552405912347
+78,PTHLH,0,188,"['decreased body height', 'decreased body height']",2,2118,0.2607315963394304,0.0006632384110492593
+83,SNRPE,0,207,['neurofibroma'],1,1780,0.1956651200487081,0.0003996005609311609
+85,BIRC5,0,189,['neurofibroma'],1,2125,0.1956651200487081,0.00033345666315101033
+86,GRK2,0,263,['scoliosis'],1,4431,0.1917412472118426,0.00030339918316785766
+87,IFI27,0,203,['neurofibroma'],1,3137,0.1956651200487081,0.00029510642109400965
+88,TMED7,0,190,['neurofibroma'],1,2982,0.1956651200487081,0.0002830047402480708
+89,DCTN6,0,189,['neurofibroma'],1,2972,0.1956651200487081,0.00028196452047326133
+90,PSMD9,0,189,['neurofibroma'],1,3453,0.1956651200487081,0.0002615896627503836
+93,MPO,0,185,['neurofibroma'],1,3880,0.1956651200487081,0.00024146903588424042
+106,POMC,0,297,['intellectual disability'],1,5549,0.1633428800962003,0.00016472117929326383
+107,ESR1,0,285,['intellectual disability'],1,5345,0.1633428800962003,0.00016098474663647663
+109,CD4,0,304,['intellectual disability'],1,7720,0.1633428800962003,0.00014297737531164767
+110,CCL2,0,209,['intellectual disability'],1,3788,0.1633428800962003,0.000139692056223502
+111,RHO,0,214,['intellectual disability'],1,4142,0.1633428800962003,0.0001368317504781959
+112,HSPA4,0,169,['intellectual disability'],1,2811,0.1633428800962003,0.00013067338463224266
+113,ALB,0,206,['intellectual disability'],1,4261,0.1633428800962003,0.00012979254423230746
+115,IL6,0,239,['intellectual disability'],1,5945,0.1633428800962003,0.00012774548172575522
+116,SIRT1,0,175,['intellectual disability'],1,3395,0.1633428800962003,0.00012320207786153226
+118,RHOD,0,168,['intellectual disability'],1,3229,0.1633428800962003,0.00012118793814424904
+119,IL10,0,175,['intellectual disability'],1,3510,0.1633428800962003,0.00012116700232028867
+120,TLR4,0,190,['intellectual disability'],1,4487,0.1633428800962003,0.00011651264102432768
+121,MAPK1,0,265,['intellectual disability'],1,11662,0.1633428800962003,0.00010125681149710932

@@ -1,0 +1,36 @@
+,gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+1,GRK2,0,41,"['myoclonus', 'myoclonus', 'myoclonus', 'bradykinesia', 'action tremor', 'action tremor', 'non-convulsive status epilepticus']",7,4431,3.774567765187221,0.012051536653196537
+2,CYP2D6,0,26,"['developmental regression', 'myoclonus', 'action tremor', 'cogwheel rigidity']",4,2242,4.0211773230035215,0.009024673510406329
+3,BMP1,0,28,"['abnormality of cognition', 'bradykinesia']",2,1677,1.4205334991715977,0.004177713844708475
+4,FGFR3,0,27,"['decreased muscle tone in infant', 'decreased muscle tone in infant', 'abnormality of cognition']",3,3024,1.8736570990405128,0.0038621045091840962
+5,SLC2A1,0,28,"['abnormality of cognition', 'typical absence', 'anxiety']",3,1776,1.3420938876385975,0.0038354396946056455
+6,MTOR,0,30,"['complex focal seizures', 'abnormality of cognition']",2,6872,2.2248370792869085,0.0036125599174730546
+7,RET,0,29,"['anxiety', 'abnormality of cognition', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus']",4,2402,1.3420938876385975,0.0034919958712612965
+8,PGPEP1,0,27,['bradykinesia'],1,1363,0.75955452531275,0.0023320391112725764
+9,ATM,0,27,"['abnormality of cognition', 'action tremor', 'non-convulsive status epilepticus']",3,3536,1.1836873473481644,0.00225634590639539
+10,GPI,0,33,"['non-convulsive status epilepticus', 'bradykinesia']",2,2966,0.75955452531275,0.0021737063924839478
+11,CXCR4,0,25,['fine motor disability'],1,3605,1.1952286093343936,0.0019743820803669035
+12,PRCP,0,26,['bradykinesia'],1,1735,0.75955452531275,0.0019377836827400136
+13,INS,0,40,['generalised epileptic myoclonus'],1,9554,0.8980265101338745,0.0018875538757482766
+14,TRH,0,33,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'action tremor']",4,2134,0.5227083734893166,0.0017635580112871534
+15,TH,0,33,['bradykinesia'],1,5626,0.75955452531275,0.001578289226441776
+16,SOD1,0,27,['anxiety'],1,2732,0.6811149137797498,0.001477082811732691
+17,STAT3,0,29,['generalised epileptic myoclonus'],1,6528,0.8980265101338745,0.0014173477192370074
+18,RHO,0,27,['anxiety'],1,4133,0.6811149137797498,0.001200915608086225
+19,BRAF,0,26,['abnormality of cognition'],1,3756,0.6609789738588476,0.001146095827242469
+20,PTEN,0,29,['abnormality of cognition'],1,5675,0.6609789738588476,0.0011188762008401457
+21,AKT1,0,35,['abnormality of cognition'],1,16329,0.6609789738588476,0.0008794758354934771
+22,TP53,0,33,['abnormality of cognition'],1,13974,0.6609789738588476,0.0008714746837876862
+23,PIK3CA,0,26,"['abnormality of cognition', 'non-convulsive status epilepticus']",2,7493,0.6609789738588476,0.0008114389618266615
+24,HSPA4,0,25,['non-convulsive status epilepticus'],1,2804,0.0,0.0
+25,CD40,0,24,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus']",2,3618,0.0,0.0
+26,PTH,0,29,['non-convulsive status epilepticus'],1,4624,0.0,0.0
+27,CA1,0,28,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus']",3,4336,0.0,0.0
+28,CA2,0,58,['non-convulsive status epilepticus'],1,16711,0.0,0.0
+29,SST,0,33,['non-convulsive status epilepticus'],1,3486,0.0,0.0
+30,FAS,0,33,['non-convulsive status epilepticus'],1,5678,0.0,0.0
+31,VEGFA,0,33,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus']",4,11159,0.0,0.0
+32,FOS,0,41,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus']",3,6908,0.0,0.0
+33,CAT,0,50,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus', 'non-convulsive status epilepticus']",3,8451,0.0,0.0
+34,TNF,0,54,"['non-convulsive status epilepticus', 'non-convulsive status epilepticus']",2,19388,0.0,0.0
+35,PIK3CB,0,24,['non-convulsive status epilepticus'],1,4006,0.0,0.0

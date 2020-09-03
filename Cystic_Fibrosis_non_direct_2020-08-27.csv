@@ -1,0 +1,30 @@
+,gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+55,LOX,0,1215,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis', 'biliary cirrhosis', 'biliary cirrhosis']",8,2383,2.641114225692284,0.01673745281071345
+82,FOS,0,2533,"['failure to thrive', 'dehydration', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'biliary cirrhosis']",8,6917,1.4098475511721391,0.010956466049356087
+107,POMC,0,2053,"['failure to thrive', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'hypercalciuria', 'hypercalciuria', 'chronic lung disease', 'male infertility']",10,5549,1.1498274992505648,0.00800267715411789
+114,RELA,0,2045,"['asthma', 'asthma', 'asthma', 'biliary cirrhosis']",4,4181,0.9357828508923202,0.007409297881143476
+115,ATM,0,1187,"['bronchiectasis', 'bronchiectasis', 'failure to thrive', 'asthma', 'biliary cirrhosis', 'male infertility']",6,3540,1.4536415088849657,0.007282213204675815
+125,CDKN1A,0,2127,"['asthma', 'asthma', 'biliary cirrhosis', 'chronic lung disease']",4,7193,1.0491188218483485,0.006624746364069724
+134,BCL2,0,1257,"['biliary cirrhosis', 'male infertility', 'male infertility', 'male infertility', 'asthma', 'asthma', 'asthma']",7,4248,1.2547152925642422,0.006058867566312772
+221,BAX,0,1884,"['asthma', 'male infertility', 'male infertility', 'male infertility']",4,4958,0.3604910234180909,0.0022321291046075047
+257,SOD2,0,1239,"['male infertility', 'male infertility', 'asthma']",3,1903,0.2541802095274503,0.0015631458087708636
+276,CD40,0,1561,"['asthma', 'asthma', 'asthma', 'asthma', 'asthma', 'asthma']",6,3639,0.24935149047701485,0.0014006564965511374
+281,PIK3CA,0,1622,"['failure to thrive', 'asthma', 'asthma', 'asthma']",4,7498,0.3175549326911222,0.0013479285340841991
+298,SOD1,0,1864,"['asthma', 'asthma', 'asthma', 'asthma']",4,2736,0.16623432698467655,0.0011619018734621812
+302,TCEAL1,0,1665,"['asthma', 'asthma', 'chronic lung disease']",3,5905,0.2380117161945357,0.0011104791027744287
+343,KIT,0,1240,"['asthma', 'asthma', 'asthma', 'male infertility']",4,4700,0.230986559129148,0.0008868859987719207
+353,SIRT1,0,1208,"['chronic lung disease', 'asthma']",2,3395,0.19645313444836654,0.0008305774365539768
+398,GRK2,0,1662,"['asthma', 'asthma', 'asthma']",3,4431,0.1246757452385074,0.0005413774752341201
+400,TAT,0,1290,"['asthma', 'asthma', 'asthma']",3,2691,0.1246757452385074,0.0005356633267677517
+401,MOGS,0,299,['failure to thrive'],1,411,0.19287918745261487,0.0005217775986232279
+405,CCND1,0,1618,"['asthma', 'asthma', 'asthma']",3,4986,0.1246757452385074,0.00049653906822624
+440,CRK,0,2261,"['asthma', 'asthma']",2,6752,0.08311716349233828,0.00030011400500689023
+449,SYT1,0,1320,"['asthma', 'asthma']",2,3334,0.08311716349233828,0.0002463834629818745
+451,GORASP1,0,1268,"['asthma', 'asthma']",2,3113,0.08311716349233828,0.0002446449125937541
+456,STAT5A,0,1211,"['asthma', 'asthma']",2,3320,0.08311716349233828,0.00022592627999751909
+458,PIK3CB,0,1317,"['asthma', 'asthma']",2,4019,0.08311716349233828,0.0002238817345374165
+466,POLDIP2,0,1244,['asthma'],1,2996,0.04155858174616914,0.0
+467,PPIG,0,1229,['asthma'],1,2557,0.04155858174616914,0.0
+473,GRAP2,0,1308,['asthma'],1,3221,0.04155858174616914,0.0
+540,SDC1,0,528,['asthma'],1,1215,0.04155858174616914,0.0
+592,SP1,0,1193,['asthma'],1,3303,0.04155858174616914,0.0

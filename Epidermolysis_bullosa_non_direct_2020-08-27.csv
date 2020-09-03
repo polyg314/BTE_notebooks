@@ -1,0 +1,83 @@
+,gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+2,COL17A1,0,9,"['corneal erosion', 'abnormal blistering of the skin', 'abnormal feet structure', 'failure to thrive', 'camptodactyly of finger', 'milia', 'dystrophic fingernails', 'dystrophic toenail', 'abnormality of the dentition']",9,381,12.080976105276351,0.1237810706277825
+4,TNF,0,34,"['anemia', 'anemia', 'anemia', 'anemia', 'anemia', 'anemia', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'nephrotic syndrome', 'chronic otitis media', 'constipation']",23,19388,11.48885518334347,0.06229494881579234
+5,TP63,0,8,"['blepharitis', 'blepharitis', 'blepharitis', 'eczema', 'eczema', 'finger syndactyly', 'abnormal tooth enamel', 'corneal erosion', 'abnormality of the nail', 'dystrophic fingernails', 'dystrophic toenail']",11,2929,13.039840710258426,0.042876031590882095
+6,REN,0,22,"['anemia', 'anemia', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'constipation']",15,5455,5.891755250375702,0.038433509861304005
+7,ALB,0,12,"['nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'anemia', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'constipation']",13,4260,7.917294387145772,0.032111970975018764
+8,IL10,0,17,"['anemia', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'constipation']",7,3507,4.928996972616439,0.03081349100508412
+9,TGFB1,0,20,"['failure to thrive', 'increased post-void residual urine volume', 'congestive heart failure', 'anemia', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'nephrotic syndrome', 'nephrotic syndrome']",9,8889,6.325520532260642,0.029443728124021875
+10,IL6,0,19,"['anemia', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'interstitial lung disease', 'constipation']",8,5945,5.200214891718328,0.02795632882337237
+11,MMP9,0,23,"['blepharitis', 'blepharitis', 'dilated cardiomyopathy', 'congestive heart failure', 'interstitial lung disease', 'interstitial lung disease']",6,7920,4.9151003119970165,0.027660283618792858
+12,COL1A1,0,10,"['immunologic hypersensitivity', 'eczema', 'nephrotic syndrome', 'interstitial lung disease']",4,1065,4.168403478703688,0.0276411947451997
+13,ACE2,0,10,"['dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease']",6,836,3.3937060824175105,0.025162191287303043
+14,ACE,0,13,"['congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'constipation', 'constipation']",10,2773,4.6175243644908806,0.02476670412326221
+15,VEGFA,0,18,"['cheilitis', 'nephrotic syndrome', 'nephrotic syndrome', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'constipation']",9,11159,6.5644680762636565,0.0245682081616175
+16,GBA,0,8,"['abnormal lung parenchyma morphology', 'abnormal lung parenchyma morphology', 'failure to thrive', 'failure to thrive', 'constipation', 'corneal erosion']",6,1275,4.943288242231387,0.024121005613955103
+17,CAT,0,17,"['death of body tissue due to lack of blood flow or infection', 'anemia', 'anemia', 'interstitial lung disease', 'congestive heart failure', 'congestive heart failure', 'constipation', 'constipation', 'dilated cardiomyopathy', 'nephrotic syndrome', 'blepharitis']",11,8451,5.912053263266838,0.02394506385812329
+18,CSH1,0,10,"['nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'interstitial lung disease', 'interstitial lung disease', 'congestive heart failure', 'constipation']",8,2386,5.1565327050153735,0.023024158380868645
+19,AKT1,0,17,"['failure to thrive', 'abnormality of the nail', 'abnormal tooth enamel', 'hypopigmented skin patches', 'finger syndactyly', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'dilated cardiomyopathy', 'constipation']",10,16329,7.8007811125805135,0.02288671920473347
+20,STAT3,0,16,"['eczema', 'failure to thrive', 'dystrophic fingernails', 'anemia', 'anemia', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'congestive heart failure']",9,6528,4.843038768060006,0.020872931905985843
+21,KIT,0,9,"['abnormal blistering of the skin', 'constipation', 'immunologic hypersensitivity', 'hypopigmented skin patches', 'anemia', 'congestive heart failure', 'interstitial lung disease']",7,4700,7.170001270029098,0.020718907080811897
+22,AGTR1,0,20,"['dilated cardiomyopathy', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure']",5,1956,1.8973676893552067,0.017656381943116105
+23,ERCC8,0,10,"['failure to thrive', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'interstitial lung disease', 'congestive heart failure']",7,2033,3.6797622293273866,0.01756473433532409
+24,EGFR,0,14,"['dilated cardiomyopathy', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'anemia', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'nephrotic syndrome', 'interstitial lung disease', 'interstitial lung disease']",11,8857,5.358197314740977,0.017406116879829802
+25,COL3A1,0,9,"['abnormal feet structure', 'interstitial lung disease']",2,660,2.1931653584427035,0.01601255787886144
+26,IFNA1,0,11,"['anemia', 'anemia', 'anemia', 'anemia', 'congestive heart failure', 'nephrotic syndrome', 'nephrotic syndrome', 'interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease']",10,7482,5.623908293752738,0.015641151822789096
+27,CCL2,0,15,"['interstitial lung disease', 'interstitial lung disease', 'congestive heart failure']",3,3780,2.9474727507652863,0.015297365068400737
+28,BRAF,0,9,"['failure to thrive', 'failure to thrive', 'constipation', 'constipation', 'dystrophic fingernails']",5,3756,4.515439323194407,0.014394883659289147
+29,PTGS2,0,15,"['congestive heart failure', 'dilated cardiomyopathy', 'cheilitis']",3,4580,2.941930356588077,0.013869605538083654
+30,TP53,0,13,"['anemia', 'anemia', 'dilated cardiomyopathy', 'cheilitis', 'congestive heart failure', 'interstitial lung disease', 'interstitial lung disease']",7,13975,5.732158989409244,0.013793641356075508
+31,ATM,0,10,"['failure to thrive', 'congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'chronic otitis media', 'dilated cardiomyopathy']",7,3536,3.7876863244689036,0.013727327064805851
+32,CD4,0,10,"['interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'anemia', 'anemia', 'anemia', 'anemia', 'congestive heart failure', 'constipation']",9,7918,5.466799227827528,0.01342445043759363
+33,TLR4,0,15,"['dilated cardiomyopathy', 'dilated cardiomyopathy', 'congestive heart failure', 'constipation', 'interstitial lung disease']",5,4498,2.7886106775911594,0.01322296472758608
+34,POMC,0,9,"['failure to thrive', 'constipation', 'constipation', 'constipation', 'constipation', 'anemia', 'anemia', 'nephrotic syndrome', 'nephrotic syndrome', 'congestive heart failure', 'congestive heart failure']",11,5544,5.000621820421664,0.013169537871627114
+35,CAMP,0,11,"['interstitial lung disease', 'interstitial lung disease', 'interstitial lung disease', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'constipation']",7,10392,5.515863980446791,0.013009104825290777
+36,TH,0,10,"['constipation', 'congestive heart failure', 'congestive heart failure', 'constipation', 'constipation', 'interstitial lung disease']",6,5626,4.097042594550259,0.011811965726909051
+37,IL2,0,14,"['anemia', 'anemia', 'anemia', 'anemia', 'nephrotic syndrome', 'nephrotic syndrome', 'constipation', 'blepharitis']",8,5694,2.9508386306550527,0.011647037179391329
+38,IL1B,0,11,"['eczema', 'congestive heart failure', 'congestive heart failure', 'constipation']",4,1835,2.1047854163856488,0.01122594625504435
+39,MTOR,0,12,"['hypopigmented skin patches', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'anemia', 'interstitial lung disease', 'constipation']",6,6872,3.575999059461643,0.011125988405314716
+40,TIMP1,0,16,"['congestive heart failure', 'congestive heart failure', 'congestive heart failure', 'dilated cardiomyopathy']",4,2557,1.6771482414455514,0.010784357384270657
+41,COL2A1,0,9,"['abnormal feet structure', 'abnormal feet structure']",2,1127,1.9245008972987525,0.010631217905538528
+42,MPO,0,11,"['congestive heart failure', 'congestive heart failure', 'anemia', 'nephrotic syndrome', 'interstitial lung disease']",5,3861,2.760761682130397,0.010355162992079066
+43,LEP,0,10,"['nephrotic syndrome', 'nephrotic syndrome', 'nephrotic syndrome', 'anemia', 'anemia', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'constipation']",9,5731,3.33460257438897,0.009434409019740629
+44,TLR3,0,8,"['nephrotic syndrome', 'constipation', 'interstitial lung disease']",3,1663,2.2568903539557663,0.009248352398410296
+45,CISH,0,8,"['congestive heart failure', 'congestive heart failure', 'interstitial lung disease', 'interstitial lung disease', 'constipation']",5,6140,4.064729622743808,0.008971082689124409
+46,IL2RA,0,8,"['eczema', 'anemia', 'anemia', 'congestive heart failure', 'interstitial lung disease']",5,2344,2.546842267434968,0.008869222395729813
+47,KL,0,10,"['anemia', 'anemia', 'interstitial lung disease']",3,1369,1.5593137230278402,0.008494219570027144
+48,PIK3CA,0,10,"['failure to thrive', 'finger syndactyly', 'hypopigmented skin patches', 'anemia', 'anemia', 'congestive heart failure']",6,7493,3.105873030929335,0.007655649325513963
+49,ANG,0,20,"['congestive heart failure', 'congestive heart failure']",2,2301,0.971285862357264,0.0075806624205671655
+50,ISG20,0,8,"['anemia', 'anemia', 'congestive heart failure', 'interstitial lung disease']",4,2044,2.044956654206472,0.007497175840971597
+51,SNCA,0,9,"['constipation', 'constipation', 'dilated cardiomyopathy']",3,1590,1.4834473295094337,0.006707887619590055
+52,JAK2,0,9,"['cerebral vascular events', 'eczema', 'anemia', 'congestive heart failure']",4,2807,1.8678428250638168,0.006519516887915002
+53,C5AR1,0,10,"['anemia', 'interstitial lung disease']",2,2117,1.3951143164105837,0.006026747757037218
+54,PPIB,0,9,"['nephrotic syndrome', 'interstitial lung disease', 'congestive heart failure', 'constipation']",4,8408,2.7425332851343978,0.005700995848943668
+55,INS,0,12,"['failure to thrive', 'dilated cardiomyopathy', 'congestive heart failure', 'congestive heart failure', 'constipation']",5,9554,2.2088776259720384,0.005654953134204801
+56,FGFR1,0,8,"['failure to thrive', 'failure to thrive', 'finger syndactyly', 'constipation']",4,4852,2.2003716957894497,0.005268166899913163
+57,SOD1,0,11,"['anemia', 'anemia', 'nephrotic syndrome', 'congestive heart failure']",4,2732,1.2084032477756947,0.004950545265027103
+58,CYP2C9,0,10,"['constipation', 'congestive heart failure']",2,1883,1.1172568719785212,0.00494776813464475
+59,ADA,0,9,"['failure to thrive', 'failure to thrive', 'congestive heart failure']",3,2027,1.2571596809890917,0.004921929897618994
+60,LOX,0,13,"['cerebral vascular events', 'dilated cardiomyopathy']",2,2372,0.9363343219490879,0.004642956481317482
+61,CCR2,0,9,['interstitial lung disease'],1,2259,1.2309149097933272,0.00455038782447057
+62,MAPK1,0,23,"['dilated cardiomyopathy', 'congestive heart failure', 'nephrotic syndrome']",3,11681,1.1002238824508368,0.004487355128534155
+63,RPSA,0,8,"['nephrotic syndrome', 'nephrotic syndrome', 'congestive heart failure']",3,2820,1.274365937903731,0.00376763632007619
+64,FOS,0,11,"['abnormal feet structure', 'failure to thrive']",2,6908,1.348008823554606,0.003529504360527717
+65,PTHLH,0,9,"['congestive heart failure', 'nephrotic syndrome']",2,2110,0.8800044345411815,0.003159449645729886
+66,MMP2,0,21,"['dilated cardiomyopathy', 'congestive heart failure']",2,7219,0.7058623790882873,0.0030159583119403898
+67,CA2,0,13,"['failure to thrive', 'dilated cardiomyopathy', 'dilated cardiomyopathy', 'anemia', 'congestive heart failure']",5,16711,1.4760396085204288,0.0029719293455133878
+68,CDKN1A,0,9,['interstitial lung disease'],1,7189,1.2309149097933272,0.002550775789862271
+69,SST,0,9,"['anemia', 'constipation']",2,3486,0.7958133474171457,0.0021689320026192227
+70,AHSA1,0,13,"['dilated cardiomyopathy', 'nephrotic syndrome']",2,4014,0.6145809512722047,0.002081855901850526
+71,SIRT1,0,9,"['dilated cardiomyopathy', 'congestive heart failure']",2,3382,0.7058623790882873,0.001888427291377364
+72,GRAP2,0,10,"['dilated cardiomyopathy', 'nephrotic syndrome']",2,3225,0.6145809512722047,0.0017866156680158328
+73,POLDIP2,0,9,"['dilated cardiomyopathy', 'nephrotic syndrome']",2,2996,0.6145809512722047,0.0016682748501421346
+74,CYP3A4,0,9,['constipation'],1,3373,0.6316139407998892,0.0016317437696348955
+75,GPI,0,8,"['anemia', 'congestive heart failure']",2,2966,0.6498423377958886,0.0016070777823088687
+76,CRK,0,13,"['dilated cardiomyopathy', 'nephrotic syndrome']",2,6751,0.6145809512722047,0.0016052966377740818
+77,OXER1,0,8,['congestive heart failure'],1,1406,0.4856429311786321,0.0015449606402975742
+78,KDR,0,9,"['anemia', 'congestive heart failure']",2,4090,0.6498423377958886,0.0015396192725670164
+79,MAPK8,0,16,['congestive heart failure'],1,7491,0.4856429311786321,0.0013386596628340555
+81,HPSE,0,8,['nephrotic syndrome'],1,1584,0.3943615033625495,0.0010422253093259931
+82,BCR,0,8,"['dilated cardiomyopathy', 'anemia']",2,2704,0.3844188545269118,0.0007632340278096964
+83,TYMS,0,9,['anemia'],1,2948,0.16419940661725654,0.0
+84,GABPA,0,11,['anemia'],1,4112,0.16419940661725654,0.0
+85,EGF,0,10,['anemia'],1,3542,0.16419940661725654,0.0

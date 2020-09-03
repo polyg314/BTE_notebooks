@@ -1,0 +1,12 @@
+,gene,direct_disease_assoc,two_step_assoc_to_disease,disease_symptoms_gene_is_associated_with,symptoms_associated_count,gene_connections_count,final_symptom_score,relevance_score
+1,ACE,0,138,"['preeclampsia', 'preeclampsia']",2,2773,1.6666666666666667,0.07239640045528882
+5,PTEN,0,129,"['blood clot in a deep vein', 'preeclampsia']",2,5675,1.644440438987146,0.0446745358082698
+8,MMP9,0,244,['preeclampsia'],1,7920,0.8333333333333334,0.02204004681398453
+9,INS,0,260,['preeclampsia'],1,9554,0.8333333333333334,0.021696808819645384
+10,AKT1,0,297,['blood clot in a deep vein'],1,16329,0.8111071056538127,0.01781260755966504
+11,PGF,0,109,['preeclampsia'],1,1289,0.8333333333333334,0.01719388858011919
+12,TH,0,147,['preeclampsia'],1,5626,0.8333333333333334,0.013274220067947928
+13,CISH,0,151,['preeclampsia'],1,6140,0.8333333333333334,0.013214721992490198
+14,PTGS2,0,124,['preeclampsia'],1,4580,0.8333333333333334,0.011328355346167256
+15,ADRA1D,0,106,['preeclampsia'],1,3271,0.8333333333333334,0.010271186543062413
+16,MTHFR,0,205,['abnormal partial thromboplastin time'],1,1477,0.5735393346764044,0.0
