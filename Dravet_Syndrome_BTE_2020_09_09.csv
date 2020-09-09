@@ -1,0 +1,4 @@
+disease_to_gene_occurrences,disease_to_gene_pub_counts,disease_to_int_to_gen_occurrences,disease_to_int_to_gene_pubs,disease_symtpoms_gene_related_to,disease_symtpoms_gene_related_to_count,unique_symptoms_count,gene_to_symptoms_pub_counts,gene_edges_out
+4,7,227,1984,"['ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'DEEP VEIN THROMBOSIS', 'DEEP VEIN THROMBOSIS', 'DEEP VEIN THROMBOSIS', 'DEEP VEIN THROMBOSIS']",8,2,13,960
+3,1,176,669,"['ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'ACTIVATED PROTEIN C RESISTANCE', 'DEEP VEIN THROMBOSIS']",5,2,2,1275
+0,0,313,2354,['BLOOD CLOT IN A DEEP VEIN'],1,1,0,16400
